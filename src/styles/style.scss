@@ -3,3 +3,787 @@
 	margin: 0%;
 	box-sizing: border-box;
 }
+
+// FONTS START
+@font-face {
+	font-family: Gotham Pro;
+	src: url(../assets/fonts/GothamProRegular/GothamProRegular.ttf);
+}
+
+@font-face {
+	font-family: Circe;
+	src: url(../assets/fonts/circe-cufonfonts-webfont/CRC25.woff);
+}
+
+@font-face {
+	font-family: GT Walsheim Pro;
+	src: url(../assets/fonts/GTWalsheimPro/GTWalsheimPro.otf);
+}
+// FONTS END
+
+// VARIABLES START
+$color1: #08243b;
+$color2: #606060;
+$color3: #d4492a;
+$color4: #71757c;
+$color5: #f1efec;
+// VARIABLES END
+
+// GLOBAL START
+html {
+	width: 100%;
+	font-size: 100%;
+}
+@media screen and (max-width: 992px) {
+	html {
+		font-size: 100%;
+	}
+}
+@media screen and (max-width: 668px) {
+	html {
+		font-size: 92%;
+	}
+}
+@media screen and (max-width: 575px) {
+	html {
+		font-size: 88%;
+	}
+}
+@media screen and (max-width: 475px) {
+	html {
+		font-size: 84%;
+	}
+}
+@media screen and (max-width: 380px) {
+	html {
+		font-size: 80%;
+	}
+}
+@media screen and (max-width: 280px) {
+	html {
+		font-size: 76%;
+	}
+}
+
+.sliderContainer {
+	.slick-prev:before,
+	.slick-next:before {
+		color: #000;
+	}
+}
+
+.f8 {
+	font-size: 0.5rem;
+}
+
+.f12 {
+	font-size: 0.75rem;
+}
+
+.f14 {
+	font-size: 0.875rem;
+}
+
+.f15 {
+	font-size: 0.938rem;
+}
+
+.f16 {
+	font-size: 1rem;
+}
+
+.f18 {
+	font-size: 1.125rem;
+}
+
+.f20 {
+	font-size: 1.25rem;
+}
+
+.fw400 {
+	font-weight: 400;
+}
+
+.fw500 {
+	font-weight: 500;
+}
+
+.fw600 {
+	font-weight: 600;
+}
+
+.fw700 {
+	font-weight: 700;
+}
+
+.fw800 {
+	font-weight: 800;
+}
+
+// COLORS
+.color1 {
+	color: $color1;
+}
+
+.color5 {
+	color: $color5;
+}
+
+.blackC {
+	color: #000;
+}
+
+.orangeC {
+	color: $color3;
+}
+
+.page_container {
+	max-width: 1220px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.header_containerSize {
+	max-width: 1350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bottomLineGray {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+.bottomLineGrayLight {
+	border-bottom: 2px solid rgba(241, 239, 236, 0.48);
+}
+
+.borderTop {
+	border-top: 2px solid #fff;
+}
+
+.gotham {
+	font-family: Gotham Pro;
+}
+
+.crice {
+	font-family: Circe;
+}
+
+.lh39 {
+	line-height: 39px;
+}
+
+button:focus {
+	outline: none;
+}
+// GLOBAL END
+
+// HEADER START
+.header_container {
+	position: fixed;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	font-family: Gotham Pro;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	transition: 0.8s;
+	z-index: 10;
+
+	ul li a {
+		font-weight: normal;
+		transition: 0.4s;
+	}
+
+	ul li a:hover {
+		color: $color1;
+	}
+
+	button {
+		box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+		border-radius: 30px;
+		font-weight: normal;
+		transition: 0.4s;
+
+		&:hover {
+			box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.09);
+		}
+	}
+
+	.dropdownList {
+		font-family: Gotham Pro;
+		border-radius: 20px;
+		box-shadow: 10px 11px 18px -11px rgba(0, 0, 0, 0.09);
+		background: #ffffff;
+		position: absolute;
+		top: 140%;
+		width: 550px;
+		left: -338%;
+
+		button {
+			font-weight: 600;
+		}
+
+		.bottomHead {
+			color: #828382;
+		}
+
+		.tria_icon {
+			position: absolute;
+			left: 50%;
+			top: -4%;
+			transform: translateX(-50%);
+		}
+
+		.inner_dropdown {
+			background: #f1efec;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+		}
+	}
+
+	.dropdownList.cases {
+		left: -306%;
+	}
+
+	.dropdownList.dev {
+		left: -92%;
+		width: 250px;
+	}
+
+	.dropdownList.pricing {
+		width: 190px;
+		left: -124%;
+	}
+}
+
+.header_container.sticky {
+	background-color: #fff;
+	box-shadow: 1px 1px 4px #cecece67;
+	height: 75px;
+	transition: 0.8s;
+}
+
+.max_content {
+	width: max-content;
+}
+// HEADER END
+
+/* ==================== SideBAR STYLING END ======================== */
+.SideBarContainer {
+	position: fixed;
+	right: 0%;
+	left: 0%;
+	bottom: 0%;
+	color: white;
+	font-size: 2.2rem;
+	background-color: #fff;
+	height: 100vh;
+	z-index: 11111;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	transition: 0.5s;
+
+	.logo {
+		position: absolute;
+		top: 3%;
+		left: 3%;
+
+		img {
+			width: 120px;
+		}
+	}
+}
+
+.SideBarContainer ul {
+	padding-left: 0rem;
+}
+
+.SideBarContainer ul li {
+	position: relative;
+	list-style: none;
+	margin-bottom: 2rem;
+	cursor: pointer;
+	padding: 0.4rem 0rem;
+	text-align: center;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		position: relative;
+		padding-bottom: 5px;
+	}
+	.activeNav::after {
+		content: "";
+		position: absolute;
+		left: 0%;
+		bottom: 0%;
+		height: 10%;
+		width: 100%;
+		background-color: #007bbc;
+		border-radius: 5px;
+	}
+}
+
+.CrossBTn {
+	position: absolute;
+	top: 5%;
+	right: 4%;
+	cursor: pointer;
+	color: #000;
+}
+/* ==================== SideBAR STYLING END ======================== */
+
+// HERO START
+.hero_container {
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		color: $color1;
+		font-family: Gotham Pro;
+		font-size: 4rem;
+		line-height: 77px;
+	}
+	p {
+		color: $color2;
+		font-size: 1rem;
+		line-height: 27px;
+		font-weight: normal;
+		font-family: Circe;
+	}
+
+	button {
+		color: $color3;
+		background: #ffffff;
+		box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+		font-family: Gotham Pro;
+		border-radius: 30px;
+		font-weight: normal;
+	}
+}
+// HERO END
+
+// HOME FINANCIAL SERVICES START
+.financial_service_container {
+	background: #08243b;
+	padding: 4rem 0rem;
+
+	h1 {
+		font-size: 2.5rem;
+		font-family: Gotham Pro;
+		line-height: 77px;
+	}
+
+	.headText {
+		line-height: 39px;
+	}
+
+	.bottomSec {
+		margin-top: 6rem;
+	}
+}
+// HOME FINANCIAL SERVICES END
+
+// WHY MOBILE START
+.whyMob_container {
+	max-width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.img_container {
+		margin-top: -10rem;
+		z-index: -1;
+	}
+
+	.whyMobTop {
+		.topP {
+			font-family: Gotham Pro;
+		}
+
+		h1 {
+			font-family: Gotham Pro;
+			font-size: 2.5rem;
+			line-height: 77px;
+			color: $color1;
+		}
+
+		p {
+			font-family: Circe;
+			color: $color2;
+			line-height: 39px;
+		}
+	}
+
+	.mobCard {
+		h3 {
+			font-family: Gotham Pro;
+		}
+		p {
+			font-family: Circe;
+			color: #9aa0a6;
+			line-height: 27px;
+		}
+	}
+}
+// WHY MOBILE END
+
+// BRAND HOME START
+.brand_container {
+	background: url("../assets/hero_brand.svg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 4rem 0rem 15rem 0rem;
+
+	p {
+		font-family: Gotham Pro;
+	}
+
+	.line {
+		width: 1.2px;
+		background: rgba(0, 0, 0, 0.08);
+		height: 100px;
+	}
+
+	.sliderContainer {
+		img {
+			width: 100px;
+		}
+	}
+}
+// BRAND HOME END
+
+// PRODUCT START
+.product_container {
+	font-family: Gotham Pro;
+
+	h1 {
+		font-size: 2.125rem;
+		line-height: 77px;
+	}
+
+	.row {
+		// --bs-gutter-x: 20rem;
+	}
+
+	.card_product {
+		h3 {
+			font-size: 2.125rem;
+			line-height: 71px;
+		}
+		p {
+			font-family: Circe;
+			letter-spacing: 0.03em;
+		}
+	}
+}
+// PRODUCT END
+
+// SYSTEM COMPONENTS START
+.System_component_container {
+	background: #f1efec;
+	box-shadow: 0px -10px 14px rgba(0, 0, 0, 0.09);
+	margin-top: 5rem;
+	padding: 3rem 0rem;
+
+	h1 {
+		line-height: 77px;
+		font-size: 2.125rem;
+	}
+
+	.system_card:nth-child(4) {
+		img {
+			max-width: 400px;
+		}
+	}
+
+	.slick-slide img {
+		width: 100%;
+	}
+}
+// SYSTEM COMPONENTS END
+
+// INSIGHTS START
+.insights_container {
+	margin: 5rem 0rem;
+	font-family: Gotham Pro;
+
+	p {
+		color: #9aa0a6;
+	}
+
+	h2 {
+		line-height: 57px;
+	}
+}
+// INSIGHTS END
+
+// FOOTER START
+.footer_container {
+	font-family: Gotham Pro;
+	background: $color4;
+	padding: 4rem 0rem 3rem 0rem;
+
+	.brandLogo {
+		width: 60px;
+		height: auto;
+	}
+
+	.secondText {
+		// font-family: GT Walsheim Pro;
+		letter-spacing: 0.03em;
+		line-height: 16px;
+	}
+
+	.newsletterInp {
+		background: #f1efec;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+		width: 450px;
+
+		input {
+			font-size: 0.938rem;
+		}
+
+		input:focus {
+			outline: none;
+		}
+
+		button {
+			letter-spacing: 0.18em;
+			border: none;
+			border-left: 2px solid #ccc;
+		}
+
+		&::placeholder {
+			color: rgba(218, 218, 218, 0.83);
+			letter-spacing: 0.03em;
+			font-size: 0.938rem;
+		}
+	}
+}
+// FOOTER END
+
+// MEDIA QUERIES START
+@media screen and (max-width: 1100px) {
+	.product_container {
+		.max_content {
+			width: 100%;
+		}
+	}
+	.hero_container {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 998px) {
+	.f8 {
+		font-size: 0.45rem;
+	}
+
+	.f12 {
+		font-size: 0.7rem;
+	}
+
+	.f15 {
+		font-size: 0.9rem;
+	}
+
+	.f16 {
+		font-size: 0.95rem;
+	}
+
+	.f18 {
+		font-size: 1rem;
+	}
+
+	.f20 {
+		font-size: 1.1rem;
+	}
+
+	.hero_container h1,
+	.financial_service_container h1,
+	.whyMob_container .whyMobTop h1 {
+		font-size: 2.5rem;
+		line-height: 60px;
+	}
+	.hero_container p,
+	.whyMob_container .whyMobTop p {
+		line-height: 25px;
+	}
+	.financial_service_container .headText {
+		line-height: 30px;
+	}
+	.whyMob_container {
+		.bottomLineGray {
+			border: none;
+		}
+	}
+	.whyMob_container .mobCard p {
+		line-height: 22px;
+	}
+	.brand_container {
+		padding: 4rem 0rem 10rem 0rem;
+	}
+	.product_container h1 {
+		font-size: 2.125rem;
+		line-height: 55px;
+	}
+	.lh39 {
+		line-height: 32px;
+	}
+	.product_container .card_product h3 {
+		font-size: 2rem;
+		line-height: 42px;
+	}
+	.System_component_container h1 {
+		font-size: 2rem;
+		line-height: 50px;
+	}
+	.hero_container {
+		height: 550px;
+	}
+	.insights_container {
+		img {
+			width: 100%;
+		}
+	}
+	.insights_container h2 {
+		line-height: 42px;
+	}
+}
+
+@media screen and (max-width: 868px) {
+	.hero_container h1,
+	.financial_service_container h1,
+	.whyMob_container .whyMobTop h1 {
+		font-size: 2.2rem;
+		line-height: 50px;
+	}
+	.hero_container p,
+	.whyMob_container .whyMobTop p {
+		line-height: 22px;
+	}
+	.whyMob_container .mobCard p {
+		line-height: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.f8 {
+		font-size: 0.45rem;
+	}
+
+	.f12 {
+		font-size: 0.75rem;
+	}
+
+	.f15 {
+		font-size: 0.85rem;
+	}
+
+	.f16 {
+		font-size: 0.85rem;
+	}
+
+	.f18 {
+		font-size: 0.95rem;
+	}
+
+	.f20 {
+		font-size: 1rem;
+	}
+
+	.hero_container {
+		height: 100%;
+		padding-top: 8rem;
+	}
+	.hero_container h1 {
+		line-height: 42px;
+	}
+	.financial_service_container h1 {
+		font-size: 2rem;
+		line-height: 44px;
+	}
+	.financial_service_container {
+		padding: 3rem 0rem;
+	}
+	.financial_service_container .bottomSec {
+		margin-top: 4rem;
+	}
+	.header_container.sticky {
+		height: 65px;
+	}
+	.fincialBrandCont {
+		img {
+			width: 150px;
+		}
+	}
+	.whyMob_container .whyMobTop h1 {
+		font-size: 2rem;
+		line-height: 42px;
+	}
+	.whyMob_container .mobCard p {
+		line-height: 15px;
+	}
+	.brand_container {
+		padding: 4rem 0rem 9rem 0rem;
+	}
+	.lh39 {
+		line-height: 28px;
+	}
+	.product_container h1 {
+		font-size: 2rem;
+		line-height: 40px;
+	}
+	.product_container .card_product h3 {
+		font-size: 1.5rem;
+		line-height: 28px;
+	}
+	.System_component_container h1 {
+		font-size: 2rem;
+		line-height: 40px;
+	}
+	.insights_container h2 {
+		line-height: 30px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.fincialBrandCont {
+		img {
+			width: 104px;
+		}
+	}
+	.lh39 {
+		line-height: 22px;
+	}
+	.System_component_container {
+		padding: 3rem 0rem 0rem 0rem;
+	}
+	.insights_container h2 {
+		line-height: 22px;
+	}
+	.footer_container .newsletterInp {
+		width: 100%;
+	}
+}
+// MEDIA QUERIES END
