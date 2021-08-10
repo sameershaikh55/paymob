@@ -1,11 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
-import b1 from "../assets/brands/b1.svg";
-import b2 from "../assets/brands/b2.svg";
-import b3 from "../assets/brands/b3.svg";
-import b4 from "../assets/brands/b4.svg";
+import b1 from "../assets/sdkBrands/i1.svg";
+import b2 from "../assets/sdkBrands/i2.svg";
+import b3 from "../assets/sdkBrands/i3.svg";
+import b4 from "../assets/sdkBrands/i4.svg";
 
-const Brands = () => {
+const SdkBrands = () => {
 	var settings = {
 		centerMode: true,
 		dots: false,
@@ -38,52 +38,52 @@ const Brands = () => {
 	const data = [
 		{
 			i: b1,
-			t: "Accredited and certified by",
+			t: "Payment systems",
 		},
 		{
 			l: "t",
 		},
 		{
 			i: b2,
-			t: "Authorised",
+			t: "Mobile payment platforms",
 		},
 		{
 			l: "t",
 		},
 		{
 			i: b3,
-			t: "A proud alumni of",
+			t: "QR and barcode payments (optional)",
 		},
 		{
 			l: "t",
 		},
 		{
 			i: b4,
-			t: "Member of",
+			t: "National cards (optional)",
 		},
 	];
 
 	const data2 = [
 		{
 			i: b1,
-			t: "Accredited and certified by",
+			t: "Payment systems",
 		},
 		{
 			i: b2,
-			t: "Authorised",
+			t: "Mobile payment platforms",
 		},
 		{
 			i: b3,
-			t: "A proud alumni of",
+			t: "QR and barcode payments (optional)",
 		},
 		{
 			i: b4,
-			t: "Member of",
+			t: "National cards (optional)",
 		},
 	];
 
 	return (
-		<div className="brand_container mt-5">
+		<div className="sdk_brand_container mt-5">
 			<div className="header_containerSize">
 				<div className="container-fluid">
 					<div className="row">
@@ -92,7 +92,7 @@ const Brands = () => {
 								<Slider {...settings}>
 									{data2.map((p, i) => {
 										return (
-											<div key={i} className="text-center  px-4 px-lg-0">
+											<div key={i} className="text-center px-4 px-lg-0">
 												<p className="color1 f16">{p.t}</p>
 												<img src={p.i} alt="" className="mx-auto w-100" />
 											</div>
@@ -123,4 +123,4 @@ const Brands = () => {
 	);
 };
 
-export default Brands;
+export default SdkBrands;

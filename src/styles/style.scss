@@ -101,6 +101,10 @@ html {
 	font-size: 1.25rem;
 }
 
+.f34 {
+	font-size: 2.125rem;
+}
+
 .fw400 {
 	font-weight: 400;
 }
@@ -139,7 +143,7 @@ html {
 }
 
 .orangeC {
-	color: $color3;
+	color: $color3 !important;
 }
 
 .page_container {
@@ -759,9 +763,54 @@ button:focus {
 
 //(PRODUCT OVERVIEW PAGE) END
 
+//(ANDROID SDK PAGE) START
+.sdk_brand_container {
+	padding: 0rem 0rem 0rem 0rem;
+
+	p {
+		font-family: Gotham Pro;
+	}
+
+	.line {
+		width: 1.2px;
+		background: rgba(0, 0, 0, 0.08);
+		height: 100px;
+	}
+
+	.sliderContainer {
+		img {
+			width: 100px;
+		}
+	}
+}
+
+.sdk_detail_container {
+	background: url("../assets/hero_brand.svg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 1rem 0rem 14rem 0rem;
+
+	p {
+		letter-spacing: 0.03em;
+		line-height: 27px;
+	}
+}
+
+// HOW IT WORKS
+.howitWorks_container {
+	h1 {
+		line-height: 71px;
+	}
+}
+//(ANDROID SDK PAGE) END
+
 // MEDIA QUERIES START
 @media screen and (max-width: 1100px) {
-	.product_container {
+	.product_container,
+	.sdk_detail_container {
 		.max_content {
 			width: 100%;
 		}
@@ -796,6 +845,10 @@ button:focus {
 
 	.f20 {
 		font-size: 1.1rem;
+	}
+
+	.f34 {
+		font-size: 2rem;
 	}
 
 	.hero_container h1,
@@ -855,6 +908,9 @@ button:focus {
 	.insights_container h2 {
 		line-height: 42px;
 	}
+	.howitWorks_container h1 {
+		line-height: 54px;
+	}
 }
 
 @media screen and (max-width: 868px) {
@@ -901,11 +957,16 @@ button:focus {
 		font-size: 1rem;
 	}
 
+	.f34 {
+		font-size: 1.8rem;
+	}
+
 	.hero_container {
 		height: 100%;
 		padding-top: 8rem;
 	}
-	.hero_container h1 {
+	.hero_container h1,
+	.howitWorks_container h1 {
 		line-height: 42px;
 	}
 	.financial_service_container h1 {
@@ -964,7 +1025,8 @@ button:focus {
 	.productHero_container {
 		height: 400px;
 	}
-	.productHero_container p {
+	.productHero_container p,
+	.sdk_detail_container p {
 		line-height: 22px;
 	}
 	.partner_paymob_container .inner_paymob {
@@ -976,6 +1038,12 @@ button:focus {
 		img {
 			width: 100%;
 		}
+	}
+	.sdk_detail_container {
+		padding: 1rem 0rem 22rem 0rem;
+	}
+	.howitWorks_container {
+		margin-top: -10rem;
 	}
 }
 

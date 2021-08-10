@@ -14,7 +14,7 @@ const Hero = () => {
 									<h1 className="fw-bolder">
 										A payment engine for business apps.
 									</h1>
-									<p className="mt-3 mt-md-4 fw600">
+									<p className="mt-3 mt-md-4 fw-bold">
 										We are bringing a new wave of payment acceptance to business
 										apps, commerce solution vendors and banking enterprise.
 										Leverage Paymobs Tap to Phone solution to offer your own

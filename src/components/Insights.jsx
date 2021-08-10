@@ -1,8 +1,19 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import Slider from "react-slick";
 import blog from "../assets/home/blog.svg";
 
 const Insights = () => {
+	var settings = {
+		centerMode: true,
+		dots: false,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		initialSlide: 0,
+	};
+
 	const data = [
 		{
 			i: blog,
@@ -39,22 +50,47 @@ const Insights = () => {
 								</div>
 							</div>
 
-							<div className="row">
-								{data.map((prev, ind) => {
-									const { i, p, t } = prev;
-									return (
-										<div className="col-11 col-md-6 mx-auto mt-5" key={ind}>
-											<img src={i} alt="" />
-											<div className="ps-3 mt-2">
-												<p className="f14 crice mb-0 mb-md-2">{p}</p>
-												{t}
-												<button className="f14 border-0 bg-transparent orangeC fw600">
-													Keep reading <IoIosArrowForward />
-												</button>
+							<div className="d-block d-md-none sliderContainer px-3">
+								<Slider {...settings}>
+									{data.map((prev, ind) => {
+										const { i, p, t } = prev;
+										return (
+											<div
+												className="col-11 col-md-6 mx-auto mt-5 px-2"
+												key={ind}
+											>
+												<img src={i} alt="" />
+												<div className="ps-3 mt-2">
+													<p className="f14 crice mb-0 mb-md-2">{p}</p>
+													{t}
+													<button className="f14 border-0 bg-transparent orangeC fw600">
+														Keep reading <IoIosArrowForward />
+													</button>
+												</div>
 											</div>
-										</div>
-									);
-								})}
+										);
+									})}
+								</Slider>
+							</div>
+
+							<div className="d-none d-md-block">
+								<div className="row">
+									{data.map((prev, ind) => {
+										const { i, p, t } = prev;
+										return (
+											<div className="col-11 col-md-6 mx-auto mt-5" key={ind}>
+												<img src={i} alt="" />
+												<div className="ps-3 mt-2">
+													<p className="f14 crice mb-0 mb-md-2">{p}</p>
+													{t}
+													<button className="f14 border-0 bg-transparent orangeC fw600">
+														Keep reading <IoIosArrowForward />
+													</button>
+												</div>
+											</div>
+										);
+									})}
+								</div>
 							</div>
 						</div>
 					</div>
