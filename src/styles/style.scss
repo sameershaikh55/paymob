@@ -27,6 +27,7 @@ $color2: #606060;
 $color3: #d4492a;
 $color4: #71757c;
 $color5: #f1efec;
+$color6: #dadada;
 // VARIABLES END
 
 // GLOBAL START
@@ -136,6 +137,10 @@ html {
 
 .color5 {
 	color: $color5;
+}
+
+.color6 {
+	color: $color6;
 }
 
 .blackC {
@@ -799,16 +804,50 @@ button:focus {
 	}
 }
 
+.sdk_detail_container.softDetails {
+	background: url("../assets/hero_brand3.svg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 1rem 0rem 14rem 0rem;
+}
+
 // HOW IT WORKS
 .howitWorks_container {
 	h1 {
 		line-height: 71px;
 	}
+	.hiwSoft_card {
+		width: 100%;
+		max-width: 450px;
+	}
 }
 //(ANDROID SDK PAGE) END
 
+// SOFTPOSE START
+.bespoke_solution_container {
+	margin: 5rem 0rem;
+
+	h1 {
+		line-height: 71px;
+	}
+
+	.img_container {
+		margin-top: 10rem;
+	}
+}
+
+.benefits_container {
+	li {
+		line-height: 30px;
+	}
+}
+// SOFTPOSE END
+
 // MEDIA QUERIES START
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
 	.product_container,
 	.sdk_detail_container {
 		.max_content {
@@ -819,6 +858,16 @@ button:focus {
 		img {
 			width: 100%;
 		}
+	}
+	.System_component_container.caseStudies {
+		.rightSide {
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.hero_container.soft img {
+		width: auto;
 	}
 }
 
@@ -893,7 +942,8 @@ button:focus {
 	}
 	.System_component_container h1,
 	.partner_paymob_container h1,
-	.new_feature_container h1 {
+	.new_feature_container h1,
+	.explore_availability_container h1 {
 		font-size: 2rem;
 		line-height: 50px;
 	}
@@ -908,8 +958,18 @@ button:focus {
 	.insights_container h2 {
 		line-height: 42px;
 	}
-	.howitWorks_container h1 {
+	.howitWorks_container h1,
+	.bespoke_solution_container h1 {
 		line-height: 54px;
+	}
+	.hero_container.soft img {
+		width: 100%;
+		height: 340px;
+	}
+	.benefits_container {
+		li {
+			line-height: 28px;
+		}
 	}
 }
 
@@ -923,13 +983,25 @@ button:focus {
 	}
 	.hero_container p,
 	.whyMob_container .whyMobTop p,
-	.partner_paymob_container .partner_card p {
+	.partner_paymob_container .partner_card p,
+	.explore_availability_container .underHead {
 		line-height: 22px;
 	}
 	.whyMob_container .mobCard p,
 	.partner_paymob_container .underHead {
 		line-height: 20px;
 	}
+	.howitWorks_container .sliderContainer {
+		img {
+			width: 100%;
+		}
+	}
+
+	// .howitWorks_container .sliderContainer .slick-slide:nth-child(2) {
+	// 	img {
+	// 		width: 380px;
+	// 	}
+	// }
 }
 
 @media screen and (max-width: 768px) {
@@ -966,7 +1038,8 @@ button:focus {
 		padding-top: 8rem;
 	}
 	.hero_container h1,
-	.howitWorks_container h1 {
+	.howitWorks_container h1,
+	.bespoke_solution_container h1 {
 		line-height: 42px;
 	}
 	.financial_service_container h1 {
@@ -1005,7 +1078,8 @@ button:focus {
 	.product_container h1,
 	.payment_interface_container h1,
 	.partner_paymob_container h1,
-	.new_feature_container h1 {
+	.new_feature_container h1,
+	.explore_availability_container h1 {
 		font-size: 1.8rem;
 		line-height: 40px;
 	}
@@ -1044,6 +1118,29 @@ button:focus {
 	}
 	.howitWorks_container {
 		margin-top: -10rem;
+	}
+	.explore_availability_container .underHead {
+		line-height: 20px;
+	}
+	.explore_availability_container {
+		img {
+			width: 100%;
+		}
+	}
+	.bespoke_solution_container .img_container {
+		margin-top: 2rem;
+	}
+	.sdk_detail_container.softDetails {
+		padding: 1rem 0rem 22rem 0rem;
+	}
+	.benefits_container {
+		li {
+			line-height: 22px;
+		}
+	}
+	.hero_container.soft img {
+		width: 100%;
+		height: 250px;
 	}
 }
 

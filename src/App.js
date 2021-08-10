@@ -8,6 +8,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import ProductOverview from "./pages/ProductOverview";
 import AndroidSdk from "./pages/AndroidSdk";
+import SoftPos from "./pages/SoftPos";
 
 function App() {
 	return (
@@ -15,7 +16,8 @@ function App() {
 			{/* <Route exact path="/" component={Home} />
 			<Route exact path="/productOverview" component={ProductOverview} />
 			<Route exact path="/androidSdk" component={AndroidSdk} /> */}
-			<Route exact path="/" component={AndroidSdk} />
+			{/* <Route exact path="/softPos" component={SoftPos} /> */}
+			<Route exact path="/" component={SoftPos} />
 		</Switch>
 	);
 }

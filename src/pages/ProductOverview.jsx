@@ -51,7 +51,7 @@ const ProductOverview = () => {
 			</div>
 			{/* PAGE TEXT END */}
 
-			{/* <ExploreAvail /> */}
+			<ExploreAvail />
 
 			{/* PAGE TEXT END */}
 			<div className="softPos_container py-5 py-md-4 mb-0 mb-md-5">

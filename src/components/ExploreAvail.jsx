@@ -28,16 +28,16 @@ const ExploreAvail = () => {
 	];
 
 	return (
-		<div className="explore_availability_container py-5">
+		<div className="explore_availability_container pt-5 py-md-5">
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-lg-12 mx-auto">
 							<div className="row">
-								<div className="col-6 px-0">
+								<div className="col-10 col-md-8 col-lg-6 mx-auto order-1 order-lg-0 px-0">
 									<img className="w-100" src={explore} alt="explores" />
 								</div>
-								<div className="col-6">
+								<div className="col-12 col-lg-6">
 									<p className="text-end orangeC gotham f18 mb-0 mb-md-2">
 										Where is Paymob?
 									</p>
@@ -56,7 +56,7 @@ const ExploreAvail = () => {
 											return (
 												<div key={i} className="col-6 text-end">
 													<div className="explore_card py-4">
-														<h5>{prev.t}</h5>
+														<h5 className="f18 gotham fw600">{prev.t}</h5>
 														<img src={prev.i} alt="" />
 													</div>
 												</div>
