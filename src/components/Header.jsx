@@ -489,7 +489,7 @@ const Header = ({ ClickEvent }) => {
 	return (
 		<div className="header_container">
 			<div className="header_containerSize w-100">
-				<div className="container-fluid ps-4 ps-md-2 h-100 w-100">
+				<div className="container-fluid ps-4 ps-md-2 pe-0 h-100 w-100">
 					<div className="row h-100 w-100">
 						<div className="col-11 h-100 mx-auto w-100">
 							<div className="d-flex justify-content-between align-items-center w-100 h-100">

@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import blog from "../assets/blog.svg";
+import blog from "../assets/home/blog.svg";
 
 const Insights = () => {
 	const data = [

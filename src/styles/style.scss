@@ -33,6 +33,7 @@ $color5: #f1efec;
 html {
 	width: 100%;
 	font-size: 100%;
+	overflow-x: hidden;
 }
 @media screen and (max-width: 992px) {
 	html {
@@ -123,6 +124,10 @@ html {
 // COLORS
 .color1 {
 	color: $color1;
+}
+
+.color2 {
+	color: $color2;
 }
 
 .color5 {
@@ -579,6 +584,180 @@ button:focus {
 	}
 }
 // FOOTER END
+
+// (PRODUCT OVERVIEW PAGE) START
+// HERO START
+.productHero_container {
+	margin-top: 5rem;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		font-size: 4rem;
+		line-height: 77px;
+		font-family: Gotham Pro;
+	}
+
+	p {
+		line-height: 27px;
+		letter-spacing: 0.03em;
+		font-family: Circe;
+	}
+
+	button {
+		color: $color3;
+		background: #ffffff;
+		box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+		font-family: Gotham Pro;
+		border-radius: 30px;
+		font-weight: normal;
+	}
+}
+// HERO END
+
+// BRAND PARTNERS START
+.brandPartners_container {
+	background: url("../assets/hero_brand2.svg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 3rem 0rem 15rem 0rem;
+}
+// BRAND PARTNERS END
+
+// PAYMENT INTERFACE END
+.payment_interface_container {
+	h1 {
+		line-height: 77px;
+		font-size: 2.125rem;
+	}
+
+	.underHead {
+		line-height: 39px;
+	}
+
+	.system_card {
+		width: 200px;
+
+		img {
+			width: 100%;
+		}
+
+		&:nth-child(4) {
+			img {
+				width: 110px;
+			}
+		}
+	}
+
+	.sliderContainer {
+		.system_cardS {
+			width: 100px;
+			padding: 0rem 3rem;
+
+			img {
+				width: 100%;
+				margin: auto;
+			}
+		}
+	}
+}
+// PAYMENT INTERFACE END
+
+// PARTNER PAYMOB END
+.partner_paymob_container {
+	background: #f1efec;
+	box-shadow: 0px -10px 14px rgba(0, 0, 0, 0.09);
+	margin-top: 5rem;
+	padding: 3rem 0rem;
+
+	h1 {
+		line-height: 77px;
+		font-size: 2.125rem;
+	}
+
+	.underHead {
+		line-height: 27px;
+		letter-spacing: 0.03em;
+	}
+
+	.partner_card {
+		p {
+			letter-spacing: 0.03em;
+			line-height: 27px;
+		}
+	}
+
+	.inner_paymob {
+		margin-top: 5rem;
+	}
+}
+// PARTNER PAYMOB END
+
+// NEW FEATURE END
+.new_feature_container {
+	padding: 2rem 0rem;
+
+	h1 {
+		line-height: 77px;
+		font-size: 2.125rem;
+	}
+
+	.underHead {
+		line-height: 39px;
+	}
+}
+// NEW FEATURE END
+
+// PRODUCT OVERVIEW CONTENT START
+.productView_content {
+	background: $color1;
+
+	.line {
+		height: 60px;
+		width: 2px;
+		background: rgba(255, 255, 255, 0.3);
+	}
+}
+// PRODUCT OVERVIEW CONTENT END
+
+// EXPLORE AVAILABLE START
+.explore_availability_container {
+	h1 {
+		font-size: 2.125rem;
+		line-height: 71px;
+	}
+
+	.explore_card {
+		border-top: 2px solid #f1efec;
+	}
+
+	.underHead {
+		line-height: 27px;
+		letter-spacing: 0.03em;
+	}
+}
+// EXPLORE AVAILABLE END
+
+// SOFT POS START
+.softPos_container {
+	h1 {
+		font-size: 2.5rem;
+		line-height: 71px;
+	}
+
+	button {
+		box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+		border-radius: 30px;
+	}
+}
+// SOFT POS END
+
+//(PRODUCT OVERVIEW PAGE) END
 
 // MEDIA QUERIES START
 @media screen and (max-width: 1100px) {

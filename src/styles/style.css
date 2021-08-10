@@ -23,6 +23,7 @@
 html {
   width: 100%;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 992px) {
@@ -116,6 +117,10 @@ html {
 
 .color1 {
   color: #08243b;
+}
+
+.color2 {
+  color: #606060;
 }
 
 .color5 {
@@ -592,6 +597,158 @@ button:focus {
   color: rgba(218, 218, 218, 0.83);
   letter-spacing: 0.03em;
   font-size: 0.938rem;
+}
+
+.productHero_container {
+  margin-top: 5rem;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productHero_container h1 {
+  font-size: 4rem;
+  line-height: 77px;
+  font-family: Gotham Pro;
+}
+
+.productHero_container p {
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  font-family: Circe;
+}
+
+.productHero_container button {
+  color: #d4492a;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+  font-family: Gotham Pro;
+  border-radius: 30px;
+  font-weight: normal;
+}
+
+.brandPartners_container {
+  background: url("../assets/hero_brand2.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0rem 15rem 0rem;
+}
+
+.payment_interface_container h1 {
+  line-height: 77px;
+  font-size: 2.125rem;
+}
+
+.payment_interface_container .underHead {
+  line-height: 39px;
+}
+
+.payment_interface_container .system_card {
+  width: 200px;
+}
+
+.payment_interface_container .system_card img {
+  width: 100%;
+}
+
+.payment_interface_container .system_card:nth-child(4) img {
+  width: 110px;
+}
+
+.payment_interface_container .sliderContainer .system_cardS {
+  width: 100px;
+  padding: 0rem 3rem;
+}
+
+.payment_interface_container .sliderContainer .system_cardS img {
+  width: 100%;
+  margin: auto;
+}
+
+.partner_paymob_container {
+  background: #f1efec;
+  -webkit-box-shadow: 0px -10px 14px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px -10px 14px rgba(0, 0, 0, 0.09);
+  margin-top: 5rem;
+  padding: 3rem 0rem;
+}
+
+.partner_paymob_container h1 {
+  line-height: 77px;
+  font-size: 2.125rem;
+}
+
+.partner_paymob_container .underHead {
+  line-height: 27px;
+  letter-spacing: 0.03em;
+}
+
+.partner_paymob_container .partner_card p {
+  letter-spacing: 0.03em;
+  line-height: 27px;
+}
+
+.partner_paymob_container .inner_paymob {
+  margin-top: 5rem;
+}
+
+.new_feature_container {
+  padding: 2rem 0rem;
+}
+
+.new_feature_container h1 {
+  line-height: 77px;
+  font-size: 2.125rem;
+}
+
+.new_feature_container .underHead {
+  line-height: 39px;
+}
+
+.productView_content {
+  background: #08243b;
+}
+
+.productView_content .line {
+  height: 60px;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.explore_availability_container h1 {
+  font-size: 2.125rem;
+  line-height: 71px;
+}
+
+.explore_availability_container .explore_card {
+  border-top: 2px solid #f1efec;
+}
+
+.explore_availability_container .underHead {
+  line-height: 27px;
+  letter-spacing: 0.03em;
+}
+
+.softPos_container h1 {
+  font-size: 2.5rem;
+  line-height: 71px;
+}
+
+.softPos_container button {
+  -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 1100px) {

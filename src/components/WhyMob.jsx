@@ -1,5 +1,5 @@
 import React from "react";
-import whyMob from "../assets/whyMob.svg";
+import whyMob from "../assets/home/whyMob.svg";
 
 const WhyMob = () => {
 	const data = [
