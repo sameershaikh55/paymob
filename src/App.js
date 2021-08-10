@@ -11,8 +11,9 @@ import ProductOverview from "./pages/ProductOverview";
 function App() {
 	return (
 		<Switch>
-			<Route exact path="/" component={Home} />
-			<Route exact path="/productOverview" component={ProductOverview} />
+			{/* <Route exact path="/" component={Home} />
+			<Route exact path="/productOverview" component={ProductOverview} /> */}
+			<Route exact path="/" component={ProductOverview} />
 		</Switch>
 	);
 }

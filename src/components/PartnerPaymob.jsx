@@ -50,14 +50,19 @@ const PartnerPaymob = () => {
 							<div className="inner_paymob row">
 								{data.map((prev, i) => {
 									return (
-										<div key={i} className="col-4 partner_card">
+										<div
+											key={i}
+											className="col-12 col-sm-6 col-md-4 partner_card mt-5 mt-md-0 text-center text-sm-start"
+										>
 											<img src={prev.i} alt="" />
-											<h6 className="fw600 my-3 gotham f20">{prev.t}</h6>
+											<h6 className="fw600 mt-3 mb-2 my-md-2 gotham f20">
+												{prev.t}
+											</h6>
 											<p className="col-12 col-md-10 col-lg-9 crice fw600 mb-1">
 												{prev.d}
 											</p>
 											{i === 2 && (
-												<button className="f14 border-0 bg-transparent orangeC fw600">
+												<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
 													Find out more <IoIosArrowForward />
 												</button>
 											)}

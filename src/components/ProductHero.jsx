@@ -12,7 +12,7 @@ const ProductHero = () => {
 					<div className="row">
 						<div className="col-11 col-lg-12 mx-auto">
 							<div className="row align-items-center">
-								<div className="col-6">
+								<div className="col-12 col-sm-10 col-md-6">
 									<h1 className="color1 fw-bolder">Product</h1>
 									<p className="color2 fw600">
 										Paymob exist to help other businesses offer their own
@@ -28,7 +28,7 @@ const ProductHero = () => {
 										Contact sales <IoIosArrowForward />
 									</button>
 								</div>
-								<div className="col-6">
+								<div className="d-none d-md-block col-6">
 									<img src={hero} alt="hero" />
 								</div>
 							</div>

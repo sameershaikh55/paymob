@@ -65,7 +65,7 @@ const PaymentInterface = () => {
 									</div>
 								</div>
 								<div className="row">
-									<p className="col-12 col-md-10 col-lg-6 underHead color1 f18 crice fw600">
+									<p className="col-12 col-md-10 col-lg-6 lh39 color1 f18 crice fw600">
 										Enhance your financial service offering and generate an
 										additional revenue stream using our bespoke finance
 										solutions, on the go, anywhere in the world.
@@ -86,7 +86,7 @@ const PaymentInterface = () => {
 												<h5 className="color1 f20 gotham fw600 mt-2">
 													{prev.t}
 												</h5>
-												<button className="f14 border-0 bg-transparent orangeC fw600">
+												<button className="gotham f14 border-0 bg-transparent orangeC fw600">
 													Learn more <IoIosArrowForward />
 												</button>
 											</div>

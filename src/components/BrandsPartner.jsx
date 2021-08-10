@@ -16,7 +16,7 @@ const BrandPartners = () => {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-lg-12 mx-auto">
-							<p className="orangeC f18 text-end">
+							<p className="orangeC f18 text-end gotham">
 								Join our growing community of Paymob partners
 							</p>
 

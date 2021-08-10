@@ -11,7 +11,7 @@ const NewFeature = () => {
 					<div className="row">
 						<div className="col-11 col-lg-12 mx-auto">
 							<div className="row align-items-center">
-								<div className="col-6">
+								<div className="col-md-6">
 									<p className="orangeC gotham f18 mb-0 mb-md-2">
 										New features
 									</p>
@@ -30,8 +30,10 @@ const NewFeature = () => {
 										transactions, no matter how big or small.
 									</p>
 								</div>
-								<div className="col-6 text-center">
-									<img src={newFeature} alt="" />
+								<div className="col-md-6 text-center">
+									<div className="col-8 col-sm-6 col-md-12 mx-auto ">
+										<img src={newFeature} alt="" />
+									</div>
 								</div>
 							</div>
 						</div>

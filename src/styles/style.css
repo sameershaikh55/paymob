@@ -781,7 +781,8 @@ button:focus {
   }
   .hero_container h1,
   .financial_service_container h1,
-  .whyMob_container .whyMobTop h1 {
+  .whyMob_container .whyMobTop h1,
+  .productHero_container h1 {
     font-size: 2.5rem;
     line-height: 60px;
   }
@@ -795,24 +796,30 @@ button:focus {
   .whyMob_container .bottomLineGray {
     border: none;
   }
-  .whyMob_container .mobCard p {
+  .whyMob_container .mobCard p,
+  .partner_paymob_container .underHead {
     line-height: 22px;
   }
   .brand_container {
     padding: 4rem 0rem 10rem 0rem;
   }
-  .product_container h1 {
+  .product_container h1,
+  .payment_interface_container h1,
+  .softPos_container h1 {
     font-size: 2.125rem;
     line-height: 55px;
   }
-  .lh39 {
+  .lh39,
+  .new_feature_container .underHead {
     line-height: 32px;
   }
   .product_container .card_product h3 {
     font-size: 2rem;
     line-height: 42px;
   }
-  .System_component_container h1 {
+  .System_component_container h1,
+  .partner_paymob_container h1,
+  .new_feature_container h1 {
     font-size: 2rem;
     line-height: 50px;
   }
@@ -830,15 +837,18 @@ button:focus {
 @media screen and (max-width: 868px) {
   .hero_container h1,
   .financial_service_container h1,
-  .whyMob_container .whyMobTop h1 {
+  .whyMob_container .whyMobTop h1,
+  .payment_interface_container h1 {
     font-size: 2.2rem;
     line-height: 50px;
   }
   .hero_container p,
-  .whyMob_container .whyMobTop p {
+  .whyMob_container .whyMobTop p,
+  .partner_paymob_container .partner_card p {
     line-height: 22px;
   }
-  .whyMob_container .mobCard p {
+  .whyMob_container .mobCard p,
+  .partner_paymob_container .underHead {
     line-height: 20px;
   }
 }
@@ -885,7 +895,8 @@ button:focus {
   .fincialBrandCont img {
     width: 150px;
   }
-  .whyMob_container .whyMobTop h1 {
+  .whyMob_container .whyMobTop h1,
+  .softPos_container h1 {
     font-size: 2rem;
     line-height: 42px;
   }
@@ -895,11 +906,15 @@ button:focus {
   .brand_container {
     padding: 4rem 0rem 9rem 0rem;
   }
-  .lh39 {
+  .lh39,
+  .new_feature_container .underHead {
     line-height: 28px;
   }
-  .product_container h1 {
-    font-size: 2rem;
+  .product_container h1,
+  .payment_interface_container h1,
+  .partner_paymob_container h1,
+  .new_feature_container h1 {
+    font-size: 1.8rem;
     line-height: 40px;
   }
   .product_container .card_product h3 {
@@ -913,13 +928,29 @@ button:focus {
   .insights_container h2 {
     line-height: 30px;
   }
+  .productHero_container {
+    height: 400px;
+  }
+  .productHero_container p {
+    line-height: 22px;
+  }
+  .partner_paymob_container .inner_paymob {
+    margin-top: 1rem;
+  }
+  .new_feature_container {
+    padding: 4rem 0rem;
+  }
+  .new_feature_container img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .fincialBrandCont img {
     width: 104px;
   }
-  .lh39 {
+  .lh39,
+  .new_feature_container .underHead {
     line-height: 22px;
   }
   .System_component_container {
@@ -930,6 +961,9 @@ button:focus {
   }
   .footer_container .newsletterInp {
     width: 100%;
+  }
+  .brandPartners_container {
+    padding: 3rem 0rem 10rem 0rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
