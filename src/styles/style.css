@@ -990,6 +990,9 @@ button:focus {
     font-size: 2rem;
     line-height: 44px;
   }
+  .financial_service_container .headText {
+    line-height: 22px;
+  }
   .financial_service_container {
     padding: 3rem 0rem;
   }

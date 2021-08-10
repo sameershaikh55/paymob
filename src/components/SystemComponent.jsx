@@ -82,7 +82,7 @@ const SystemComponent = () => {
 												<h5 className="color1 f20 gotham fw600 mt-2">
 													{prev.t}
 												</h5>
-												<button className="f14 border-0 bg-transparent orangeC fw600">
+												<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
 													Learn more <IoIosArrowForward />
 												</button>
 											</div>
@@ -100,7 +100,7 @@ const SystemComponent = () => {
 												<h5 className="color1 f20 gotham fw600 mt-2">
 													{prev.t}
 												</h5>
-												<button className="f14 border-0 bg-transparent orangeC fw600">
+												<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
 													Learn more <IoIosArrowForward />
 												</button>
 											</div>

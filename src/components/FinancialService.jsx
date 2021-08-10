@@ -25,7 +25,7 @@ const FinancialService = () => {
 
 								<div className="row">
 									<div className="col-md-8 col-lg-5">
-										<p className="headText mt-3 f18 crice">
+										<p className="headText mt-3 f18 crice fw-bold">
 											Join our likeminded pay-tech community utalising Paymob’s
 											payment gateway, bespoke SoftPOS app, seamless SDK
 											integration and API architecture.

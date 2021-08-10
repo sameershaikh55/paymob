@@ -70,11 +70,11 @@ const Products = () => {
 													<h3 className="fw800 text-start color1 max_content">
 														{prev.t}
 													</h3>
-													<p className="text-start f16 max_content mb-1 mb-sm-2">
+													<p className="text-start f16 max_content mb-1 mb-sm-2 fw-bold">
 														{prev.d}
 													</p>
 													<div className="text-start">
-														<button className="f14 border-0 bg-transparent orangeC fw600">
+														<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
 															Learn more <IoIosArrowForward />
 														</button>
 													</div>
@@ -102,11 +102,11 @@ const Products = () => {
 													<h3 className="fw800 text-start color1 max_content">
 														{prev.t}
 													</h3>
-													<p className="text-start f16 max_content mb-1 mb-sm-2">
+													<p className="text-start f16 max_content mb-1 mb-sm-2 fw-bold">
 														{prev.d}
 													</p>
 													<div className="text-start">
-														<button className="f14 border-0 bg-transparent orangeC fw600">
+														<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
 															Learn more <IoIosArrowForward />
 														</button>
 													</div>

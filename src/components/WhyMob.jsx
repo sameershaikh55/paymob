@@ -69,7 +69,7 @@ const WhyMob = () => {
 								<h1 className="fw600">
 									On-demand finance solutions for the moving economy.
 								</h1>
-								<p className="f18">
+								<p className="f18 fw-bold">
 									Enhance your financial service offering and generate an
 									additional revenue stream using our bespoke finance solutions,
 									on the go, anywhere in the world.
@@ -82,7 +82,7 @@ const WhyMob = () => {
 									return (
 										<div key={i} className="mobCard col-6 mt-5">
 											{t}
-											<p className="mt-3 f14">{d}</p>
+											<p className="mt-3 f14 fw-bold">{d}</p>
 										</div>
 									);
 								})}
