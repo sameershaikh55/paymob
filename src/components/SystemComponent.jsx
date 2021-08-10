@@ -12,7 +12,7 @@ const SystemComponent = () => {
 	var settings = {
 		centerMode: true,
 		dots: false,
-		infinite: true,
+		infinite: false,
 		speed: 500,
 		slidesToShow: 2,
 		slidesToScroll: 1,
@@ -66,7 +66,19 @@ const SystemComponent = () => {
 									{data.map((prev, i) => {
 										return (
 											<div className="text-center mt-5 px-3 px-sm-4 system_card">
-												<img src={prev.i} alt="" />
+												<img
+													style={{
+														width:
+															(prev.t === "Accreditation & Certification" &&
+																"68%") ||
+															(prev.t === "Digital merchant onboarding" &&
+																"70%") ||
+															(prev.t === "Payment gateway" && "80%"),
+														margin: "auto",
+													}}
+													src={prev.i}
+													alt=""
+												/>
 												<h5 className="color1 f20 gotham fw600 mt-2">
 													{prev.t}
 												</h5>

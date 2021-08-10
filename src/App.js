@@ -13,11 +13,10 @@ import SoftPos from "./pages/SoftPos";
 function App() {
 	return (
 		<Switch>
-			{/* <Route exact path="/" component={Home} />
+			<Route exact path="/" component={Home} />
 			<Route exact path="/productOverview" component={ProductOverview} />
-			<Route exact path="/androidSdk" component={AndroidSdk} /> */}
-			{/* <Route exact path="/softPos" component={SoftPos} /> */}
-			<Route exact path="/" component={SoftPos} />
+			<Route exact path="/androidSdk" component={AndroidSdk} />
+			<Route exact path="/softPos" component={SoftPos} />
 		</Switch>
 	);
 }
