@@ -1,5 +1,4 @@
 import React from "react";
-import { IoIosArrowForward } from "react-icons/io";
 import hero from "../assets/softpos/hero.svg";
 
 const HeroSoft = () => {
@@ -23,7 +22,7 @@ const HeroSoft = () => {
 										internal merchant tools, and consumer facing payment pages.
 									</p>
 								</div>
-								<div className="col-12 col-md-6 mt-4 mt-md-0 mb-4 mb-md-0 text-center">
+								<div className="col-12 col-md-6 mt-5 mt-md-0 mb-4 mb-md-0 text-center">
 									<div className="row">
 										<div className="col-12 col-sm-8 col-md-12 mx-auto">
 											<img src={hero} alt="" />

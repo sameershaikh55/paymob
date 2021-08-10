@@ -1,12 +1,11 @@
 import React from "react";
-import { IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
 
 // IMPORTS
 import i1 from "../assets/hiworks/i1.svg";
-import i2 from "../assets/hiworks/i2.svg";
+// import i2 from "../assets/hiworks/i2.svg";
 import i3 from "../assets/hiworks/i3.svg";
-import centerPhone from "../assets/softpos/centerPhone.svg";
+// import centerPhone from "../assets/softpos/centerPhone.svg";
 
 const HiwSoft = () => {
 	var settings = {
