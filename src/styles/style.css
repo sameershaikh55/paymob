@@ -1110,6 +1110,9 @@ button:focus {
   .specification_container {
     margin-top: 3rem;
   }
+  .hero_container.smartPos .max_content {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 575px) {
