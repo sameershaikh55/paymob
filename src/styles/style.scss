@@ -28,6 +28,8 @@ $color3: #d4492a;
 $color4: #71757c;
 $color5: #f1efec;
 $color6: #dadada;
+$color7: #ff5833;
+$color7: #154a6d;
 // VARIABLES END
 
 // GLOBAL START
@@ -126,6 +128,10 @@ html {
 	font-weight: 800;
 }
 
+.fw900 {
+	font-weight: 900;
+}
+
 // COLORS
 .color1 {
 	color: $color1;
@@ -143,12 +149,24 @@ html {
 	color: $color6;
 }
 
+.color4 {
+	color: $color4;
+}
+
+.color7 {
+	color: $color7;
+}
+
 .blackC {
 	color: #000;
 }
 
 .orangeC {
 	color: $color3 !important;
+}
+
+.orangeCL {
+	color: $color7 !important;
 }
 
 .page_container {
@@ -192,6 +210,21 @@ html {
 }
 
 button:focus {
+	outline: none;
+}
+
+.themeBtn {
+	box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+	border-radius: 30px;
+	font-weight: normal;
+	transition: 0.4s;
+
+	&:hover {
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.09);
+	}
+}
+
+input:focus {
 	outline: none;
 }
 // GLOBAL END
@@ -877,6 +910,39 @@ button:focus {
 }
 // MPOS PAGE END
 
+// MPOS PAGE END
+.onboarding_container {
+	.your_business_container {
+		background: #ffffff;
+		box-shadow: 2px 3px 18px 2px rgba(0, 0, 0, 0.11);
+		border-radius: 19px;
+
+		input {
+			border: none;
+			border-radius: 6px;
+			box-shadow: 2px 3px 18px 2px rgba(0, 0, 0, 0.11);
+		}
+	}
+}
+// MPOS PAGE END
+
+// OUR PAYMENT INFRA START
+.ourPaymentInfra_container {
+	padding: 4rem 0rem;
+	margin-top: 5rem;
+	background: $color5;
+
+	h1 {
+		font-size: 3rem;
+		line-height: 85px;
+	}
+
+	.cards_inner {
+		border-left: 2px solid rgba(0, 0, 0, 0.09);
+	}
+}
+// OUR PAYMENT INFRA END
+
 // MEDIA QUERIES START
 @media screen and (max-width: 1100px) {
 	.product_container,
@@ -934,7 +1000,8 @@ button:focus {
 	.hero_container h1,
 	.financial_service_container h1,
 	.whyMob_container .whyMobTop h1,
-	.productHero_container h1 {
+	.productHero_container h1,
+	.ourPaymentInfra_container h1 {
 		font-size: 2.5rem;
 		line-height: 60px;
 	}
@@ -1008,7 +1075,8 @@ button:focus {
 	.hero_container h1,
 	.financial_service_container h1,
 	.whyMob_container .whyMobTop h1,
-	.payment_interface_container h1 {
+	.payment_interface_container h1,
+	.ourPaymentInfra_container h1 {
 		font-size: 2.2rem;
 		line-height: 50px;
 	}
@@ -1064,7 +1132,8 @@ button:focus {
 	}
 	.hero_container h1,
 	.howitWorks_container h1,
-	.bespoke_solution_container h1 {
+	.bespoke_solution_container h1,
+	.ourPaymentInfra_container h1 {
 		line-height: 42px;
 	}
 	.financial_service_container h1 {
@@ -1175,6 +1244,12 @@ button:focus {
 	}
 	.hero_container.smartPos .max_content {
 		width: auto;
+	}
+	.onboarding_container {
+		margin-top: -10rem;
+	}
+	.ourPaymentInfra_container {
+		padding: 3rem 0rem;
 	}
 }
 

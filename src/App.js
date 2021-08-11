@@ -12,6 +12,7 @@ import SoftPos from "./pages/SoftPos";
 import MposCard from "./pages/MposCard";
 import MiniPos from "./pages/MiniPos";
 import SmartPos from "./pages/SmartPos";
+import MerchantOnboarding from "./pages/MerchantOnboarding";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 			<Route exact path="/mposCard" component={MposCard} />
 			<Route exact path="/miniPos" component={MiniPos} />
 			<Route exact path="/smartPos" component={SmartPos} />
+			<Route exact path="/merchantOnboarding" component={MerchantOnboarding} />
 		</Switch>
 	);
 }

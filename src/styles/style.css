@@ -119,6 +119,10 @@ html {
   font-weight: 800;
 }
 
+.fw900 {
+  font-weight: 900;
+}
+
 .color1 {
   color: #08243b;
 }
@@ -135,12 +139,24 @@ html {
   color: #dadada;
 }
 
+.color4 {
+  color: #71757c;
+}
+
+.color7 {
+  color: #154a6d;
+}
+
 .blackC {
   color: #000;
 }
 
 .orangeC {
   color: #d4492a !important;
+}
+
+.orangeCL {
+  color: #154a6d !important;
 }
 
 .page_container {
@@ -184,6 +200,24 @@ html {
 }
 
 button:focus {
+  outline: none;
+}
+
+.themeBtn {
+  -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+  border-radius: 30px;
+  font-weight: normal;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.themeBtn:hover {
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.09);
+}
+
+input:focus {
   outline: none;
 }
 
@@ -854,6 +888,35 @@ button:focus {
   margin-top: 7rem;
 }
 
+.onboarding_container .your_business_container {
+  background: #ffffff;
+  -webkit-box-shadow: 2px 3px 18px 2px rgba(0, 0, 0, 0.11);
+          box-shadow: 2px 3px 18px 2px rgba(0, 0, 0, 0.11);
+  border-radius: 19px;
+}
+
+.onboarding_container .your_business_container input {
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 2px 3px 18px 2px rgba(0, 0, 0, 0.11);
+          box-shadow: 2px 3px 18px 2px rgba(0, 0, 0, 0.11);
+}
+
+.ourPaymentInfra_container {
+  padding: 4rem 0rem;
+  margin-top: 5rem;
+  background: #f1efec;
+}
+
+.ourPaymentInfra_container h1 {
+  font-size: 3rem;
+  line-height: 85px;
+}
+
+.ourPaymentInfra_container .cards_inner {
+  border-left: 2px solid rgba(0, 0, 0, 0.09);
+}
+
 @media screen and (max-width: 1100px) {
   .product_container .max_content,
   .sdk_detail_container .max_content {
@@ -895,7 +958,8 @@ button:focus {
   .hero_container h1,
   .financial_service_container h1,
   .whyMob_container .whyMobTop h1,
-  .productHero_container h1 {
+  .productHero_container h1,
+  .ourPaymentInfra_container h1 {
     font-size: 2.5rem;
     line-height: 60px;
   }
@@ -963,7 +1027,8 @@ button:focus {
   .hero_container h1,
   .financial_service_container h1,
   .whyMob_container .whyMobTop h1,
-  .payment_interface_container h1 {
+  .payment_interface_container h1,
+  .ourPaymentInfra_container h1 {
     font-size: 2.2rem;
     line-height: 50px;
   }
@@ -1010,7 +1075,8 @@ button:focus {
   }
   .hero_container h1,
   .howitWorks_container h1,
-  .bespoke_solution_container h1 {
+  .bespoke_solution_container h1,
+  .ourPaymentInfra_container h1 {
     line-height: 42px;
   }
   .financial_service_container h1 {
@@ -1112,6 +1178,12 @@ button:focus {
   }
   .hero_container.smartPos .max_content {
     width: auto;
+  }
+  .onboarding_container {
+    margin-top: -10rem;
+  }
+  .ourPaymentInfra_container {
+    padding: 3rem 0rem;
   }
 }
 
