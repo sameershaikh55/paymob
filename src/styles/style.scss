@@ -846,6 +846,37 @@ button:focus {
 }
 // SOFTPOSE END
 
+// MPOS PAGE START
+.hero_container.mPos {
+	button {
+		color: $color1;
+	}
+}
+
+.specification_container {
+	margin-bottom: 15rem;
+
+	h1 {
+		margin-bottom: -4rem;
+		line-height: 71px;
+	}
+
+	h6 {
+		letter-spacing: 0.03em;
+		line-height: 30px;
+	}
+
+	p {
+		letter-spacing: 0.03em;
+	}
+
+	.specification_card {
+		height: 200px;
+		margin-top: 7rem;
+	}
+}
+// MPOS PAGE END
+
 // MEDIA QUERIES START
 @media screen and (max-width: 1100px) {
 	.product_container,
@@ -1138,6 +1169,9 @@ button:focus {
 	.hero_container.soft img {
 		width: 100%;
 		height: 250px;
+	}
+	.specification_container {
+		margin-top: 3rem;
 	}
 }
 
