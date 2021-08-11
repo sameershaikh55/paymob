@@ -10,6 +10,7 @@ import ProductOverview from "./pages/ProductOverview";
 import AndroidSdk from "./pages/AndroidSdk";
 import SoftPos from "./pages/SoftPos";
 import MposCard from "./pages/MposCard";
+import MiniPos from "./pages/MiniPos";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 			<Route exact path="/androidSdk" component={AndroidSdk} />
 			<Route exact path="/softPos" component={SoftPos} />
 			<Route exact path="/mposCard" component={MposCard} />
+			<Route exact path="/miniPos" component={MiniPos} />
 		</Switch>
 	);
 }
