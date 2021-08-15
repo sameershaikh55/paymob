@@ -430,6 +430,10 @@ input:focus {
 		font-weight: normal;
 	}
 }
+
+.hero_container.pricing {
+	height: 480px;
+}
 // HERO END
 
 // HOME FINANCIAL SERVICES START
@@ -955,6 +959,22 @@ input:focus {
 }
 // OUR PAYMENT INFRA END
 
+// PRICING START
+.pricing_container {
+	h3 {
+		line-height: 65px;
+	}
+}
+// PRICING END
+
+// CORE FEATURE START
+.coreFeatures_container {
+	h1 {
+		font-size: 3.125rem;
+	}
+}
+// CORE FEATURE END
+
 // MEDIA QUERIES START
 @media screen and (max-width: 1100px) {
 	.product_container,
@@ -1069,7 +1089,8 @@ input:focus {
 		line-height: 42px;
 	}
 	.howitWorks_container h1,
-	.bespoke_solution_container h1 {
+	.bespoke_solution_container h1,
+	.pricing_container h3 {
 		line-height: 54px;
 	}
 	.hero_container.soft img {
@@ -1089,6 +1110,9 @@ input:focus {
 	}
 	.pre_built_dashboard_cont {
 		margin-top: -6rem;
+	}
+	.coreFeatures_container h1 {
+		font-size: 2.2rem;
 	}
 }
 
@@ -1215,7 +1239,8 @@ input:focus {
 		font-size: 2rem;
 		line-height: 40px;
 	}
-	.insights_container h2 {
+	.insights_container h2,
+	.pricing_container h3 {
 		line-height: 30px;
 	}
 
@@ -1286,6 +1311,15 @@ input:focus {
 	}
 	.pre_built_dashboard_cont {
 		margin-top: -10rem;
+	}
+	.hero_container.pricing {
+		height: auto;
+		padding-top: 9rem;
+		padding-bottom: 3rem;
+	}
+	.pricing_container h3 {
+		font-size: 1.3rem;
+		line-height: 24px;
 	}
 }
 

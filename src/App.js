@@ -16,6 +16,7 @@ import MerchantOnboarding from "./pages/MerchantOnboarding";
 import MerchantDashboard from "./pages/MerchantDashboard";
 import AdminPortal from "./pages/AdminPortal";
 import PaymentGatway from "./pages/PaymentGatway";
+import Pricing from "./pages/Pricing";
 
 function App() {
 	return (
@@ -31,6 +32,7 @@ function App() {
 			<Route exact path="/merchantDashboard" component={MerchantDashboard} />
 			<Route exact path="/adminPortal" component={AdminPortal} />
 			<Route exact path="/paymentGatway" component={PaymentGatway} />
+			<Route exact path="/pricing" component={Pricing} />
 		</Switch>
 	);
 }
