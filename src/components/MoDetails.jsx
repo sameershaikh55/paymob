@@ -1,8 +1,10 @@
 import React from "react";
 
 const MoDetails = ({ adminP }) => {
+	var data;
+
 	if (adminP) {
-		var data = [
+		data = [
 			{
 				t: (
 					<h5 className="fw600 color1 mb-4">
@@ -38,7 +40,7 @@ const MoDetails = ({ adminP }) => {
 			},
 		];
 	} else {
-		var data = [
+		data = [
 			{
 				t: (
 					<h5 className="fw600 color1 mb-4">
