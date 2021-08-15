@@ -1,13 +1,36 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
-const OurPaymentInfra = () => {
-	const data = [
-		"Merchant dashboard",
-		"Merchant dashboard",
-		"Admin portal",
-		"Certifications",
-	];
+const OurPaymentInfra = ({ md, adminP, pg }) => {
+	if (md) {
+		var data = [
+			"Digital merchant onboarding",
+			"Payment gateway",
+			"Admin portal",
+			"Certifications",
+		];
+	} else if (adminP) {
+		var data = [
+			"Merchant dashboard",
+			"Payment gateway",
+			"Digital merchant onboarding",
+			"Certifications",
+		];
+	} else if (pg) {
+		var data = [
+			"Merchant dashboard",
+			"Admin portal",
+			"Digital merchant onboarding",
+			"Certifications",
+		];
+	} else {
+		var data = [
+			"Merchant dashboard",
+			"Merchant dashboard",
+			"Admin portal",
+			"Certifications",
+		];
+	}
 
 	return (
 		<div className="ourPaymentInfra_container">

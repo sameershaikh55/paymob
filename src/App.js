@@ -13,6 +13,9 @@ import MposCard from "./pages/MposCard";
 import MiniPos from "./pages/MiniPos";
 import SmartPos from "./pages/SmartPos";
 import MerchantOnboarding from "./pages/MerchantOnboarding";
+import MerchantDashboard from "./pages/MerchantDashboard";
+import AdminPortal from "./pages/AdminPortal";
+import PaymentGatway from "./pages/PaymentGatway";
 
 function App() {
 	return (
@@ -25,6 +28,9 @@ function App() {
 			<Route exact path="/miniPos" component={MiniPos} />
 			<Route exact path="/smartPos" component={SmartPos} />
 			<Route exact path="/merchantOnboarding" component={MerchantOnboarding} />
+			<Route exact path="/merchantDashboard" component={MerchantDashboard} />
+			<Route exact path="/adminPortal" component={AdminPortal} />
+			<Route exact path="/paymentGatway" component={PaymentGatway} />
 		</Switch>
 	);
 }

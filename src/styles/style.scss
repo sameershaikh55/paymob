@@ -209,6 +209,14 @@ html {
 	line-height: 39px;
 }
 
+.lh27 {
+	line-height: 27px;
+}
+
+.lh71 {
+	line-height: 71px;
+}
+
 button:focus {
 	outline: none;
 }
@@ -837,6 +845,10 @@ input:focus {
 	}
 }
 
+.sdk_detail_container.gateway {
+	padding: 1rem 0rem 8rem 0rem;
+}
+
 .sdk_detail_container.softDetails {
 	background: url("../assets/hero_brand3.svg");
 	width: 100%;
@@ -1069,6 +1081,15 @@ input:focus {
 			line-height: 28px;
 		}
 	}
+	.lh27 {
+		line-height: 24px;
+	}
+	.lh71 {
+		line-height: 55px;
+	}
+	.pre_built_dashboard_cont {
+		margin-top: -6rem;
+	}
 }
 
 @media screen and (max-width: 868px) {
@@ -1094,6 +1115,12 @@ input:focus {
 		img {
 			width: 100%;
 		}
+	}
+	.lh71 {
+		line-height: 50px;
+	}
+	.pre_built_dashboard_cont {
+		margin-top: -6rem;
 	}
 }
 
@@ -1251,6 +1278,15 @@ input:focus {
 	.ourPaymentInfra_container {
 		padding: 3rem 0rem;
 	}
+	.lh27 {
+		line-height: 22px;
+	}
+	.lh71 {
+		line-height: 40px;
+	}
+	.pre_built_dashboard_cont {
+		margin-top: -10rem;
+	}
 }
 
 @media screen and (max-width: 575px) {
@@ -1274,6 +1310,9 @@ input:focus {
 	}
 	.brandPartners_container {
 		padding: 3rem 0rem 10rem 0rem;
+	}
+	.pre_built_dashboard_cont {
+		margin-top: -12rem;
 	}
 }
 // MEDIA QUERIES END
