@@ -1,11 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
-import b1 from "../assets/sdkBrands/i1.svg";
-import b2 from "../assets/sdkBrands/i2.svg";
-import b3 from "../assets/sdkBrands/i3.svg";
-import b4 from "../assets/sdkBrands/i4.svg";
+import b1 from "../assets/securityCertificate/i1.svg";
+import b2 from "../assets/securityCertificate/i2.svg";
+import b3 from "../assets/securityCertificate/i3.svg";
 
-const SdkBrands = () => {
+const SecurityCertificate = () => {
 	var settings = {
 		centerMode: true,
 		dots: false,
@@ -38,62 +37,48 @@ const SdkBrands = () => {
 	const data = [
 		{
 			i: b1,
-			t: "Payment systems",
 		},
 		{
 			l: "t",
 		},
 		{
 			i: b2,
-			t: "Mobile payment platforms",
 		},
 		{
 			l: "t",
 		},
 		{
 			i: b3,
-			t: "QR and barcode payments (optional)",
-		},
-		{
-			l: "t",
-		},
-		{
-			i: b4,
-			t: "National cards (optional)",
 		},
 	];
 
 	const data2 = [
 		{
 			i: b1,
-			t: "Payment systems",
 		},
 		{
 			i: b2,
-			t: "Mobile payment platforms",
 		},
 		{
 			i: b3,
-			t: "QR and barcode payments (optional)",
-		},
-		{
-			i: b4,
-			t: "National cards (optional)",
 		},
 	];
 
 	return (
-		<div className="sdk_brand_container mt-5 mt-md-0">
+		<div className="sdk_brand_container mt-5 mb-4">
 			<div className="header_containerSize">
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-lg-12 mx-auto">
+							<h6 className="text-center me-0 me-md-5 mb-4 color2 f18 crice fw-bold">
+								Security certifications
+							</h6>
+
 							<div className="d-block d-lg-none sliderContainer px-3">
 								<Slider {...settings}>
 									{data2.map((p, i) => {
 										return (
-											<div key={i} className="text-center px-4 px-lg-0">
-												<p className="color2 crice f16">{p.t}</p>
+											<div key={i} className="text-center px-5 px-lg-0">
 												<img src={p.i} alt="" className="mx-auto w-100" />
 											</div>
 										);
@@ -101,13 +86,12 @@ const SdkBrands = () => {
 								</Slider>
 							</div>
 
-							<div className="d-none d-lg-flex justify-content-between align-items-start flex-wrap">
+							<div className="d-none d-lg-flex justify-content-center align-items-start flex-wrap">
 								{data.map((p, i) => {
 									return (
-										<div key={i} className="mt-5 mt-lg-0">
+										<div key={i} className="mt-5 mt-lg-0 px-3">
 											{(p.l && <div className="line"></div>) || (
 												<>
-													<p className="color2 crice f16">{p.t}</p>
 													<img src={p.i} alt="" />
 												</>
 											)}
@@ -123,4 +107,4 @@ const SdkBrands = () => {
 	);
 };
 
-export default SdkBrands;
+export default SecurityCertificate;

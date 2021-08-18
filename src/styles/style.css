@@ -962,6 +962,18 @@ input:focus {
   font-size: 3.125rem;
 }
 
+.certificationDetail_container {
+  background: #f1efec;
+  -webkit-box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.09);
+  padding: 2.5rem 0rem 4rem 0rem;
+}
+
+.certificationDetail_container p {
+  line-height: 27px;
+  letter-spacing: 0.03em;
+}
+
 @media screen and (max-width: 1100px) {
   .product_container .max_content,
   .sdk_detail_container .max_content {
@@ -1152,7 +1164,8 @@ input:focus {
     font-size: 2rem;
     line-height: 44px;
   }
-  .financial_service_container .headText {
+  .financial_service_container .headText,
+  .certificationDetail_container p {
     line-height: 22px;
   }
   .financial_service_container {
@@ -1301,6 +1314,9 @@ input:focus {
   }
   .pre_built_dashboard_cont {
     margin-top: -12rem;
+  }
+  .certificationDetail_container p {
+    line-height: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
