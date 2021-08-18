@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import onboarding from "../assets/gifs/Merchant onboarding GIF.gif";
 
 const OnBoarding = () => {
 	return (
@@ -34,7 +35,8 @@ const OnBoarding = () => {
 									</div>
 								</div>
 								<div className="col-md-6 mt-5 mt-md-0">
-									<div className="row">
+									<img className="w-100" src={onboarding} alt="onboarding" />
+									{/* <div className="row">
 										<div className="col-12 col-lg-11">
 											<div className="your_business_container px-4 py-5">
 												<h2 className="text-center gotham orangeCL fw800 mb-4">
@@ -167,7 +169,7 @@ const OnBoarding = () => {
 												</div>
 											</div>
 										</div>
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</div>

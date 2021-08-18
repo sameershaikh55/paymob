@@ -1,7 +1,7 @@
 import React from "react";
 
 // IMPORT
-import hero from "../assets/products/p1.svg";
+import hero from "../assets/gifs/Android SDK GIF.gif";
 
 const HeroSdk = () => {
 	return (
@@ -28,10 +28,10 @@ const HeroSdk = () => {
 											their own enterprise, clients or customers.
 										</p>
 									</div>
-									<div className="col-12 col-md-6 mt-4 mt-md-0 mb-4 mb-md-0">
+									<div className="col-12 col-md-6 mt-1 mt-md-0 mb-4 mb-md-0">
 										<div className="row">
-											<div className="col-10 col-sm-8 col-md-12 mx-auto text-center">
-												<img src={hero} alt="" />
+											<div className="col-11 col-sm-8 col-md-10 mx-auto text-center">
+												<img className="w-100" src={hero} alt="" />
 											</div>
 										</div>
 									</div>

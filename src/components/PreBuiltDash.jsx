@@ -1,5 +1,5 @@
 import React from "react";
-import preBuilt from "../assets/MDashboard/preBuilt.svg";
+import preBuilt from "../assets/gifs/Merchant portal design GIF.gif";
 import { IoIosArrowForward } from "react-icons/io";
 
 // IMPORTS FOR ADMIN PORTAL PAGE

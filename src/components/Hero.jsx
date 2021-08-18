@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import hero from "../assets/home/hero.svg";
+import hero from "../assets/gifs/Header 'Tap to Phone' GIF.gif";
 
 const Hero = () => {
 	return (
@@ -27,7 +27,7 @@ const Hero = () => {
 								<div className="col-12 col-md-6 mt-5 mt-md-0 mb-4 mb-md-0">
 									<div className="row">
 										<div className="col-12 col-sm-8 col-md-12 mx-auto">
-											<img src={hero} alt="" />
+											<img className="w-100" src={hero} alt="" />
 										</div>
 									</div>
 								</div>

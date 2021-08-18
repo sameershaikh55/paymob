@@ -2,7 +2,7 @@ import React from "react";
 
 // IMPORTS
 import { IoIosArrowForward } from "react-icons/io";
-import hero from "../assets/productOverview/hero.svg";
+import hero from "../assets/gifs/Globe.gif";
 
 const ProductHero = () => {
 	return (
@@ -28,8 +28,8 @@ const ProductHero = () => {
 										Contact sales <IoIosArrowForward />
 									</button>
 								</div>
-								<div className="d-none d-md-block col-6">
-									<img src={hero} alt="hero" />
+								<div className="col-10 col-md-6 mx-auto mt-4 mt-md-0 px-2 px-lg-0">
+									<img className="w-100" src={hero} alt="hero" />
 								</div>
 							</div>
 						</div>

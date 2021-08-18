@@ -494,7 +494,9 @@ const Header = ({ ClickEvent }) => {
 						<div className="col-11 h-100 mx-auto w-100">
 							<div className="d-flex justify-content-between align-items-center w-100 h-100">
 								<div>
-									<img src={logo} alt="" />
+									<NavLink to="/">
+										<img src={logo} alt="" />
+									</NavLink>
 								</div>
 								{/* HAMBERGER START */}
 								<div className="d-block d-lg-none pointer">

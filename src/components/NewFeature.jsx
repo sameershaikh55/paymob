@@ -1,7 +1,7 @@
 import React from "react";
 
 // IMPORTS
-import newFeature from "../assets/productOverview/newFeature.svg";
+import newFeature from "../assets/gifs/SoftPOS app GIF.gif";
 
 const NewFeature = () => {
 	return (
@@ -31,8 +31,8 @@ const NewFeature = () => {
 									</p>
 								</div>
 								<div className="col-md-6 text-center">
-									<div className="col-8 col-sm-6 col-md-12 mx-auto ">
-										<img src={newFeature} alt="" />
+									<div className="col-12 col-sm-8 col-md-12 mx-auto ">
+										<img className="w-100" src={newFeature} alt="" />
 									</div>
 								</div>
 							</div>

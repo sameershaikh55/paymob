@@ -30,6 +30,7 @@ $color5: #f1efec;
 $color6: #dadada;
 $color7: #ff5833;
 $color7: #154a6d;
+$color8: #414042;
 // VARIABLES END
 
 // GLOBAL START
@@ -155,6 +156,10 @@ html {
 
 .color7 {
 	color: $color7;
+}
+
+.color8 {
+	color: $color8;
 }
 
 .blackC {
@@ -464,8 +469,14 @@ input:focus {
 	margin-right: auto;
 
 	.img_container {
-		margin-top: -10rem;
+		margin-top: -16rem;
+		margin-left: -20rem;
 		z-index: -1;
+
+		img {
+			width: 900px;
+			height: auto;
+		}
 	}
 
 	.whyMobTop {
@@ -885,6 +896,12 @@ input:focus {
 
 	.img_container {
 		margin-top: 10rem;
+
+		// .img_text {
+		// 	width: 900px;
+		// 	margin-right: -10rem;
+		// 	z-index: 1;
+		// }
 	}
 }
 
@@ -1114,6 +1131,11 @@ input:focus {
 	.coreFeatures_container h1 {
 		font-size: 2.2rem;
 	}
+	.whyMob_container .img_container {
+		margin-top: -30rem;
+		margin-left: -42rem;
+		z-index: -1;
+	}
 }
 
 @media screen and (max-width: 868px) {
@@ -1246,7 +1268,8 @@ input:focus {
 
 	// PRODUCT OVERVIEW
 	.productHero_container {
-		height: 400px;
+		height: auto;
+		margin-top: 8rem;
 	}
 	.productHero_container p,
 	.sdk_detail_container p {

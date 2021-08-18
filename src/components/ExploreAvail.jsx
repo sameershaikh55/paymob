@@ -1,7 +1,7 @@
 import React from "react";
 
 // IMPORTS
-import explore from "../assets/productOverview/explore.svg";
+import explore from "../assets/gifs/Spinning globe.gif";
 import i1 from "../assets/explorePaymob/i1.svg";
 import i2 from "../assets/explorePaymob/i2.svg";
 import i3 from "../assets/explorePaymob/i3.svg";

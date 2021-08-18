@@ -3,6 +3,7 @@ import React from "react";
 // IMPORTS
 import contentIcon from "../assets/productOverview/contentIcon.svg";
 import softPos from "../assets/productOverview/softPos.svg";
+import video from "../assets/gifs/Promo video for product page.mp4";
 
 // IMPORTING COMPONENTS
 import Layout from "../layout";
@@ -63,7 +64,14 @@ const ProductOverview = () => {
 									Paymob SoftPOS demo
 								</h1>
 								<div>
-									<img className="w-100" src={softPos} alt="" />
+									<video
+										className="w-100"
+										poster={softPos}
+										autoPlay
+										loop
+										muted
+										src={video}
+									/>
 								</div>
 								<div className="d-flex justify-content-center mt-4">
 									<button className="gotham color1 border-0 bg-white py-2 fw500 f18 px-4">

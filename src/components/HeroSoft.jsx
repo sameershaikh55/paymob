@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../assets/softpos/hero.svg";
+import hero from "../assets/gifs/SoftPOS app GIF.gif";
 
 const HeroSoft = () => {
 	return (
@@ -22,10 +22,10 @@ const HeroSoft = () => {
 										internal merchant tools, and consumer facing payment pages.
 									</p>
 								</div>
-								<div className="col-12 col-md-6 mt-5 mt-md-0 mb-4 mb-md-0 text-center">
+								<div className="col-12 col-md-6 mt-3 mt-md-0 mb-4 mb-md-0 text-center">
 									<div className="row">
 										<div className="col-12 col-sm-8 col-md-12 mx-auto">
-											<img src={hero} alt="" />
+											<img className="w-100" src={hero} alt="" />
 										</div>
 									</div>
 								</div>
