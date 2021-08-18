@@ -18,6 +18,7 @@ import AdminPortal from "./pages/AdminPortal";
 import PaymentGatway from "./pages/PaymentGatway";
 import Pricing from "./pages/Pricing";
 import Certifications from "./pages/Certifications";
+import Team from "./pages/Team";
 
 function App() {
 	return (
@@ -35,6 +36,7 @@ function App() {
 			<Route exact path="/paymentGatway" component={PaymentGatway} />
 			<Route exact path="/certifications" component={Certifications} />
 			<Route exact path="/pricing" component={Pricing} />
+			<Route exact path="/team" component={Team} />
 		</Switch>
 	);
 }
