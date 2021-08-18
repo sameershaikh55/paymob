@@ -1,24 +1,24 @@
 import React from "react";
 
 // IMPORTING IMAGES
-import i1 from "../assets/specification/i1.svg";
-import i2 from "../assets/specification/i2.svg";
-import i3 from "../assets/specification/i3.svg";
-import i4 from "../assets/specification/i4.svg";
-import i5 from "../assets/specification/i5.svg";
-import i6 from "../assets/specification/i6.svg";
-import i7 from "../assets/specification/i7.svg";
-import i8 from "../assets/specification/i8.svg";
-import i9 from "../assets/specification/i9.svg";
-import i10 from "../assets/specification/i10.svg";
-import i11 from "../assets/specification/i11.svg";
-import i12 from "../assets/specification/i12.svg";
-import i13 from "../assets/specification/i13.svg";
-import i14 from "../assets/specification/i14.svg";
-import i15 from "../assets/specification/i15.svg";
-import i16 from "../assets/specification/i16.svg";
-import i17 from "../assets/specification/i17.svg";
-import i18 from "../assets/specification/i18.svg";
+import i1 from "../assets/specification/bluetooth.svg";
+import i2 from "../assets/specification/smartCard.svg";
+import i3 from "../assets/specification/communications.svg";
+import i4 from "../assets/specification/display.svg";
+import i5 from "../assets/specification/orderTaking.svg";
+import i6 from "../assets/specification/nfc.svg";
+import i7 from "../assets/specification/audio.svg";
+import i8 from "../assets/specification/battery.svg";
+import i9 from "../assets/specification/weight.svg";
+import i10 from "../assets/specification/dimensions.svg";
+import i11 from "../assets/specification/indicatorLight.svg";
+import i12 from "../assets/specification/keys.svg";
+import i13 from "../assets/specification/processor.svg";
+import i14 from "../assets/specification/memory.svg";
+import i15 from "../assets/specification/ports.svg";
+import i16 from "../assets/specification/certificats.svg";
+import i17 from "../assets/specification/enviromental.svg";
+import i18 from "../assets/specification/mangstripe.svg";
 
 const Specifications = () => {
 	const data = [
@@ -79,27 +79,29 @@ const Specifications = () => {
 						<div className="col-11 col-lg-12 mx-auto">
 							<h1 className="color1 fw-bold gotham">Specifications</h1>
 
-							<div className="row">
+							<div className="row inner_cont">
 								{data.map((prev, ind) => {
 									const { i, t, d } = prev;
 									return (
 										<div
 											key={ind}
-											className="specification_card col-6 col-6 col-sm-6 col-md-4 col-lg-3 text-center"
+											className="col-6 col-sm-4 col-lg-3 text-center"
 										>
-											<img src={i} alt="" />
-											<h6 className="gotham f20 color1 fw500 mt-3 mb-0">{t}</h6>
-											<p className="col-12 col-md-10 mx-auto text-center color2">
-												{d}
-											</p>
-											{t === "Environmental" && (
+											<div className="specification_card">
+												<img src={i} alt="" />
+												<h6 className="gotham f20 color1 fw500 mb-0">{t}</h6>
 												<p className="col-12 col-md-10 mx-auto text-center color2">
-													Operating temperature: <br /> 0°C - 50°C <br />{" "}
-													Storage temperature: <br /> -20°C - 70°C <br />{" "}
-													Relative humidity: <br /> 5% - 95%, <br />{" "}
-													Non-condensing
+													{d}
 												</p>
-											)}
+												{t === "Environmental" && (
+													<p className="col-12 col-md-10 mx-auto text-center color2">
+														Operating temperature: <br /> 0°C - 50°C <br />{" "}
+														Storage temperature: <br /> -20°C - 70°C <br />{" "}
+														Relative humidity: <br /> 5% - 95%, <br />{" "}
+														Non-condensing
+													</p>
+												)}
+											</div>
 										</div>
 									);
 								})}

@@ -892,7 +892,7 @@ input:focus {
 }
 
 .specification_container {
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
 }
 
 .specification_container h1 {
@@ -910,8 +910,19 @@ input:focus {
 }
 
 .specification_container .specification_card {
-  height: 200px;
-  margin-top: 7rem;
+  margin-top: 2rem;
+}
+
+.specification_container .specification_card h6 {
+  margin-top: -0.5rem;
+}
+
+.specification_container .specification_card img {
+  width: 150px;
+}
+
+.specification_container .inner_cont {
+  margin-top: 6rem;
 }
 
 .onboarding_container .your_business_container {
@@ -1262,6 +1273,9 @@ input:focus {
   .pricing_container h3 {
     font-size: 1.3rem;
     line-height: 24px;
+  }
+  .specification_container .specification_card img {
+    width: 120px;
   }
 }
 

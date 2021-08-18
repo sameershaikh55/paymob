@@ -920,7 +920,7 @@ input:focus {
 }
 
 .specification_container {
-	margin-bottom: 15rem;
+	margin-bottom: 5rem;
 
 	h1 {
 		margin-bottom: -4rem;
@@ -937,8 +937,20 @@ input:focus {
 	}
 
 	.specification_card {
-		height: 200px;
-		margin-top: 7rem;
+		// height: 200px;
+		margin-top: 2rem;
+
+		h6 {
+			margin-top: -0.5rem;
+		}
+
+		img {
+			width: 150px;
+		}
+	}
+
+	.inner_cont {
+		margin-top: 6rem;
 	}
 }
 // MPOS PAGE END
@@ -1343,6 +1355,9 @@ input:focus {
 	.pricing_container h3 {
 		font-size: 1.3rem;
 		line-height: 24px;
+	}
+	.specification_container .specification_card img {
+		width: 120px;
 	}
 }
 
