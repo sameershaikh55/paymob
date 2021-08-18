@@ -1032,6 +1032,16 @@ input:focus {
 }
 // OUR TEAM END
 
+// CAREER BODY START
+.career_container {
+	height: 700px;
+
+	h1 {
+		font-size: 3.375rem;
+	}
+}
+// CAREER BODY END
+
 // MEDIA QUERIES START
 @media screen and (max-width: 1100px) {
 	.product_container,
@@ -1090,7 +1100,8 @@ input:focus {
 	.financial_service_container h1,
 	.whyMob_container .whyMobTop h1,
 	.productHero_container h1,
-	.ourPaymentInfra_container h1 {
+	.ourPaymentInfra_container h1,
+	.career_container h1 {
 		font-size: 2.5rem;
 		line-height: 60px;
 	}
@@ -1175,6 +1186,9 @@ input:focus {
 		margin-top: -30rem;
 		margin-left: -42rem;
 		z-index: -1;
+	}
+	.career_container {
+		height: 600px;
 	}
 }
 
@@ -1387,6 +1401,12 @@ input:focus {
 	}
 	.specification_container .specification_card img {
 		width: 120px;
+	}
+	.career_container h1 {
+		font-size: 2rem;
+	}
+	.career_container {
+		height: 500px;
 	}
 }
 

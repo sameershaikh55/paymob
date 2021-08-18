@@ -19,6 +19,8 @@ import PaymentGatway from "./pages/PaymentGatway";
 import Pricing from "./pages/Pricing";
 import Certifications from "./pages/Certifications";
 import Team from "./pages/Team";
+import Careers from "./pages/Careers";
+import JobOpenings from "./pages/JobOpenings";
 
 function App() {
 	return (
@@ -37,6 +39,8 @@ function App() {
 			<Route exact path="/certifications" component={Certifications} />
 			<Route exact path="/pricing" component={Pricing} />
 			<Route exact path="/team" component={Team} />
+			<Route exact path="/careers" component={Careers} />
+			<Route exact path="/careers/job_openings" component={JobOpenings} />
 		</Switch>
 	);
 }
