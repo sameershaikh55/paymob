@@ -1,7 +1,7 @@
 import React from "react";
 
 // IMPORTS
-import newFeature from "../assets/gifs/SoftPOS app GIF.gif";
+import newFeature from "../assets/gifs/Pin on glass (1).gif";
 
 const NewFeature = () => {
 	return (

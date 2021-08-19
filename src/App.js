@@ -27,6 +27,7 @@ import Partners from "./pages/Partners";
 import CaseStudies from "./pages/CaseStudies";
 import Developers from "./pages/Developers";
 import BlogList from "./pages/BlogList";
+import BlogInside from "./pages/BlogInside";
 
 function App() {
 	return (
@@ -53,6 +54,7 @@ function App() {
 			<Route exact path="/caseStudies" component={CaseStudies} />
 			<Route exact path="/developers" component={Developers} />
 			<Route exact path="/blogList" component={BlogList} />
+			<Route exact path="/blogInside" component={BlogInside} />
 		</Switch>
 	);
 }
