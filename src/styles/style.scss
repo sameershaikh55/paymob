@@ -1120,6 +1120,20 @@ input:focus {
 }
 // CASE STUDIES BODY END
 
+// DEVELOPERS START.
+.developersBody_container {
+	padding: 12rem 0rem 4rem 0rem;
+
+	.developer_card {
+		background: #ffffff;
+		box-shadow: 4px 4px 47px 4px rgba(0, 0, 0, 0.07);
+		border-radius: 10px;
+		min-height: 180px;
+		height: 100%;
+	}
+}
+// DEVELOPERS END
+
 // MEDIA QUERIES START
 @media screen and (max-width: 1100px) {
 	.product_container,
@@ -1512,6 +1526,9 @@ input:focus {
 	.industry_container h1 {
 		line-height: 30px;
 	}
+	.developersBody_container {
+		padding: 8rem 0rem 4rem 0rem;
+	}
 }
 
 @media screen and (max-width: 575px) {
@@ -1544,6 +1561,10 @@ input:focus {
 	}
 	.aboutDetail_container h5 {
 		width: 110px;
+	}
+	.developersBody_container .developer_card {
+		min-height: 115px;
+		height: 100%;
 	}
 }
 // MEDIA QUERIES END
