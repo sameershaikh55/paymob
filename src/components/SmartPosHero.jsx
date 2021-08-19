@@ -1,5 +1,4 @@
 import React from "react";
-
 import hero from "../assets/smartPos/hero.svg";
 
 const SmartPosHero = () => {

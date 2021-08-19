@@ -113,6 +113,11 @@ html {
 	font-size: 2.125rem;
 }
 
+.f64 {
+	font-size: 4rem;
+	line-height: 71px;
+}
+
 .fw400 {
 	font-weight: 400;
 }
@@ -168,6 +173,10 @@ html {
 
 .blackC {
 	color: #000;
+}
+
+.letterSpace {
+	letter-spacing: 0.03em;
 }
 
 .orangeC {
@@ -1098,6 +1107,19 @@ input:focus {
 }
 // INDUSTRY END
 
+// CASE STUDIES HERO START
+.caseStudiesHero {
+	padding: 8rem 0rem 1rem 0rem;
+}
+// CASE STUDIES HERO END
+
+// CASE STUDIES BODY START
+.caseStudyBody_container {
+	background: #f1efec;
+	padding: 4rem 0rem;
+}
+// CASE STUDIES BODY END
+
 // MEDIA QUERIES START
 @media screen and (max-width: 1100px) {
 	.product_container,
@@ -1163,7 +1185,8 @@ input:focus {
 	.productHero_container h1,
 	.ourPaymentInfra_container h1,
 	.career_container h1,
-	.industry_container h1 {
+	.industry_container h1,
+	.f64 {
 		font-size: 2.5rem;
 		line-height: 60px;
 	}
@@ -1266,7 +1289,8 @@ input:focus {
 	.whyMob_container .whyMobTop h1,
 	.payment_interface_container h1,
 	.ourPaymentInfra_container h1,
-	.industry_container h1 {
+	.industry_container h1,
+	.f64 {
 		font-size: 2.2rem;
 		line-height: 50px;
 	}
@@ -1329,7 +1353,8 @@ input:focus {
 	.hero_container h1,
 	.howitWorks_container h1,
 	.bespoke_solution_container h1,
-	.ourPaymentInfra_container h1 {
+	.ourPaymentInfra_container h1,
+	.f64 {
 		line-height: 42px;
 	}
 	.financial_service_container h1 {
