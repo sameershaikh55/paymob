@@ -28,6 +28,7 @@ import CaseStudies from "./pages/CaseStudies";
 import Developers from "./pages/Developers";
 import BlogList from "./pages/BlogList";
 import BlogInside from "./pages/BlogInside";
+import Press from "./pages/Press";
 
 function App() {
 	return (
@@ -55,6 +56,7 @@ function App() {
 			<Route exact path="/developers" component={Developers} />
 			<Route exact path="/blogList" component={BlogList} />
 			<Route exact path="/blogInside" component={BlogInside} />
+			<Route exact path="/press" component={Press} />
 		</Switch>
 	);
 }
