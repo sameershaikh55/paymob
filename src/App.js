@@ -26,6 +26,7 @@ import IndustrySector from "./pages/IndustrySector";
 import Partners from "./pages/Partners";
 import CaseStudies from "./pages/CaseStudies";
 import Developers from "./pages/Developers";
+import BlogList from "./pages/BlogList";
 
 function App() {
 	return (
@@ -51,6 +52,7 @@ function App() {
 			<Route exact path="/partners" component={Partners} />
 			<Route exact path="/caseStudies" component={CaseStudies} />
 			<Route exact path="/developers" component={Developers} />
+			<Route exact path="/blogList" component={BlogList} />
 		</Switch>
 	);
 }
