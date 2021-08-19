@@ -29,6 +29,7 @@ import Developers from "./pages/Developers";
 import BlogList from "./pages/BlogList";
 import BlogInside from "./pages/BlogInside";
 import Press from "./pages/Press";
+import Contact from "./pages/Contact";
 
 function App() {
 	return (
@@ -57,6 +58,7 @@ function App() {
 			<Route exact path="/blogList" component={BlogList} />
 			<Route exact path="/blogInside" component={BlogInside} />
 			<Route exact path="/press" component={Press} />
+			<Route exact path="/contact" component={Contact} />
 		</Switch>
 	);
 }
