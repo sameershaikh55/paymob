@@ -21,6 +21,9 @@ import Certifications from "./pages/Certifications";
 import Team from "./pages/Team";
 import Careers from "./pages/Careers";
 import JobOpenings from "./pages/JobOpenings";
+import About from "./pages/About";
+import IndustrySector from "./pages/IndustrySector";
+import Partners from "./pages/Partners";
 
 function App() {
 	return (
@@ -41,6 +44,9 @@ function App() {
 			<Route exact path="/team" component={Team} />
 			<Route exact path="/careers" component={Careers} />
 			<Route exact path="/careers/job_openings" component={JobOpenings} />
+			<Route exact path="/about" component={About} />
+			<Route exact path="/industrySector" component={IndustrySector} />
+			<Route exact path="/partners" component={Partners} />
 		</Switch>
 	);
 }

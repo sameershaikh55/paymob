@@ -1,4 +1,6 @@
 import React from "react";
+
+// IMPORTS
 import { IoIosArrowForward } from "react-icons/io";
 import t1 from "../assets/ourTeam/t1.svg";
 import t2 from "../assets/ourTeam/t2.svg";
@@ -63,6 +65,7 @@ const TeamBody = () => {
 			d: "CEO & Co-Founder",
 		},
 	];
+
 	return (
 		<div className="our_team_container">
 			<div className="page_container">
