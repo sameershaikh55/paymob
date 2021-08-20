@@ -31,6 +31,7 @@ import BlogInside from "./pages/BlogInside";
 import Press from "./pages/Press";
 import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
+import Callback from "./pages/Callback";
 
 function App() {
 	return (
@@ -61,6 +62,7 @@ function App() {
 			<Route exact path="/press" component={Press} />
 			<Route exact path="/contact" component={Contact} />
 			<Route exact path="/faq" component={Faq} />
+			<Route exact path="/callback" component={Callback} />
 		</Switch>
 	);
 }

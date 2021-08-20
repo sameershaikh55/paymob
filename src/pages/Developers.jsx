@@ -1,8 +1,8 @@
 import React from "react";
-import DevelopersBody from "../components/DevelopersBody";
 
 // IMPORTING COMPONENTS
 import Layout from "../layout";
+import DevelopersBody from "../components/DevelopersBody";
 
 const Developers = () => {
 	return (

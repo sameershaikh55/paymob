@@ -112,6 +112,10 @@ html {
   font-size: 2.125rem;
 }
 
+.f30 {
+  font-size: 1.875rem;
+}
+
 .f35 {
   font-size: 2.125rem;
   line-height: 57px;
@@ -1252,6 +1256,37 @@ input:focus {
   max-width: 800px;
 }
 
+.callback_container {
+  height: 700px;
+}
+
+.callbackApp_container {
+  background: url(../assets/callback/i1.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.callbackApp_container {
+  padding: 3rem 0rem 15rem 0rem;
+}
+
+.callbackPayment2_container {
+  background: url(../assets/callback/i4.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 15rem 0rem;
+}
+
+.howItWorks_container {
+  padding: 10rem 0rem 6rem 0rem;
+}
+
 @media screen and (max-width: 1100px) {
   .product_container .max_content,
   .sdk_detail_container .max_content {
@@ -1392,7 +1427,8 @@ input:focus {
     font-size: 1.375rem;
   }
   .industry_container,
-  .press_hero_container {
+  .press_hero_container,
+  .callback_container {
     height: 600px;
   }
 }
@@ -1427,6 +1463,9 @@ input:focus {
   }
   .pre_built_dashboard_cont {
     margin-top: -6rem;
+  }
+  .f30 {
+    font-size: 1.625rem;
   }
 }
 
@@ -1637,6 +1676,12 @@ input:focus {
   .faq_container {
     padding: 8rem 0rem 6rem 0rem;
   }
+  .callback_container {
+    height: 400px;
+  }
+  .f30 {
+    font-size: 1.375rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1674,6 +1719,9 @@ input:focus {
   }
   .press_hero_container {
     height: 450px;
+  }
+  .howItWorks_container {
+    padding: 18rem 0rem 6rem 0rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

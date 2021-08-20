@@ -7,7 +7,7 @@ import i2 from "../assets/hiworks/i2.svg";
 import i3 from "../assets/hiworks/i3.svg";
 import i4 from "../assets/hiworks/i4.svg";
 
-const HowitWorks = () => {
+const HowitWorks = ({ callback }) => {
 	var settings = {
 		centerMode: true,
 		dots: false,
@@ -54,7 +54,11 @@ const HowitWorks = () => {
 					<div className="row">
 						<div className="col-10 col-lg-12 mx-auto">
 							<div className="row">
-								<div className="ms-auto col-12 col-md-10 col-lg-8 text-end">
+								<div
+									className={`${
+										(callback && "me-auto text-start") || "ms-auto text-end"
+									}  col-12 col-md-10 col-lg-8`}
+								>
 									<p className="f20 orangeC mb-0 gotham">How does it work</p>
 									<h1 className="fw700 gotham color1">
 										Developer friendly SDK for instant frontline payments
