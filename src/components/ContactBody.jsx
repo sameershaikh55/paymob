@@ -12,42 +12,62 @@ const ContactBody = () => {
 							<div className="row">
 								<div className="col-12 col-md-6">
 									<h1 className="color1 gotham f64 fw600">Contact us</h1>
-
-									<ul className="list-unstyled mt-4 mt-md-5">
-										<li className="mb-4 mb-md-5 color1 letterSpace f18 gotham lh27 d-flex">
-											<div>
-												<HiOutlineLocationMarker
-													className="orangeC me-3"
-													fontSize="1.6rem"
-												/>
-											</div>
-											<div>
-												71-75 Shelton Street, Covent Garden, London, England,
-												WC2H 9JQ
-											</div>
-										</li>
-										<li className="mb-4 mb-md-5 color1 letterSpace f18 gotham lh27 d-flex">
-											<div>
-												<FiMail className="orangeC me-3" fontSize="1.5rem" />{" "}
-											</div>
-											<div>
-												For general queries contact welcome@paymobtech.com
-											</div>
-										</li>
-										<li className="mb-4 mb-md-5 color1 letterSpace f18 gotham lh27 d-flex">
-											<div>
-												<FiMail className="orangeC me-3" fontSize="1.5rem" />{" "}
-											</div>
-											<div>For media enquiries contact pr@paymobpos.com</div>
-										</li>
-										<li className=" color1 letterSpace f18 gotham lh27 d-flex">
-											<div>
-												<FiPhone className="orangeC me-3" fontSize="1.5rem" />{" "}
-												+44
-											</div>
-											<div>7751 471779</div>
-										</li>
-									</ul>
+									<div className="row">
+										<div className="col-12 col-md-10 col-lg-6">
+											<ul className="list-unstyled mt-4 mt-md-5">
+												<li className="mb-4 mb-md-5 color1 letterSpace f18 gotham lh27 d-flex">
+													<div>
+														<HiOutlineLocationMarker
+															className="orangeC me-3"
+															fontSize="1.6rem"
+														/>
+													</div>
+													<div>
+														71-75 Shelton Street, Covent Garden, London,
+														England, WC2H 9JQ
+													</div>
+												</li>
+												<li className="mb-4 mb-md-5 color1 letterSpace f18 gotham lh27 d-flex">
+													<div>
+														<FiMail
+															className="orangeC me-3"
+															fontSize="1.5rem"
+														/>{" "}
+													</div>
+													<div>
+														For general queries contact{" "}
+														<a
+															className="color1 text-decoration-none"
+															href="welcome@paymobtech.com"
+														>
+															welcome@paymobtech.com
+														</a>
+													</div>
+												</li>
+												<li className="mb-4 mb-md-5 color1 letterSpace f18 gotham lh27 d-flex">
+													<div>
+														<FiMail
+															className="orangeC me-3"
+															fontSize="1.5rem"
+														/>{" "}
+													</div>
+													<div>
+														For media enquiries contact pr@paymobpos.com
+													</div>
+												</li>
+												<li className=" color1 letterSpace f18 gotham lh27 d-flex">
+													<div>
+														<FiPhone
+															className="orangeC me-3"
+															fontSize="1.5rem"
+														/>{" "}
+														+44
+													</div>
+													<div>7751 471779</div>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 								<div className="col-12 col-md-6 mt-5 mt-md-0">
 									<div className="contact_form py-5 px-4">

@@ -224,7 +224,7 @@ html {
 }
 
 .gotham {
-  font-family: Gotham Pro;
+  font-family: Gotham Pro !important;
 }
 
 .crice {
@@ -1213,6 +1213,45 @@ input:focus {
   padding: 0.5rem;
 }
 
+.faq_container {
+  padding: 12rem 0rem 8rem 0rem;
+}
+
+.faq_container .faq_body {
+  background: #f1efec;
+  -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+}
+
+.faq_container .faq_body .head {
+  font-family: Gotham Pro;
+  color: #08243b;
+  letter-spacing: 0.03em;
+  font-size: 1rem;
+}
+
+.faq_container .faq_body .body {
+  font-family: Circe;
+  letter-spacing: 0.03em;
+  color: #606060;
+}
+
+.faq_container .faq_body .MuiSvgIcon-root {
+  fill: #08243b;
+}
+
+.faq_container .faq_body .MuiPaper-root {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0.2rem 0rem;
+}
+
+.faq_container .inner_body {
+  max-width: 800px;
+}
+
 @media screen and (max-width: 1100px) {
   .product_container .max_content,
   .sdk_detail_container .max_content {
@@ -1594,6 +1633,9 @@ input:focus {
   .contact_container .contact_form input {
     height: 38px;
     font-size: 1.1rem;
+  }
+  .faq_container {
+    padding: 8rem 0rem 6rem 0rem;
   }
 }
 
