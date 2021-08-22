@@ -330,7 +330,7 @@ input:focus {
           box-shadow: 10px 11px 18px -11px rgba(0, 0, 0, 0.09);
   background: #ffffff;
   position: absolute;
-  top: 140%;
+  top: 110%;
   width: 550px;
   left: -338%;
 }
@@ -369,6 +369,22 @@ input:focus {
 .header_container .dropdownList.pricing {
   width: 190px;
   left: -124%;
+}
+
+.header_container .nav_one .dropdown_one,
+.header_container .nav_two .dropdown_two,
+.header_container .nav_three .dropdown_three,
+.header_container .nav_four .dropdown_four,
+.header_container .nav_five .dropdown_five {
+  display: none;
+}
+
+.header_container .nav_one:hover .dropdown_one,
+.header_container .nav_two:hover .dropdown_two,
+.header_container .nav_three:hover .dropdown_three,
+.header_container .nav_four:hover .dropdown_four,
+.header_container .nav_five:hover .dropdown_five {
+  display: block;
 }
 
 .header_container.sticky {

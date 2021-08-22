@@ -328,7 +328,7 @@ input:focus {
 		box-shadow: 10px 11px 18px -11px rgba(0, 0, 0, 0.09);
 		background: #ffffff;
 		position: absolute;
-		top: 140%;
+		top: 110%;
 		width: 550px;
 		left: -338%;
 
@@ -366,6 +366,22 @@ input:focus {
 	.dropdownList.pricing {
 		width: 190px;
 		left: -124%;
+	}
+
+	.nav_one .dropdown_one,
+	.nav_two .dropdown_two,
+	.nav_three .dropdown_three,
+	.nav_four .dropdown_four,
+	.nav_five .dropdown_five {
+		display: none;
+	}
+
+	.nav_one:hover .dropdown_one,
+	.nav_two:hover .dropdown_two,
+	.nav_three:hover .dropdown_three,
+	.nav_four:hover .dropdown_four,
+	.nav_five:hover .dropdown_five {
+		display: block;
 	}
 }
 

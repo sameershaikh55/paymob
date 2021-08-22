@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
-import triangle from "../assets/triangle.svg";
+// import triangle from "../assets/triangle.svg";
 
 // IMPORTS
 import logo from "../assets/logo.svg";
@@ -124,9 +124,9 @@ const ProductList = () => {
 			</div>
 
 			{/* ARROW START */}
-			<div className="tria_icon">
+			{/* <div className="tria_icon">
 				<img src={triangle} alt="" />
-			</div>
+			</div> */}
 			{/* ARROW END */}
 		</div>
 	);
@@ -232,9 +232,9 @@ const UseCases = () => {
 			</div>
 
 			{/* ARROW START */}
-			<div className="tria_icon">
+			{/* <div className="tria_icon">
 				<img src={triangle} alt="" />
-			</div>
+			</div> */}
 			{/* ARROW END */}
 		</div>
 	);
@@ -289,9 +289,9 @@ const Developers = () => {
 			</div>
 
 			{/* ARROW START */}
-			<div className="tria_icon">
+			{/* <div className="tria_icon">
 				<img src={triangle} alt="" />
-			</div>
+			</div> */}
 			{/* ARROW END */}
 		</div>
 	);
@@ -382,9 +382,9 @@ const About = () => {
 			</div>
 
 			{/* ARROW START */}
-			<div className="tria_icon">
+			{/* <div className="tria_icon">
 				<img src={triangle} alt="" />
-			</div>
+			</div> */}
 			{/* ARROW END */}
 		</div>
 	);
@@ -415,9 +415,9 @@ const Pricing = () => {
 			</div>
 
 			{/* ARROW START */}
-			<div className="tria_icon">
+			{/* <div className="tria_icon">
 				<img src={triangle} alt="" />
-			</div>
+			</div> */}
 			{/* ARROW END */}
 		</div>
 	);
@@ -434,11 +434,11 @@ const Header = ({ ClickEvent }) => {
 		});
 	}, []);
 	const [nestedNav, setNestedNav] = useState({
-		first: false,
-		second: false,
-		third: false,
-		fourth: false,
-		fifth: false,
+		first: true,
+		second: true,
+		third: true,
+		fourth: true,
+		fifth: true,
 	});
 
 	const first = () => {
@@ -505,35 +505,50 @@ const Header = ({ ClickEvent }) => {
 								{/* HAMBERGER END */}
 								<div className="d-none d-lg-block">
 									<ul className="d-flex list-unstyled mb-0">
-										<li className="position-relative">
+										<li className="nav_one position-relative">
 											<span onClick={first} className="blackC pointer">
 												Products
 											</span>
-											{nestedNav.first && <ProductList />}
+											{/* {nestedNav.first && <ProductList />} */}
+											<div className="dropdown_one">
+												<ProductList />
+											</div>
 										</li>
-										<li className="ms-5 position-relative">
+										<li className="nav_two ms-5 position-relative">
 											<span onClick={second} className="blackC pointer">
 												Use cases
 											</span>
-											{nestedNav.second && <UseCases />}
+											{/* {nestedNav.second && <UseCases />} */}
+											<div className="dropdown_two">
+												<UseCases />
+											</div>
 										</li>
-										<li className="ms-5 position-relative">
+										<li className="nav_three ms-5 position-relative">
 											<span onClick={third} className="blackC pointer">
 												Developers
 											</span>
-											{nestedNav.third && <Developers />}
+											{/* {nestedNav.third && <Developers />} */}
+											<div className="dropdown_three">
+												<Developers />
+											</div>
 										</li>
-										<li className="ms-5 position-relative">
+										<li className="nav_four ms-5 position-relative">
 											<span onClick={fourth} className="blackC pointer">
 												Pricing
 											</span>
-											{nestedNav.fourth && <Pricing />}
+											{/* {nestedNav.fourth && <Pricing />} */}
+											<div className="dropdown_four">
+												<Pricing />
+											</div>
 										</li>
-										<li className="ms-5 position-relative">
+										<li className="nav_five ms-5 position-relative">
 											<span onClick={fifth} className="blackC pointer">
 												About us
 											</span>
-											{nestedNav.fifth && <About />}
+											{/* {nestedNav.fifth && <About />} */}
+											<div className="dropdown_five">
+												<About />
+											</div>
 										</li>
 									</ul>
 								</div>
