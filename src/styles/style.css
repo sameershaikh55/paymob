@@ -1039,7 +1039,7 @@ input:focus {
 }
 
 .certificationDetail_container img {
-  width: 50%;
+  width: 35%;
 }
 
 .our_team_container {
@@ -1447,6 +1447,9 @@ input:focus {
   .callback_container {
     height: 600px;
   }
+  .certificationDetail_container img {
+    width: 38%;
+  }
 }
 
 @media screen and (max-width: 868px) {
@@ -1697,6 +1700,9 @@ input:focus {
   }
   .f30 {
     font-size: 1.375rem;
+  }
+  .certificationDetail_container img {
+    width: 50%;
   }
 }
 

@@ -1,7 +1,5 @@
 import React from "react";
-// import bespokeSolutions from "../assets/gifs/Bespoke services GIF.gif";
-import bespokeSolutions from "../assets/bespokeSolutions.svg";
-// import checkLine from "../assets/checkLine.svg";
+import bespokeSolutions from "../assets/beskpole.gif";
 
 const BespokeSolutions = () => {
 	return (
@@ -36,27 +34,6 @@ const BespokeSolutions = () => {
 								</div>
 								<div className="img_container col-11 col-md-6 mx-auto">
 									<div className="d-flex">
-										{/* <div className="img_text text-end h-100">
-											<ul className="d-flex flex-column justify-content-evenly h-100 list-unstyled">
-												<li className="d-flex color8 fw-bold gotham">
-													No peripherals required{" "}
-													<img className="ms-2" src={checkLine} alt="" />
-												</li>
-												<li className="d-flex color8 fw-bold gotham">
-													Accepts any contactless enabled card{" "}
-													<img className="ms-2" src={checkLine} alt="" />
-												</li>
-												<li className="d-flex color8 fw-bold gotham">
-													Accepts mobile wallets{" "}
-													<img className="ms-2" src={checkLine} alt="" />
-												</li>
-												<li className="d-flex color8 fw-bold gotham">
-													Compliments potential future payment enablers{" "}
-													<img className="ms-2" src={checkLine} alt="" />
-												</li>
-											</ul>
-										</div> */}
-
 										<img className="w-100" src={bespokeSolutions} alt="" />
 									</div>
 								</div>
