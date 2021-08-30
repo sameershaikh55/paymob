@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Route, Switch } from "react-router-dom";
 
+// IMPORTING LOADER
+import HashLoader from "react-spinners/HashLoader";
+
 // IMPORTING PAGES
 import Home from "./pages/Home.jsx";
 import ProductOverview from "./pages/ProductOverview";
@@ -34,10 +37,30 @@ import Faq from "./pages/Faq";
 import Callback from "./pages/Callback";
 import InHouseDeployement from "./pages/InHouseDeployement";
 import ScrollToTop from "./components/ScrollToTop";
+import { useEffect } from "react";
+import logoW from "./assets/logoW.svg";
 
 function App() {
+	useEffect(() => {
+		document.body.style.overflow = "hidden";
+
+		window.addEventListener("load", (event) => {
+			document.body.style.overflowY = "auto";
+			const load = document.querySelector(".loading_page");
+			load.style.opacity = "0";
+			load.style.display = "none";
+		});
+	}, []);
+
 	return (
 		<>
+			<div className="loading_page">
+				<div className="inner_loading d-flex flex-column align-items-center">
+					<img src={logoW} alt="" />
+					<HashLoader className="load" size={40} color="#fff" />
+				</div>
+			</div>
+
 			<ScrollToTop />
 			<Switch>
 				<Route exact path="/" component={Home} />

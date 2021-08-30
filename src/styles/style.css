@@ -237,6 +237,58 @@ ul {
   border-top: 2px solid #fff;
 }
 
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading_page {
+  position: fixed;
+  height: 100vh;
+  background: #08243b;
+  width: 100%;
+  z-index: 9999999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.loading_page .inner_loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-60%, -50%);
+          transform: translate(-60%, -50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.loading_page .inner_loading .load {
+  -webkit-animation: fade-in 0.5s ease-in-out infinite both;
+  animation: fade-in 0.5s ease-in-out infinite both;
+}
+
+.loading_page .inner_loading img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 250px;
+  height: auto;
+  -webkit-animation: fade-in 0.8s ease-in-out infinite both;
+  animation: fade-in 0.8s ease-in-out infinite both;
+}
+
 .gotham {
   font-family: Gotham Pro !important;
 }

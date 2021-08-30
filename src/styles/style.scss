@@ -248,6 +248,54 @@ ul {
 	border-top: 2px solid #fff;
 }
 
+// LOADER
+@-webkit-keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.loading_page {
+	position: fixed;
+	height: 100vh;
+	background: $color1;
+	width: 100%;
+	z-index: 9999999;
+	transition: 0.5s;
+
+	.inner_loading {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-60%, -50%);
+		transition: 0.5s;
+
+		.load {
+			-webkit-animation: fade-in 0.5s ease-in-out infinite both;
+			animation: fade-in 0.5s ease-in-out infinite both;
+		}
+
+		img {
+			transition: 0.5s;
+			width: 250px;
+			height: auto;
+			-webkit-animation: fade-in 0.8s ease-in-out infinite both;
+			animation: fade-in 0.8s ease-in-out infinite both;
+		}
+	}
+}
+
 // FONT CLASS
 .gotham {
 	font-family: Gotham Pro !important;

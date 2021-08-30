@@ -2,47 +2,51 @@ import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import logoW from "../assets/logoW.svg";
 import b3 from "../assets/brands/b3.svg";
+import { Link as LinkS } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	const products = [
-		{ t: "Product overview" },
-		{ t: "Android mobile SDK" },
-		{ t: "SoftPOS mobile App" },
-		{ t: "mPOS card reader" },
-		{ t: "Mini POS Terminal" },
-		{ t: "Smart POS Terminal" },
-		{ t: "Merchant onboarding" },
-		{ t: "Dashboards" },
-		{ t: "Admin portal" },
-		{ t: "Payment gateway" },
+		{ t: "Product overview", l: "/productOverview" },
+		{ t: "Android mobile SDK", l: "/androidSdk" },
+		{ t: "SoftPOS mobile App", l: "/softPos" },
+		{ t: "mPOS card reader", l: "/mposCard" },
+		{ t: "Mini POS Terminal", l: "/miniPos" },
+		{ t: "Smart POS Terminal", l: "/smartPos" },
+		{ t: "Merchant onboarding", l: "/merchantOnboarding" },
+		{ t: "Dashboards", l: "/merchantDashboard" },
+		{ t: "Admin portal", l: "/adminPortal" },
+		{ t: "Payment gateway", l: "/paymentGatway" },
 	];
 
 	const cases = [
-		{ t: "Industry sectors" },
-		{ t: "Channel partners" },
-		{ t: "Commerce vendors" },
-		{ t: "Banking" },
-		{ t: "Case studies" },
+		{ t: "Industry sectors", l: "/industrySector" },
+		{ t: "Channel partners", l: "/partners" },
+		{ t: "Commerce vendors", l: "/partners" },
+		{ t: "Banking", l: "/partners" },
+		{ t: "Case studies", l: "/caseStudies" },
 	];
 
 	const dev = [
-		{ t: "Developer tools" },
-		{ t: "App to app API" },
-		{ t: "In-house deployment" },
-		{ t: "Banking" },
-		{ t: "Case studies" },
+		{ t: "Developer tools", l: "/developers" },
+		{ t: "App to app API", l: "/callback" },
+		{ t: "In-house deployment", l: "/inHouseDeployement" },
+		{ t: "Banking", l: "/partners" },
+		{ t: "Case studies", l: "/caseStudies" },
 	];
 
-	const price = [{ t: "Basic fee setup" }];
+	const price = [
+		{ t: "Basic fee setup", el: "https://airtable.com/shrL21Fd1xLND39mK" },
+	];
 
 	const about = [
-		{ t: "About us" },
-		{ t: "Paymob INsightsAbout us" },
-		{ t: "FAQs" },
-		{ t: "Press" },
-		{ t: "Certifications & security" },
-		{ t: "Careers" },
-		{ t: "Contact us" },
+		{ t: "About us", l: "/about" },
+		{ t: "Paymob INsights", l: "insight" },
+		{ t: "FAQs", l: "/faq" },
+		{ t: "Press", l: "/press" },
+		{ t: "Certifications & security", l: "/certifications" },
+		{ t: "Careers", l: "/careers" },
+		{ t: "Contact us", l: "/contact" },
 	];
 
 	return (
@@ -89,9 +93,51 @@ const Footer = () => {
 												<ul className="list-unstyled mt-3">
 													{products.map((prev, i) => {
 														return (
-															<li className="mb-2 mb-md-3 f14" key={i}>
-																{prev.t}
-															</li>
+															<>
+																{(prev.l === "insight" && (
+																	<LinkS
+																		to={prev.l}
+																		offset={-120}
+																		smooth={true}
+																		duration={600}
+																		spy={true}
+																		className="text-decoration-none"
+																	>
+																		<li
+																			className="text-white mb-2 mb-md-3 f14"
+																			key={i}
+																		>
+																			{prev.t}
+																		</li>
+																	</LinkS>
+																)) ||
+																	(prev.el && (
+																		<a
+																			target="blank"
+																			href={prev.el}
+																			className="text-decoration-none"
+																		>
+																			<li
+																				className="text-white mb-2 mb-md-3 f14"
+																				key={i}
+																			>
+																				{prev.t}
+																			</li>
+																		</a>
+																	)) || (
+																		<Link
+																			to={prev.l}
+																			className="text-decoration-none"
+																		>
+																			<li
+																				className="text-white mb-2 mb-md-3 f14"
+																				key={i}
+																			>
+																				{prev.t}
+																			</li>
+																		</Link>
+																	)}
+															</>
 														);
 													})}
 												</ul>
@@ -104,9 +150,51 @@ const Footer = () => {
 											<ul className="list-unstyled mt-3">
 												{cases.map((prev, i) => {
 													return (
-														<li className="mb-2 mb-md-3 f14" key={i}>
-															{prev.t}
-														</li>
+														<>
+															{(prev.l === "insight" && (
+																<LinkS
+																	to={prev.l}
+																	offset={-120}
+																	smooth={true}
+																	duration={600}
+																	spy={true}
+																	className="text-decoration-none"
+																>
+																	<li
+																		className="text-white mb-2 mb-md-3 f14"
+																		key={i}
+																	>
+																		{prev.t}
+																	</li>
+																</LinkS>
+															)) ||
+																(prev.el && (
+																	<a
+																		target="blank"
+																		href={prev.el}
+																		className="text-decoration-none"
+																	>
+																		<li
+																			className="text-white mb-2 mb-md-3 f14"
+																			key={i}
+																		>
+																			{prev.t}
+																		</li>
+																	</a>
+																)) || (
+																	<Link
+																		to={prev.l}
+																		className="text-decoration-none"
+																	>
+																		<li
+																			className="text-white mb-2 mb-md-3 f14"
+																			key={i}
+																		>
+																			{prev.t}
+																		</li>
+																	</Link>
+																)}
+														</>
 													);
 												})}
 											</ul>
@@ -118,9 +206,51 @@ const Footer = () => {
 											<ul className="list-unstyled mt-3">
 												{dev.map((prev, i) => {
 													return (
-														<li className="mb-2 mb-md-3 f14" key={i}>
-															{prev.t}
-														</li>
+														<>
+															{(prev.l === "insight" && (
+																<LinkS
+																	to={prev.l}
+																	offset={-120}
+																	smooth={true}
+																	duration={600}
+																	spy={true}
+																	className="text-decoration-none"
+																>
+																	<li
+																		className="text-white mb-2 mb-md-3 f14"
+																		key={i}
+																	>
+																		{prev.t}
+																	</li>
+																</LinkS>
+															)) ||
+																(prev.el && (
+																	<a
+																		target="blank"
+																		href={prev.el}
+																		className="text-decoration-none"
+																	>
+																		<li
+																			className="text-white mb-2 mb-md-3 f14"
+																			key={i}
+																		>
+																			{prev.t}
+																		</li>
+																	</a>
+																)) || (
+																	<Link
+																		to={prev.l}
+																		className="text-decoration-none"
+																	>
+																		<li
+																			className="text-white mb-2 mb-md-3 f14"
+																			key={i}
+																		>
+																			{prev.t}
+																		</li>
+																	</Link>
+																)}
+														</>
 													);
 												})}
 											</ul>
@@ -132,9 +262,51 @@ const Footer = () => {
 											<ul className="list-unstyled mt-3">
 												{price.map((prev, i) => {
 													return (
-														<li className="mb-2 mb-md-3 f14" key={i}>
-															{prev.t}
-														</li>
+														<>
+															{(prev.l === "insight" && (
+																<LinkS
+																	to={prev.l}
+																	offset={-120}
+																	smooth={true}
+																	duration={600}
+																	spy={true}
+																	className="text-decoration-none"
+																>
+																	<li
+																		className="text-white mb-2 mb-md-3 f14"
+																		key={i}
+																	>
+																		{prev.t}
+																	</li>
+																</LinkS>
+															)) ||
+																(prev.el && (
+																	<a
+																		target="blank"
+																		href={prev.el}
+																		className="text-decoration-none"
+																	>
+																		<li
+																			className="text-white mb-2 mb-md-3 f14"
+																			key={i}
+																		>
+																			{prev.t}
+																		</li>
+																	</a>
+																)) || (
+																	<Link
+																		to={prev.l}
+																		className="text-decoration-none"
+																	>
+																		<li
+																			className="text-white mb-2 mb-md-3 f14"
+																			key={i}
+																		>
+																			{prev.t}
+																		</li>
+																	</Link>
+																)}
+														</>
 													);
 												})}
 											</ul>
@@ -146,9 +318,51 @@ const Footer = () => {
 											<ul className="list-unstyled mt-3">
 												{about.map((prev, i) => {
 													return (
-														<li className="mb-2 mb-md-3 f14" key={i}>
-															{prev.t}
-														</li>
+														<>
+															{(prev.l === "insight" && (
+																<LinkS
+																	to={prev.l}
+																	offset={-120}
+																	smooth={true}
+																	duration={600}
+																	spy={true}
+																	className="text-decoration-none"
+																>
+																	<li
+																		className="text-white mb-2 mb-md-3 f14"
+																		key={i}
+																	>
+																		{prev.t}
+																	</li>
+																</LinkS>
+															)) ||
+																(prev.el && (
+																	<a
+																		target="blank"
+																		href={prev.el}
+																		className="text-decoration-none"
+																	>
+																		<li
+																			className="text-white mb-2 mb-md-3 f14"
+																			key={i}
+																		>
+																			{prev.t}
+																		</li>
+																	</a>
+																)) || (
+																	<Link
+																		to={prev.l}
+																		className="text-decoration-none"
+																	>
+																		<li
+																			className="text-white mb-2 mb-md-3 f14"
+																			key={i}
+																		>
+																			{prev.t}
+																		</li>
+																	</Link>
+																)}
+														</>
 													);
 												})}
 											</ul>
