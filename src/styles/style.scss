@@ -114,6 +114,10 @@ html {
 	font-size: 1.25rem;
 }
 
+.f22 {
+	font-size: 1.375rem;
+}
+
 .f24 {
 	font-size: 1.5rem;
 }
@@ -204,6 +208,11 @@ html {
 
 .orangeC {
 	color: $color3 !important;
+}
+
+ol,
+ul {
+	padding-left: 1rem;
 }
 
 .orangeCL {
@@ -1358,6 +1367,52 @@ input:focus {
 }
 // CALLBACK END
 
+// IN-HOUSE DEVELOPMENT START
+.inHouseBody_container {
+	margin-top: 12rem;
+}
+// IN-HOUSE DEVELOPMENT END
+
+// IN-HOUSE DETAIL START
+.inHouseDetail_container {
+	background: url("../assets/hero_brand2.svg");
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 3rem 0rem 12rem 0rem;
+}
+
+.inHouse_table {
+	.bankHost_img {
+		margin: 10rem 0rem;
+	}
+
+	.table_container {
+		table {
+			table-layout: fixed;
+			width: 100%;
+
+			tbody {
+				tr {
+					td {
+						height: 100px;
+						vertical-align: middle;
+					}
+				}
+			}
+
+			tr {
+				td {
+					width: 25%;
+				}
+			}
+		}
+	}
+}
+
+// IN-HOUSE DETAIL END
+
 // MEDIA QUERIES START
 @media screen and (max-width: 1100px) {
 	.product_container,
@@ -1571,6 +1626,9 @@ input:focus {
 }
 
 @media screen and (max-width: 768px) {
+	.f22 {
+		font-size: 1.1rem;
+	}
 	.f8 {
 		font-size: 0.45rem;
 	}
@@ -1802,6 +1860,43 @@ input:focus {
 	}
 	.certificationDetail_container img {
 		width: 50%;
+	}
+	.inHouse_table {
+		.table_container {
+			overflow-x: auto;
+			min-width: 100% !important;
+
+			table {
+				width: 100%;
+				table-layout: initial;
+
+				tr {
+					td {
+						height: auto;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+	.inHouseDetail_container {
+		padding: 3rem 0rem 14rem 0rem;
+	}
+	.inHouseBody_container {
+		margin-top: 8rem;
+
+		ol,
+		ul {
+			padding-left: 1rem;
+		}
+	}
+
+	.inHouse_table {
+		margin-top: -4rem;
+	}
+
+	.inHouse_table .bankHost_img {
+		margin: 4rem 0rem;
 	}
 }
 

@@ -32,6 +32,7 @@ import Press from "./pages/Press";
 import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
 import Callback from "./pages/Callback";
+import InHouseDeployement from "./pages/InHouseDeployement";
 
 function App() {
 	return (
@@ -63,6 +64,7 @@ function App() {
 			<Route exact path="/contact" component={Contact} />
 			<Route exact path="/faq" component={Faq} />
 			<Route exact path="/callback" component={Callback} />
+			<Route exact path="/inHouseDeployement" component={InHouseDeployement} />
 		</Switch>
 	);
 }
