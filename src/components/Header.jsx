@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
+
 // import triangle from "../assets/triangle.svg";
 
 // IMPORTS
@@ -15,14 +17,18 @@ const ProductList = () => {
 				<div className="container-fluid pb-4">
 					<div className="row">
 						<div className="col-6">
-							<button className="color1 border-0 shadow-none bg-transparent f14">
-								Overview <IoIosArrowForward />
-							</button>
+							<NavLink exact to="/productOverview">
+								<button className="color1 border-0 shadow-none bg-transparent f14">
+									Overview <IoIosArrowForward />
+								</button>
+							</NavLink>
 						</div>
 						<div className="col-6">
-							<button className="color1 border-0 shadow-none bg-transparent f14">
-								Contact <IoIosArrowForward />
-							</button>
+							<NavLink exact to="/contact">
+								<button className="color1 border-0 shadow-none bg-transparent f14">
+									Contact <IoIosArrowForward />
+								</button>
+							</NavLink>
 						</div>
 					</div>
 				</div>
@@ -35,7 +41,7 @@ const ProductList = () => {
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/androidSdk"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Android mobile SDK <IoIosArrowForward />
@@ -43,7 +49,7 @@ const ProductList = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/softPos"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									SoftPOS app <IoIosArrowForward />
@@ -51,7 +57,7 @@ const ProductList = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/mposCard"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									mPOS card reader <IoIosArrowForward />
@@ -59,7 +65,7 @@ const ProductList = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/miniPos"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Mini POS terminal <IoIosArrowForward />
@@ -67,7 +73,7 @@ const ProductList = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/smartPos"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Smart POS terminal <IoIosArrowForward />
@@ -80,7 +86,7 @@ const ProductList = () => {
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/merchantOnboarding"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Merchent onboarding <IoIosArrowForward />
@@ -88,7 +94,7 @@ const ProductList = () => {
 							</li>
 							<li className="f14 mb-3 color1 fw600">
 								<NavLink
-									to=""
+									to="/adminPortal"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Admin portal <IoIosArrowForward />
@@ -96,7 +102,7 @@ const ProductList = () => {
 							</li>
 							<li className="f14 mb-3 color1 fw600">
 								<NavLink
-									to=""
+									to="/merchantDashboard"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Merchant & client dashboard <IoIosArrowForward />
@@ -104,7 +110,7 @@ const ProductList = () => {
 							</li>
 							<li className="f14 mb-3 color1 fw600">
 								<NavLink
-									to=""
+									to="/paymentGatway"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Payment gateway <IoIosArrowForward />
@@ -112,7 +118,7 @@ const ProductList = () => {
 							</li>
 							<li className="f14 mb-3 color1 fw600">
 								<NavLink
-									to=""
+									to="/certifications"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Certifications <IoIosArrowForward />
@@ -146,7 +152,7 @@ const UseCases = () => {
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/industrySector"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Retailers & small business <IoIosArrowForward />
@@ -154,7 +160,7 @@ const UseCases = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/industrySector"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Gig economy <IoIosArrowForward />
@@ -162,7 +168,7 @@ const UseCases = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/industrySector"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Transportation <IoIosArrowForward />
@@ -170,7 +176,7 @@ const UseCases = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/industrySector"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Hospitality <IoIosArrowForward />
@@ -183,7 +189,7 @@ const UseCases = () => {
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/partners"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Channel partners <IoIosArrowForward />
@@ -191,7 +197,7 @@ const UseCases = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/partners"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Banking <IoIosArrowForward />
@@ -199,7 +205,7 @@ const UseCases = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/partners"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Commerce vendors <IoIosArrowForward />
@@ -212,7 +218,7 @@ const UseCases = () => {
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/caseStudies"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									ZmBIZI <IoIosArrowForward />
@@ -220,7 +226,7 @@ const UseCases = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/caseStudies"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Aisino <IoIosArrowForward />
@@ -253,7 +259,7 @@ const Developers = () => {
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/developers"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Developer tools <IoIosArrowForward />
@@ -261,7 +267,7 @@ const Developers = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/callback"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									App to app API <IoIosArrowForward />
@@ -269,19 +275,20 @@ const Developers = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/inHouseDeployement"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									In-house deployment <IoIosArrowForward />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
-								<NavLink
-									to="/"
+								<a
 									className="color1 text-decoration-none color1 fw600"
+									target="blank"
+									href="https://airtable.com/shrL21Fd1xLND39mK"
 								>
 									Create a demo account <IoIosArrowForward />
-								</NavLink>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -310,23 +317,27 @@ const About = () => {
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/about"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									About us <IoIosArrowForward />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
-								<NavLink
-									to="/"
-									className="color1 text-decoration-none color1 fw600"
+								<LinkS
+									to="insight"
+									offset={-120}
+									smooth={true}
+									duration={600}
+									spy={true}
+									className="color1 text-decoration-none color1 fw600 pointer"
 								>
 									Paymob INsights <IoIosArrowForward />
-								</NavLink>
+								</LinkS>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/faq"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									FAQs <IoIosArrowForward />
@@ -334,7 +345,7 @@ const About = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/press"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Press <IoIosArrowForward />
@@ -346,7 +357,7 @@ const About = () => {
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/team"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Our team <IoIosArrowForward />
@@ -354,7 +365,7 @@ const About = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/careers"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Careers <IoIosArrowForward />
@@ -362,7 +373,7 @@ const About = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/certifications"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Certifications and security <IoIosArrowForward />
@@ -370,7 +381,7 @@ const About = () => {
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/contact"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Contact us <IoIosArrowForward />

@@ -43,6 +43,7 @@ html {
 	width: 100%;
 	font-size: 100%;
 	overflow-x: hidden;
+	scroll-behavior: auto !important;
 }
 @media screen and (max-width: 992px) {
 	html {

@@ -36,7 +36,7 @@ const Insights = () => {
 	];
 
 	return (
-		<div className="insights_container">
+		<div id="insight" className="insights_container">
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
