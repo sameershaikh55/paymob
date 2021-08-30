@@ -1,10 +1,10 @@
 import React from "react";
 
 // IMPORTS
-import i1 from "../assets/industry/i1.svg";
-import i2 from "../assets/industry/i2.svg";
-import i3 from "../assets/industry/i3.svg";
-import i4 from "../assets/industry/i4.svg";
+import i1 from "../assets/industry/i1.png";
+import i2 from "../assets/industry/i2.png";
+import i3 from "../assets/industry/i3.png";
+import i4 from "../assets/industry/i4.png";
 
 const IndustryBody = () => {
 	return (

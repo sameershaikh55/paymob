@@ -74,9 +74,14 @@ const ProductOverview = () => {
 									/>
 								</div>
 								<div className="d-flex justify-content-center mt-4">
-									<button className="gotham color1 border-0 bg-white py-2 fw500 f18 px-4">
-										Request demo <IoIosArrowForward />
-									</button>
+									<a
+										target="blank"
+										href="https://airtable.com/shrL21Fd1xLND39mK"
+									>
+										<button className="gotham color1 border-0 bg-white py-2 fw500 f18 px-4">
+											Request demo <IoIosArrowForward />
+										</button>
+									</a>
 								</div>
 							</div>
 						</div>

@@ -17,9 +17,14 @@ const PriceHero = () => {
 										are interested in joining forces with us to launch your own
 										Tap to Phone solution, get in touch or request a demo.{" "}
 									</p>
-									<button className="py-2 px-3 border-0 f18 mt-2 mt-md-3">
-										Request demo <IoIosArrowForward />
-									</button>
+									<a
+										target="blank"
+										href="https://airtable.com/shrL21Fd1xLND39mK"
+									>
+										<button className="py-2 px-3 border-0 f18 mt-2 mt-md-3">
+											Request demo <IoIosArrowForward />
+										</button>
+									</a>
 								</div>
 							</div>
 						</div>

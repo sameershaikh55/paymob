@@ -33,39 +33,51 @@ import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
 import Callback from "./pages/Callback";
 import InHouseDeployement from "./pages/InHouseDeployement";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 	return (
-		<Switch>
-			<Route exact path="/" component={Home} />
-			<Route exact path="/productOverview" component={ProductOverview} />
-			<Route exact path="/androidSdk" component={AndroidSdk} />
-			<Route exact path="/softPos" component={SoftPos} />
-			<Route exact path="/mposCard" component={MposCard} />
-			<Route exact path="/miniPos" component={MiniPos} />
-			<Route exact path="/smartPos" component={SmartPos} />
-			<Route exact path="/merchantOnboarding" component={MerchantOnboarding} />
-			<Route exact path="/merchantDashboard" component={MerchantDashboard} />
-			<Route exact path="/adminPortal" component={AdminPortal} />
-			<Route exact path="/paymentGatway" component={PaymentGatway} />
-			<Route exact path="/certifications" component={Certifications} />
-			<Route exact path="/pricing" component={Pricing} />
-			<Route exact path="/team" component={Team} />
-			<Route exact path="/careers" component={Careers} />
-			<Route exact path="/careers/job_openings" component={JobOpenings} />
-			<Route exact path="/about" component={About} />
-			<Route exact path="/industrySector" component={IndustrySector} />
-			<Route exact path="/partners" component={Partners} />
-			<Route exact path="/caseStudies" component={CaseStudies} />
-			<Route exact path="/developers" component={Developers} />
-			<Route exact path="/blogList" component={BlogList} />
-			<Route exact path="/blogInside" component={BlogInside} />
-			<Route exact path="/press" component={Press} />
-			<Route exact path="/contact" component={Contact} />
-			<Route exact path="/faq" component={Faq} />
-			<Route exact path="/callback" component={Callback} />
-			<Route exact path="/inHouseDeployement" component={InHouseDeployement} />
-		</Switch>
+		<>
+			<ScrollToTop />
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route exact path="/productOverview" component={ProductOverview} />
+				<Route exact path="/androidSdk" component={AndroidSdk} />
+				<Route exact path="/softPos" component={SoftPos} />
+				<Route exact path="/mposCard" component={MposCard} />
+				<Route exact path="/miniPos" component={MiniPos} />
+				<Route exact path="/smartPos" component={SmartPos} />
+				<Route
+					exact
+					path="/merchantOnboarding"
+					component={MerchantOnboarding}
+				/>
+				<Route exact path="/merchantDashboard" component={MerchantDashboard} />
+				<Route exact path="/adminPortal" component={AdminPortal} />
+				<Route exact path="/paymentGatway" component={PaymentGatway} />
+				<Route exact path="/certifications" component={Certifications} />
+				<Route exact path="/pricing" component={Pricing} />
+				<Route exact path="/team" component={Team} />
+				<Route exact path="/careers" component={Careers} />
+				<Route exact path="/careers/job_openings" component={JobOpenings} />
+				<Route exact path="/about" component={About} />
+				<Route exact path="/industrySector" component={IndustrySector} />
+				<Route exact path="/partners" component={Partners} />
+				<Route exact path="/caseStudies" component={CaseStudies} />
+				<Route exact path="/developers" component={Developers} />
+				<Route exact path="/blogList" component={BlogList} />
+				<Route exact path="/blogInside" component={BlogInside} />
+				<Route exact path="/press" component={Press} />
+				<Route exact path="/contact" component={Contact} />
+				<Route exact path="/faq" component={Faq} />
+				<Route exact path="/callback" component={Callback} />
+				<Route
+					exact
+					path="/inHouseDeployement"
+					component={InHouseDeployement}
+				/>
+			</Switch>
+		</>
 	);
 }
 

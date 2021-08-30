@@ -27,7 +27,7 @@ const OurPaymentInfra = ({ md, adminP, pg }) => {
 	} else {
 		data = [
 			"Merchant dashboard",
-			"Merchant dashboard",
+			"Payment gateway",
 			"Admin portal",
 			"Certifications",
 		];
@@ -41,7 +41,7 @@ const OurPaymentInfra = ({ md, adminP, pg }) => {
 						<div className="col-11 col-lg-12 mx-auto">
 							<div className="row align-items-center">
 								<div className="col-12 col-md-6 col-lg-5">
-									<h1 className="color7">
+									<h1 className="color7 gotham fw600">
 										Our payment <br /> infrastructure.
 									</h1>
 								</div>

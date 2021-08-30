@@ -1,9 +1,9 @@
 import React from "react";
 
 // IMPORTS
-import i1 from "../assets/partners/i1.svg";
-import i2 from "../assets/partners/i2.svg";
-import i3 from "../assets/partners/i3.svg";
+import i1 from "../assets/partners/i1.png";
+import i2 from "../assets/partners/i2.png";
+import i3 from "../assets/partners/i3.png";
 
 const PartnerBody = () => {
 	return (

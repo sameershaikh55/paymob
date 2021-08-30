@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 
 const PricingDetails = () => {
 	const data = [
@@ -32,9 +33,11 @@ const PricingDetails = () => {
 								})}
 
 								<div className="col-12 text-center">
-									<button className="themeBtn bg-white py-2 px-3 border-0 f18 mt-2 mt-md-3">
-										Request demo <IoIosArrowForward />
-									</button>
+									<NavLink to="/contact">
+										<button className="themeBtn bg-white py-2 px-3 border-0 f18 fw-bold gotham mt-2 mt-md-3">
+											Contact sales <IoIosArrowForward />
+										</button>
+									</NavLink>
 								</div>
 							</div>
 						</div>

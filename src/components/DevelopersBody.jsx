@@ -1,35 +1,74 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const DevelopersBody = () => {
 	const data = [
 		{
 			t: "Create a demo account",
 			d: "Test run our solution in minutes.",
-			b: ["Get demo"],
+			b: [
+				{
+					t: "Get demo",
+					el: "https://airtable.com/shrL21Fd1xLND39mK",
+				},
+			],
 		},
 		{
 			t: "App to App callback protocol",
 			d: "How our app to app callback works within your existing framework.",
-			b: ["Download demo app"],
+			b: [
+				{
+					t: "Download demo app",
+					l: "/callback",
+				},
+			],
 		},
 		{
 			t: "Merchant dashboard APIs",
 			d: "API documentation to build your own merchant dashboard.",
-			b: ["Start building"],
+			b: [
+				{
+					t: "Start building",
+					el: "http://back.demo.paymob.ru/swagger-ui.html",
+				},
+			],
 		},
 		{
 			t: "Paymob SDK",
 			d: "Learn how to integrate our SDK to leverage your own financial services.",
-			b: ["Learn more"],
+			b: [
+				{
+					t: "Learn more",
+					l: "/androidSdk",
+				},
+			],
 		},
 		{
 			t: "In-house deployment",
-			b: ["Learn more", "Request brochure"],
+			b: [
+				{
+					t: "Learn more",
+					l: "/inHouseDeployement",
+				},
+				{
+					t: "Request brochure",
+					el: "",
+				},
+			],
 		},
 		{
 			t: "In-house deployment",
-			b: ["Learn more", "Request brochure"],
+			b: [
+				{
+					t: "Learn more",
+					l: "/inHouseDeployement",
+				},
+				{
+					t: "Request brochure",
+					el: "",
+				},
+			],
 		},
 	];
 
@@ -66,23 +105,36 @@ const DevelopersBody = () => {
 														</p>
 														<div className="d-flex flex-column align-items-start">
 															{prev.b.map((prev2, ind2) => {
+																console.log(prev2);
 																return (
-																	<button
-																		key={ind2}
-																		className="orangeC border-0 bg-transparent fw600 gotham f16 letterSpace"
-																	>
-																		{prev2}{" "}
-																		<IoIosArrowForward className="orangeC" />
-																	</button>
+																	<>
+																		{(!prev2.el && (
+																			<Link exact to={prev2.l}>
+																				<button className="orangeC border-0 bg-transparent fw600 gotham f16 letterSpace">
+																					{prev2.t}
+																					<IoIosArrowForward className="orangeC" />
+																				</button>
+																			</Link>
+																		)) || (
+																			<a target="blank" href={prev2.el}>
+																				<button className="orangeC border-0 bg-transparent fw600 gotham f16 letterSpace">
+																					{prev2.t}
+																					<IoIosArrowForward className="orangeC" />
+																				</button>
+																			</a>
+																		)}
+																	</>
 																);
 															})}
 														</div>
 													</div>
 												)) || (
 													<div className="d-flex flex-column align-items-center align-items-md-start justify-content-end mt-2 mt-sm-0 h-100">
-														<button className="themeBtn bg-white gotham fw-bold py-2 px-3 border-0 f16">
-															Contact us <IoIosArrowForward />
-														</button>
+														<Link to="/contact">
+															<button className="themeBtn bg-white gotham fw-bold py-2 px-3 border-0 f16">
+																Contact us <IoIosArrowForward />
+															</button>
+														</Link>
 													</div>
 												)}
 											</div>

@@ -80,9 +80,9 @@ const WhyMob = () => {
 								{data.map((prev, i) => {
 									const { t, d } = prev;
 									return (
-										<div key={i} className="mobCard col-6 mt-5">
+										<div key={i} className="mobCard col-6 mt-4">
 											{t}
-											<p className="mt-3 f14 fw-bold">{d}</p>
+											<p className="mt-3 f14 fw-bold mt-4 pt-3">{d}</p>
 										</div>
 									);
 								})}

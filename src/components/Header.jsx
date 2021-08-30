@@ -553,9 +553,14 @@ const Header = ({ ClickEvent }) => {
 									</ul>
 								</div>
 								<div className="d-none d-lg-block">
-									<button className="color1 border-0 bg-white py-2 px-4 fw800">
-										Request Demo
-									</button>
+									<a
+										target="blank"
+										href="https://airtable.com/shrL21Fd1xLND39mK"
+									>
+										<button className="color1 border-0 bg-white py-2 px-4 fw800">
+											Request Demo
+										</button>
+									</a>
 								</div>
 							</div>
 						</div>
