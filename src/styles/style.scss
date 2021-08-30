@@ -1947,6 +1947,15 @@ input:focus {
 	.inHouse_table .bankHost_img {
 		margin: 4rem 0rem;
 	}
+	.loading_page {
+		.inner_loading {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			transition: 0.5s;
+		}
+	}
 }
 
 @media screen and (max-width: 575px) {
