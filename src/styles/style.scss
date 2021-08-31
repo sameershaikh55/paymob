@@ -268,10 +268,14 @@ ul {
 
 .loading_page {
 	position: fixed;
+	left: 0%;
+	top: 0%;
+	bottom: 0%;
+	right: 0%;
 	height: 100vh;
 	background: $color1;
-	width: 100%;
-	z-index: 9999999;
+	width: 100vw;
+	z-index: 9999999999999;
 	transition: 0.5s;
 
 	.inner_loading {
@@ -282,16 +286,16 @@ ul {
 		transition: 0.5s;
 
 		.load {
-			-webkit-animation: fade-in 0.5s ease-in-out infinite both;
-			animation: fade-in 0.5s ease-in-out infinite both;
+			-webkit-animation: fade-in 0.8s ease-in-out infinite both;
+			animation: fade-in 0.8s ease-in-out infinite both;
 		}
 
 		img {
 			transition: 0.5s;
 			width: 250px;
 			height: auto;
-			-webkit-animation: fade-in 0.8s ease-in-out infinite both;
-			animation: fade-in 0.8s ease-in-out infinite both;
+			-webkit-animation: fade-in 1s ease-in-out infinite both;
+			animation: fade-in 1s ease-in-out infinite both;
 		}
 	}
 }
@@ -358,7 +362,7 @@ input:focus {
 	align-items: center;
 	width: 100%;
 	transition: 0.8s;
-	z-index: 10;
+	z-index: 100000;
 
 	ul li a {
 		font-weight: normal;
@@ -461,67 +465,29 @@ input:focus {
 	right: 0%;
 	left: 0%;
 	bottom: 0%;
-	color: white;
 	font-size: 2.2rem;
 	background-color: #fff;
 	height: 100vh;
 	z-index: 11111;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
 	overflow-y: hidden;
 	overflow-x: hidden;
 	transition: 0.5s;
+	padding-top: 8rem;
 
-	.logo {
-		position: absolute;
-		top: 3%;
-		left: 3%;
+	.innerSidebar {
+		max-height: 90%;
+		overflow-y: auto;
+	}
 
-		img {
-			width: 120px;
-		}
+	.MuiAccordion-root {
+		box-shadow: none;
+	}
+	.MuiAccordion-root.Mui-expanded {
+		margin: 0px;
 	}
 }
 
-.SideBarContainer ul {
-	padding-left: 0rem;
-}
-
-.SideBarContainer ul li {
-	position: relative;
-	list-style: none;
-	margin-bottom: 2rem;
-	cursor: pointer;
-	padding: 0.4rem 0rem;
-	text-align: center;
-
-	a {
-		color: #fff;
-		text-decoration: none;
-		position: relative;
-		padding-bottom: 5px;
-	}
-	.activeNav::after {
-		content: "";
-		position: absolute;
-		left: 0%;
-		bottom: 0%;
-		height: 10%;
-		width: 100%;
-		background-color: #007bbc;
-		border-radius: 5px;
-	}
-}
-
-.CrossBTn {
-	position: absolute;
-	top: 5%;
-	right: 4%;
-	cursor: pointer;
-	color: #000;
-}
 /* ==================== SideBAR STYLING END ======================== */
 
 // HERO START
@@ -1955,6 +1921,9 @@ input:focus {
 			transform: translate(-50%, -50%);
 			transition: 0.5s;
 		}
+	}
+	.loading_page .inner_loading img {
+		width: 190px;
 	}
 }
 

@@ -257,10 +257,14 @@ ul {
 
 .loading_page {
   position: fixed;
+  left: 0%;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
   height: 100vh;
   background: #08243b;
-  width: 100%;
-  z-index: 9999999;
+  width: 100vw;
+  z-index: 9999999999999;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -276,8 +280,8 @@ ul {
 }
 
 .loading_page .inner_loading .load {
-  -webkit-animation: fade-in 0.5s ease-in-out infinite both;
-  animation: fade-in 0.5s ease-in-out infinite both;
+  -webkit-animation: fade-in 0.8s ease-in-out infinite both;
+  animation: fade-in 0.8s ease-in-out infinite both;
 }
 
 .loading_page .inner_loading img {
@@ -285,8 +289,8 @@ ul {
   transition: 0.5s;
   width: 250px;
   height: auto;
-  -webkit-animation: fade-in 0.8s ease-in-out infinite both;
-  animation: fade-in 0.8s ease-in-out infinite both;
+  -webkit-animation: fade-in 1s ease-in-out infinite both;
+  animation: fade-in 1s ease-in-out infinite both;
 }
 
 .gotham {
@@ -358,7 +362,7 @@ input:focus {
   width: 100%;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  z-index: 10;
+  z-index: 100000;
 }
 
 .header_container ul li a {
@@ -470,74 +474,30 @@ input:focus {
   right: 0%;
   left: 0%;
   bottom: 0%;
-  color: white;
   font-size: 2.2rem;
   background-color: #fff;
   height: 100vh;
   z-index: 11111;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  padding-top: 8rem;
 }
 
-.SideBarContainer .logo {
-  position: absolute;
-  top: 3%;
-  left: 3%;
+.SideBarContainer .innerSidebar {
+  max-height: 90%;
+  overflow-y: auto;
 }
 
-.SideBarContainer .logo img {
-  width: 120px;
+.SideBarContainer .MuiAccordion-root {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.SideBarContainer ul {
-  padding-left: 0rem;
-}
-
-.SideBarContainer ul li {
-  position: relative;
-  list-style: none;
-  margin-bottom: 2rem;
-  cursor: pointer;
-  padding: 0.4rem 0rem;
-  text-align: center;
-}
-
-.SideBarContainer ul li a {
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  padding-bottom: 5px;
-}
-
-.SideBarContainer ul li .activeNav::after {
-  content: "";
-  position: absolute;
-  left: 0%;
-  bottom: 0%;
-  height: 10%;
-  width: 100%;
-  background-color: #007bbc;
-  border-radius: 5px;
-}
-
-.CrossBTn {
-  position: absolute;
-  top: 5%;
-  right: 4%;
-  cursor: pointer;
-  color: #000;
+.SideBarContainer .MuiAccordion-root.Mui-expanded {
+  margin: 0px;
 }
 
 /* ==================== SideBAR STYLING END ======================== */
@@ -1827,6 +1787,18 @@ input:focus {
   }
   .inHouse_table .bankHost_img {
     margin: 4rem 0rem;
+  }
+  .loading_page .inner_loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .loading_page .inner_loading img {
+    width: 190px;
   }
 }
 

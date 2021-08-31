@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
@@ -434,7 +435,7 @@ const Pricing = () => {
 	);
 };
 
-const Header = ({ ClickEvent }) => {
+const Header = ({ ClickEvent, isOpen }) => {
 	useEffect(() => {
 		// FOR NAVBAR SCROLLING EFFECT START
 		window.addEventListener("scroll", function () {
@@ -510,9 +511,16 @@ const Header = ({ ClickEvent }) => {
 									</NavLink>
 								</div>
 								{/* HAMBERGER START */}
-								<div className="d-block d-lg-none pointer">
-									<GiHamburgerMenu onClick={ClickEvent} fontSize="1.8rem" />
-								</div>
+								{(!isOpen && (
+									<div className="d-block d-lg-none pointer">
+										<GiHamburgerMenu onClick={ClickEvent} fontSize="1.8rem" />
+									</div>
+								)) || (
+									<FaTimes
+										onClick={ClickEvent}
+										fontSize="2.2rem"
+									/>
+								)}
 								{/* HAMBERGER END */}
 								<div className="d-none d-lg-block">
 									<ul className="d-flex list-unstyled mb-0">

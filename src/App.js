@@ -57,7 +57,7 @@ function App() {
 			<div className="loading_page">
 				<div className="inner_loading d-flex flex-column align-items-center">
 					<img src={logoW} alt="" />
-					<HashLoader className="load" size={40} color="#fff" />
+					{/* <HashLoader className="load mt-3" size={40} color="#fff" /> */}
 				</div>
 			</div>
 

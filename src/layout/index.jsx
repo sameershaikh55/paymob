@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
 
 	return (
 		<>
-			<Header ClickEvent={OnClick} />
+			<Header ClickEvent={OnClick} isOpen={isOpen} />
 			<Sidebar ClickEvent={OnClick} isOpen={isOpen} />
 			{children}
 			<Footer />
