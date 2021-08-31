@@ -4,9 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Route, Switch } from "react-router-dom";
 
-// IMPORTING LOADER
-import HashLoader from "react-spinners/HashLoader";
-
 // IMPORTING PAGES
 import Home from "./pages/Home.jsx";
 import ProductOverview from "./pages/ProductOverview";
