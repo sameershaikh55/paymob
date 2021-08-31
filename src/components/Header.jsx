@@ -415,7 +415,7 @@ const Pricing = () => {
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
-									to="/"
+									to="/pricing"
 									className="color1 text-decoration-none color1 fw600"
 								>
 									Basic fee setup <IoIosArrowForward />
@@ -515,12 +515,7 @@ const Header = ({ ClickEvent, isOpen }) => {
 									<div className="d-block d-lg-none pointer">
 										<GiHamburgerMenu onClick={ClickEvent} fontSize="1.8rem" />
 									</div>
-								)) || (
-									<FaTimes
-										onClick={ClickEvent}
-										fontSize="2.2rem"
-									/>
-								)}
+								)) || <FaTimes onClick={ClickEvent} fontSize="2.2rem" />}
 								{/* HAMBERGER END */}
 								<div className="d-none d-lg-block">
 									<ul className="d-flex list-unstyled mb-0">

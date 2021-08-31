@@ -2,6 +2,7 @@ import React from "react";
 
 // IMPORTS
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 import hero from "../assets/gifs/Globe.gif";
 
 const ProductHero = () => {
@@ -24,9 +25,11 @@ const ProductHero = () => {
 										So you can focus on growing your business, while Paymob take
 										care of the backend and onboarding.
 									</p>
-									<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
-										Contact sales <IoIosArrowForward />
-									</button>
+									<Link to="/contact">
+										<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
+											Contact sales <IoIosArrowForward />
+										</button>
+									</Link>
 								</div>
 								<div className="col-10 col-md-6 mx-auto mt-4 mt-md-0 px-2 px-lg-0">
 									<img className="w-100" src={hero} alt="hero" />

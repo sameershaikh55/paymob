@@ -9,11 +9,16 @@ import i4 from "../assets/hiworks/i4.svg";
 
 const HowitWorks = ({ callback }) => {
 	var settings = {
+		dots: false,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 4,
+		slidesToScroll: 1,
 		responsive: [
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 2,
 					slidesToScroll: 1,
 					infinite: true,
 				},
@@ -22,7 +27,6 @@ const HowitWorks = ({ callback }) => {
 				breakpoint: 575,
 				settings: {
 					slidesToShow: 1,
-					centerPadding: 12,
 					slidesToScroll: 1,
 					infinite: true,
 				},

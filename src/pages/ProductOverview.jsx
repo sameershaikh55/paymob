@@ -14,6 +14,7 @@ import PartnerPaymob from "../components/PartnerPaymob";
 import NewFeature from "../components/NewFeature";
 import { IoIosArrowForward } from "react-icons/io";
 import ExploreAvail from "../components/ExploreAvail";
+import { Link } from "react-router-dom";
 
 const ProductOverview = () => {
 	return (
@@ -42,9 +43,11 @@ const ProductOverview = () => {
 								<h6 className="text-white f14 lh39 fw-light gotham mt-3 mb-4 mt-md-0 mb-md-0">
 									Alpesh Patel, Co Founder of ZmBIZI
 								</h6>
-								<button className="gotham f14 border-0 bg-transparent orangeC fw600">
-									Case study <IoIosArrowForward />
-								</button>
+								<Link to="/caseStudies">
+									<button className="gotham f14 border-0 bg-transparent orangeC fw600">
+										Case study <IoIosArrowForward />
+									</button>
+								</Link>
 							</div>
 						</div>
 					</div>

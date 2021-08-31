@@ -29,9 +29,11 @@ const OnBoarding = () => {
 												merchant custmers from day one.
 											</p>
 										</div>
-										<button className="themeBtn bg-white orangeC py-2 px-3 border-0 f18">
-											Find out more <IoIosArrowForward />
-										</button>
+										<a href="https://airtable.com/shrL21Fd1xLND39mK">
+											<button className="themeBtn bg-white gotham orangeC py-2 px-3 border-0 f18">
+												Find out more <IoIosArrowForward />
+											</button>
+										</a>
 									</div>
 								</div>
 								<div className="col-md-6 mt-5 mt-md-0">

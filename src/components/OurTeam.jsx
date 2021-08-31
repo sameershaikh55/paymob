@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 // IMPORTS
 import t1 from "../assets/ourTeam/t1.svg";
@@ -55,9 +56,11 @@ const OurTeam = () => {
 							</div>
 
 							<div className="col-12 text-end mt-4 mt-md-5">
-								<button className="themeBtn bg-white gotham fw-bold py-2 px-3 border-0 f16">
-									Meet the team <IoIosArrowForward />
-								</button>
+								<Link to="/team">
+									<button className="themeBtn bg-white gotham fw-bold py-2 px-3 border-0 f16">
+										Meet the team <IoIosArrowForward />
+									</button>
+								</Link>
 							</div>
 						</div>
 					</div>

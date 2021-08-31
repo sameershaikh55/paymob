@@ -38,7 +38,7 @@ const ContactBody = () => {
 														For general queries contact{" "}
 														<a
 															className="color1 text-decoration-none"
-															href="welcome@paymobtech.com"
+															href="mailto:welcome@paymobtech.com"
 														>
 															welcome@paymobtech.com
 														</a>
@@ -52,18 +52,29 @@ const ContactBody = () => {
 														/>{" "}
 													</div>
 													<div>
-														For media enquiries contact pr@paymobpos.com
+														For media enquiries contact{" "}
+														<a
+															className="text-decoration-none color1 letterSpace f18 gotham"
+															href="mailto:pr@paymobpos.com"
+														>
+															pr@paymobpos.com
+														</a>
 													</div>
 												</li>
-												<li className=" color1 letterSpace f18 gotham lh27 d-flex">
-													<div>
-														<FiPhone
-															className="orangeC me-3"
-															fontSize="1.5rem"
-														/>{" "}
-														+44
-													</div>
-													<div>7751 471779</div>
+												<li className="">
+													<a
+														href="tel:+447751 471779"
+														className="d-flex text-decoration-none color1 letterSpace f18 gotham lh27"
+													>
+														<div>
+															<FiPhone
+																className="orangeC me-3"
+																fontSize="1.5rem"
+															/>{" "}
+															+44
+														</div>
+														<div>7751 471779</div>
+													</a>
 												</li>
 											</ul>
 										</div>

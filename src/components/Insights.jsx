@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import blog from "../assets/home/blog.svg";
 
@@ -23,6 +24,7 @@ const Insights = () => {
 					How an in-app payments SDK can <br /> transform your business
 				</h2>
 			),
+			l: "/blogInside",
 		},
 		{
 			i: blog,
@@ -32,6 +34,7 @@ const Insights = () => {
 					5 Benefits of Accepting Contactless <br /> Payments
 				</h2>
 			),
+			l: "/blogInside",
 		},
 	];
 
@@ -53,7 +56,7 @@ const Insights = () => {
 							<div className="d-block d-md-none sliderContainer px-3">
 								<Slider {...settings}>
 									{data.map((prev, ind) => {
-										const { i, p, t } = prev;
+										const { i, p, t, l } = prev;
 										return (
 											<div
 												className="col-11 col-md-6 mx-auto mt-5 px-2"
@@ -63,9 +66,11 @@ const Insights = () => {
 												<div className="ps-3 mt-2">
 													<p className="f14 crice mb-0 mb-md-2">{p}</p>
 													{t}
-													<button className="f14 border-0 bg-transparent orangeC fw600">
-														Keep reading <IoIosArrowForward />
-													</button>
+													<Link to={l}>
+														<button className="f14 border-0 bg-transparent orangeC fw600">
+															Keep reading <IoIosArrowForward />
+														</button>
+													</Link>
 												</div>
 											</div>
 										);
@@ -76,16 +81,18 @@ const Insights = () => {
 							<div className="d-none d-md-block">
 								<div className="row">
 									{data.map((prev, ind) => {
-										const { i, p, t } = prev;
+										const { i, p, t, l } = prev;
 										return (
 											<div className="col-11 col-md-6 mx-auto mt-5" key={ind}>
 												<img src={i} alt="" />
 												<div className="ps-3 mt-2">
 													<p className="f14 crice mb-0 mb-md-2">{p}</p>
 													{t}
-													<button className="f14 border-0 bg-transparent orangeC fw600">
-														Keep reading <IoIosArrowForward />
-													</button>
+													<Link to={l}>
+														<button className="f14 border-0 bg-transparent orangeC fw600">
+															Keep reading <IoIosArrowForward />
+														</button>
+													</Link>
 												</div>
 											</div>
 										);

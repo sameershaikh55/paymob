@@ -3,6 +3,7 @@ import p1 from "../assets/products/p1.svg";
 import p2 from "../assets/products/p2.svg";
 import { IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 const Products = () => {
 	var settings = {
@@ -19,11 +20,13 @@ const Products = () => {
 			t: "Android mobile SDK",
 			i: p1,
 			d: "Initiate contactless card payments from within your app.",
+			l: "/androidSdk",
 		},
 		{
 			t: "White label SoftPOS app",
 			i: p2,
 			d: "Offer your own SoftPOS financial services.",
+			l: "/softPos",
 		},
 	];
 	return (
@@ -74,9 +77,11 @@ const Products = () => {
 														{prev.d}
 													</p>
 													<div className="text-start">
-														<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
-															Learn more <IoIosArrowForward />
-														</button>
+														<Link to={prev.l}>
+															<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
+																Learn more <IoIosArrowForward />
+															</button>
+														</Link>
 													</div>
 												</div>
 											</div>
@@ -106,9 +111,11 @@ const Products = () => {
 														{prev.d}
 													</p>
 													<div className="text-start">
-														<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
-															Learn more <IoIosArrowForward />
-														</button>
+														<Link to={prev.l}>
+															<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
+																Learn more <IoIosArrowForward />
+															</button>
+														</Link>
 													</div>
 												</div>
 											</div>

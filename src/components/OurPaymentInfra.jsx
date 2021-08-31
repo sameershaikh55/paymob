@@ -1,35 +1,84 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const OurPaymentInfra = ({ md, adminP, pg }) => {
 	var data;
 	if (md) {
 		data = [
-			"Digital merchant onboarding",
-			"Payment gateway",
-			"Admin portal",
-			"Certifications",
+			{
+				t: "Digital merchant onboarding",
+				l: "/merchantOnboarding",
+			},
+			{
+				t: "Payment gateway",
+				l: "/paymentGatway",
+			},
+			{
+				t: "Admin portal",
+				l: "/adminPortal",
+			},
+			{
+				t: "Certifications",
+				l: "/certifications",
+			},
 		];
 	} else if (adminP) {
 		data = [
-			"Merchant dashboard",
-			"Payment gateway",
-			"Digital merchant onboarding",
-			"Certifications",
+			{
+				t: "Merchant dashboard",
+				l: "/merchantDashboard",
+			},
+			{
+				t: "Payment gateway",
+				l: "/paymentGatway",
+			},
+			{
+				t: "Digital merchant onboarding",
+				l: "/merchantOnboarding",
+			},
+			{
+				t: "Certifications",
+				l: "/certifications",
+			},
 		];
 	} else if (pg) {
 		data = [
-			"Merchant dashboard",
-			"Admin portal",
-			"Digital merchant onboarding",
-			"Certifications",
+			{
+				t: "Merchant dashboard",
+				l: "/merchantDashboard",
+			},
+			{
+				t: "Admin portal",
+				l: "/adminPortal",
+			},
+			{
+				t: "Digital merchant onboarding",
+				l: "/merchantOnboarding",
+			},
+			{
+				t: "Certifications",
+				l: "/certifications",
+			},
 		];
 	} else {
 		data = [
-			"Merchant dashboard",
-			"Payment gateway",
-			"Admin portal",
-			"Certifications",
+			{
+				t: "Merchant dashboard",
+				l: "/merchantDashboard",
+			},
+			{
+				t: "Payment gateway",
+				l: "/paymentGatway",
+			},
+			{
+				t: "Admin portal",
+				l: "/adminPortal",
+			},
+			{
+				t: "Certifications",
+				l: "/certifications",
+			},
 		];
 	}
 
@@ -52,11 +101,13 @@ const OurPaymentInfra = ({ md, adminP, pg }) => {
 												<div key={i} className="col-6 mt-4">
 													<div className="cards_inner ps-2">
 														<h5 className="gotham f20 color1 fw700 color7">
-															{prev}
+															{prev.t}
 														</h5>
-														<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
-															Learn more <IoIosArrowForward />
-														</button>
+														<Link to={prev.l}>
+															<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
+																Learn more <IoIosArrowForward />
+															</button>
+														</Link>
 													</div>
 												</div>
 											);

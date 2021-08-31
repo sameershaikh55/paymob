@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 import hero from "../assets/gifs/Header 'Tap to Phone' GIF.gif";
 
 const Hero = () => {
@@ -20,9 +21,11 @@ const Hero = () => {
 										Leverage Paymobs Tap to Phone solution to offer your own
 										cutting edge financial services.
 									</p>
-									<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
-										Contact sales <IoIosArrowForward />
-									</button>
+									<Link to="/contact">
+										<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
+											Contact sales <IoIosArrowForward />
+										</button>
+									</Link>
 								</div>
 								<div className="col-12 col-md-6 mt-5 mt-md-0 mb-4 mb-md-0">
 									<div className="row">

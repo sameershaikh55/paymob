@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Add from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const FAQBody = () => {
 	const data = [
@@ -83,9 +84,11 @@ const FAQBody = () => {
 									<p className="color2 letterSpace lh27 f16 crice fw-bold mb-0">
 										Still need help?
 									</p>
-									<button className="themeBtn bg-white ms-3 color1 py-2 px-3 border-0 f18 fw-bold gotham f16">
-										Contact us <IoIosArrowForward />
-									</button>
+									<Link to="/contact">
+										<button className="themeBtn bg-white ms-3 color1 py-2 px-3 border-0 f18 fw-bold gotham f16">
+											Contact us <IoIosArrowForward />
+										</button>
+									</Link>
 								</div>
 							</div>
 						</div>

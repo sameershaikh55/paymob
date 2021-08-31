@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 import hero from "../assets/systemComp/s2.svg";
 
 const MoHero = () => {
@@ -17,12 +18,16 @@ const MoHero = () => {
 										flow, Paymob take care of the end-to-end onboarding process
 										so you can focus on your own financial offering.
 									</p>
-									<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
-										Get started now
-									</button>
-									<button className="ms-3 py-2 px-3 border-0 f18 mt-2 mt-md-4">
-										Contact sales <IoIosArrowForward />
-									</button>
+									<a href="https://airtable.com/shrL21Fd1xLND39mK">
+										<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
+											Get started now
+										</button>
+									</a>
+									<Link to="/contact">
+										<button className="ms-3 py-2 px-3 border-0 f18 mt-2 mt-md-4">
+											Contact sales <IoIosArrowForward />
+										</button>
+									</Link>
 								</div>
 								<div className="col-12 col-md-6 mt-5 mt-md-0 mb-4 mb-md-0">
 									<div className="row">

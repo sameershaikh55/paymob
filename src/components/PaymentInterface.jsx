@@ -8,6 +8,7 @@ import i2 from "../assets/productInterface/i2.svg";
 import i3 from "../assets/productInterface/i3.svg";
 import { IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 const PaymentInterface = () => {
 	var settings = {
@@ -40,11 +41,11 @@ const PaymentInterface = () => {
 	};
 
 	const data = [
-		{ i: p1, t: "Mobile SDK" },
-		{ i: p2, t: "SoftPOS app" },
-		{ i: i1, t: "mPOS card reader" },
-		{ i: i2, t: "Mini POS Terminal" },
-		{ i: i3, t: "Smart POS Terminal" },
+		{ i: p1, t: "Mobile SDK", l: "/androidSdk" },
+		{ i: p2, t: "SoftPOS app", l: "/softPos" },
+		{ i: i1, t: "mPOS card reader", l: "/mposCard" },
+		{ i: i2, t: "Mini POS Terminal", l: "/miniPos" },
+		{ i: i3, t: "Smart POS Terminal", l: "/smartPos" },
 	];
 
 	return (
@@ -86,9 +87,11 @@ const PaymentInterface = () => {
 												<h5 className="color1 f20 gotham fw600 mt-2">
 													{prev.t}
 												</h5>
-												<button className="gotham f14 border-0 bg-transparent orangeC fw600">
-													Learn more <IoIosArrowForward />
-												</button>
+												<Link to={prev.l}>
+													<button className="gotham f14 border-0 bg-transparent orangeC fw600">
+														Learn more <IoIosArrowForward />
+													</button>
+												</Link>
 											</div>
 										);
 									})}
@@ -104,9 +107,11 @@ const PaymentInterface = () => {
 												<h5 className="color1 f20 gotham fw600 mt-2">
 													{prev.t}
 												</h5>
-												<button className="f14 border-0 bg-transparent orangeC fw600">
-													Learn more <IoIosArrowForward />
-												</button>
+												<Link to={prev.l}>
+													<button className="f14 border-0 bg-transparent orangeC fw600">
+														Learn more <IoIosArrowForward />
+													</button>
+												</Link>
 											</div>
 										);
 									})}

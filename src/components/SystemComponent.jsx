@@ -7,6 +7,7 @@ import s4 from "../assets/systemComp/s4.svg";
 import s5 from "../assets/systemComp/s5.svg";
 import { IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 const SystemComponent = () => {
 	var settings = {
@@ -31,11 +32,11 @@ const SystemComponent = () => {
 	};
 
 	const data = [
-		{ i: s1, t: "Merchant dashboard" },
-		{ i: s2, t: "Digital merchant onboarding" },
-		{ i: s3, t: "Accreditation & Certification" },
-		{ i: s4, t: "Admin Portal" },
-		{ i: s5, t: "Payment gateway" },
+		{ i: s1, t: "Merchant dashboard", l: "/merchantDashboard" },
+		{ i: s2, t: "Digital merchant onboarding", l: "/merchantOnboarding" },
+		{ i: s3, t: "Accreditation & Certification", l: "/certifications" },
+		{ i: s4, t: "Admin Portal", l: "/adminPortal" },
+		{ i: s5, t: "Payment gateway", l: "/paymentGatway" },
 	];
 	return (
 		<div className="System_component_container">
@@ -82,9 +83,11 @@ const SystemComponent = () => {
 												<h5 className="color1 f20 gotham fw600 mt-2">
 													{prev.t}
 												</h5>
-												<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
-													Learn more <IoIosArrowForward />
-												</button>
+												<Link to={prev.l}>
+													<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
+														Learn more <IoIosArrowForward />
+													</button>
+												</Link>
 											</div>
 										);
 									})}
@@ -100,9 +103,11 @@ const SystemComponent = () => {
 												<h5 className="color1 f20 gotham fw600 mt-2">
 													{prev.t}
 												</h5>
-												<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
-													Learn more <IoIosArrowForward />
-												</button>
+												<Link to={prev.l}>
+													<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
+														Learn more <IoIosArrowForward />
+													</button>
+												</Link>
 											</div>
 										);
 									})}
