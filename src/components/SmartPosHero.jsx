@@ -1,5 +1,6 @@
 import React from "react";
-import hero from "../assets/smartPos/hero.svg";
+import hero from "../assets/smartPos/hero.png";
+import Smart from "../assets/brouchers/Smart POS Terminal.pdf";
 
 const SmartPosHero = () => {
 	return (
@@ -21,14 +22,16 @@ const SmartPosHero = () => {
 										as Bluetooth support. A90 is equipped with magnetic stripe
 										card readers, smart cards, and a contactless reader.
 									</p>
-									<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
-										Download data sheet
-									</button>
+									<a href={Smart} download>
+										<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
+											Download data sheet
+										</button>
+									</a>
 								</div>
 								<div className="col-12 col-md-6 mt-5 mt-md-0 mb-4 mb-md-0">
 									<div className="row">
-										<div className="col-11 col-sm-8 col-md-12 mx-auto">
-											<img src={hero} alt="" />
+										<div className="col-11 col-sm-8 col-md-6 mx-auto">
+											<img className="w-100" src={hero} alt="" />
 										</div>
 									</div>
 								</div>

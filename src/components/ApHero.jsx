@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../assets/adminPortal/hero.svg";
+import hero from "../assets/adminPortal/hero.png";
 
 const ApHero = () => {
 	return (
@@ -19,7 +19,7 @@ const ApHero = () => {
 									</p>
 								</div>
 								<div className="col-11 col-sm-10 col-md-6 col-lg-7 mt-4 mt-md-0 mb-4 mb-md-0">
-									<img src={hero} alt="" />
+									<img className="w-100" src={hero} alt="" />
 								</div>
 							</div>
 						</div>

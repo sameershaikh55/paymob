@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
-import hero from "../assets/systemComp/s2.svg";
+import hero from "../assets/MOnboarding/Merchant onboarding.svg";
 
 const MoHero = () => {
 	return (
@@ -18,7 +18,7 @@ const MoHero = () => {
 										flow, Paymob take care of the end-to-end onboarding process
 										so you can focus on your own financial offering.
 									</p>
-									<a href="https://airtable.com/shrL21Fd1xLND39mK">
+									<a target="blank" href="https://airtable.com/shrL21Fd1xLND39mK">
 										<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
 											Get started now
 										</button>

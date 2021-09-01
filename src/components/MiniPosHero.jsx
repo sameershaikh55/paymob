@@ -1,5 +1,6 @@
 import React from "react";
-import hero from "../assets/miniPos/hero.svg";
+import hero from "../assets/miniPos/hero.png";
+import Mini from "../assets/brouchers/Mini POS Terminal.pdf";
 
 const MiniPosHero = () => {
 	return (
@@ -17,9 +18,11 @@ const MiniPosHero = () => {
 										touching screen Quad-core high perfromance secure CPU
 										Quicker code scanning for 1D/2D QR code.
 									</p>
-									<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
-										Download data sheet
-									</button>
+									<a href={Mini} download>
+										<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
+											Download data sheet
+										</button>
+									</a>
 								</div>
 								<div className="col-8 col-md-6 mt-3 mt-md-0 mb-4 mb-md-0 mx-auto">
 									<div className="row">

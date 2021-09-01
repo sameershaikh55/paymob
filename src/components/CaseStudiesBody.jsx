@@ -1,8 +1,8 @@
 import React from "react";
 import check from "../assets/check.svg";
-import i1 from "../assets/mPosSolutions/hero.svg";
-import i2 from "../assets/miniPos/hero.svg";
-import i3 from "../assets/smartPos/hero.svg";
+import i1 from "../assets/mPosSolutions/hero.png";
+import i2 from "../assets/miniPos/hero.png";
+import i3 from "../assets/smartPos/hero.png";
 import { IoIosArrowForward } from "react-icons/io";
 
 const CaseStudiesBody = () => {
@@ -34,7 +34,12 @@ const CaseStudiesBody = () => {
 											return (
 												<div key={ind} className="col-6 mx-auto text-center">
 													<img
-														style={{ width: (ind === 1 && "50%") || "100%" }}
+														style={{
+															width:
+																(ind === 1 && "50%") ||
+																(ind === 2 && "55%") ||
+																"100%",
+														}}
 														src={prev.i}
 														alt=""
 													/>

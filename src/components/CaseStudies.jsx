@@ -44,7 +44,7 @@ const CaseStudies = () => {
 									</ul>
 								</div>
 								<div className="col-12 col-sm-10 col-lg-8 mt-4 mt-lg-5 rightSide text-center mx-auto">
-									<img src={caseStudy} alt="caseStudy" />
+									<img className="w-100" src={caseStudy} alt="caseStudy" />
 								</div>
 							</div>
 						</div>

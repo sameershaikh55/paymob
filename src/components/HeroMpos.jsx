@@ -1,5 +1,6 @@
 import React from "react";
-import hero from "../assets/mPosSolutions/hero.svg";
+import hero from "../assets/mPosSolutions/hero.png";
+import mPOS from "../assets/brouchers/mPOS Card Reader.pdf";
 
 const HeroMpos = () => {
 	return (
@@ -18,9 +19,11 @@ const HeroMpos = () => {
 										via bluetooth being converted into a mobile payment
 										solution.
 									</p>
-									<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
-										Download data sheet
-									</button>
+									<a href={mPOS} download>
+										<button className="py-2 px-3 border-0 f18 mt-2 mt-md-4">
+											Download data sheet
+										</button>
+									</a>
 								</div>
 								<div className="col-8 col-md-6 mt-3 mt-md-0 mb-4 mb-md-0 mx-auto">
 									<div className="row">

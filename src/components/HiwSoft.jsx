@@ -1,47 +1,48 @@
 import React from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 // IMPORTS
-import i1 from "../assets/hiworks/i1.svg";
+// import i1 from "../assets/hiworks/i1.svg";
 // import i2 from "../assets/hiworks/i2.svg";
-import i3 from "../assets/hiworks/i3.svg";
+// import i3 from "../assets/hiworks/i3.svg";
 // import centerPhone from "../assets/softpos/centerPhone.svg";
+import soft from "../assets/softpos/SoftPOS.svg";
 
 const HiwSoft = () => {
-	var settings = {
-		centerMode: true,
-		dots: false,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		initialSlide: 0,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-				},
-			},
-			{
-				breakpoint: 575,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				},
-			},
-		],
-	};
+	// var settings = {
+	// 	centerMode: true,
+	// 	dots: false,
+	// 	infinite: true,
+	// 	speed: 500,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	initialSlide: 0,
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 768,
+	// 			settings: {
+	// 				slidesToShow: 2,
+	// 				slidesToScroll: 1,
+	// 			},
+	// 		},
+	// 		{
+	// 			breakpoint: 575,
+	// 			settings: {
+	// 				slidesToShow: 1,
+	// 				slidesToScroll: 1,
+	// 			},
+	// 		},
+	// 	],
+	// };
 
-	const data = [
-		{ i: i1, t: "Enable contactless payments" },
-		{ i: i1, t: "No extra hardware, plugins or dongles" },
-		{
-			i: i3,
-			t: "Payment successful, funds are deposited into the merchants bank",
-		},
-	];
+	// const data = [
+	// 	{ i: i1, t: "Enable contactless payments" },
+	// 	{ i: i1, t: "No extra hardware, plugins or dongles" },
+	// 	{
+	// 		i: i3,
+	// 		t: "Payment successful, funds are deposited into the merchants bank",
+	// 	},
+	// ];
 
 	return (
 		<div className="howitWorks_container">
@@ -57,7 +58,11 @@ const HiwSoft = () => {
 									</h1>
 								</div>
 
-								<div className="d-block d-lg-none sliderContainer px-3">
+								<div className="mt-3">
+									<img className="w-100" src={soft} alt="" />
+								</div>
+
+								{/* <div className="d-block d-lg-none sliderContainer px-3">
 									<Slider {...settings}>
 										{data.map((prev, i) => {
 											return (
@@ -70,9 +75,9 @@ const HiwSoft = () => {
 											);
 										})}
 									</Slider>
-								</div>
+								</div> */}
 
-								<div className="d-none d-lg-flex justify-content-center mt-5">
+								{/* <div className="d-none d-lg-flex justify-content-center mt-5">
 									{data.map((pre, i) => {
 										return (
 											<div
@@ -86,7 +91,7 @@ const HiwSoft = () => {
 											</div>
 										);
 									})}
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>

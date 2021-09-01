@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import Press from "../assets/pressPack/Press pack.zip";
 
 const PressHero = () => {
 	return (
@@ -13,9 +14,11 @@ const PressHero = () => {
 							<p className="my-4 color2 crice f16 lh27 letterSpace fw600">
 								For media enquiries, please contact pr@paymobtech.com
 							</p>
-							<button className="themeBtn color1 bg-white fw-bold gotham py-2 px-3 border-0 f18">
-								Download our press kit
-							</button>
+							<a href={Press} download>
+								<button className="themeBtn color1 bg-white fw-bold gotham py-2 px-3 border-0 f18">
+									Download our press kit
+								</button>
+							</a>
 							<div>
 								<p className="color2 fw600 mt-4 crice lh27 letterSpace">
 									Follow Paymob

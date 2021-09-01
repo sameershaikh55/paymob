@@ -3,9 +3,9 @@ import React from "react";
 // IMPORTS
 import p1 from "../assets/products/p1.svg";
 import p2 from "../assets/products/p2.svg";
-import i1 from "../assets/productInterface/i1.svg";
+import i1 from "../assets/productInterface/i1.png";
 import i2 from "../assets/productInterface/i2.svg";
-import i3 from "../assets/productInterface/i3.svg";
+import i3 from "../assets/productInterface/i3.jpeg";
 import { IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
@@ -80,7 +80,9 @@ const PaymentInterface = () => {
 										return (
 											<div className="text-center mt-5 system_cardS">
 												<img
-													style={{ width: i === 3 && "66%" }}
+													style={{
+														width: (i === 3 && "66%") || (i === 4 && "65%"),
+													}}
 													src={prev.i}
 													alt=""
 												/>
@@ -103,7 +105,11 @@ const PaymentInterface = () => {
 									{data.map((prev, i) => {
 										return (
 											<div className="text-center mt-5 system_card">
-												<img src={prev.i} alt="" />
+												<img
+													style={{ width: i === 4 && "66%" }}
+													src={prev.i}
+													alt=""
+												/>
 												<h5 className="color1 f20 gotham fw600 mt-2">
 													{prev.t}
 												</h5>

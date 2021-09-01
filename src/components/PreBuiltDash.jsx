@@ -3,7 +3,7 @@ import preBuilt from "../assets/gifs/Merchant portal design GIF.gif";
 import { IoIosArrowForward } from "react-icons/io";
 
 // IMPORTS FOR ADMIN PORTAL PAGE
-import preBuiltA from "../assets/adminPortal/prebuilt.svg";
+import preBuiltA from "../assets/adminPortal/prebuilt.png";
 
 const PreBuiltDash = ({ adminP }) => {
 	return (

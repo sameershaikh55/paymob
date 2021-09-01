@@ -1,5 +1,5 @@
 import React from "react";
-import i1 from "../assets/press/i1.svg";
+import i1 from "../assets/press/i1.png";
 
 const AboutPaymob = () => {
 	return (
