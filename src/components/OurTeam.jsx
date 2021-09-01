@@ -3,10 +3,10 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 // IMPORTS
-import t1 from "../assets/ourTeam/t1.svg";
-import t2 from "../assets/ourTeam/t2.svg";
-import t3 from "../assets/ourTeam/t3.svg";
-import t4 from "../assets/ourTeam/t4.svg";
+import t1 from "../assets/ourTeam/t1.png";
+import t2 from "../assets/ourTeam/t2.png";
+import t3 from "../assets/ourTeam/t3.png";
+import t4 from "../assets/ourTeam/t4.png";
 
 const OurTeam = () => {
 	const data = [

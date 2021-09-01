@@ -2,16 +2,16 @@ import React from "react";
 
 // IMPORTS
 import { IoIosArrowForward } from "react-icons/io";
-import t1 from "../assets/ourTeam/t1.svg";
-import t2 from "../assets/ourTeam/t2.svg";
-import t3 from "../assets/ourTeam/t3.svg";
-import t4 from "../assets/ourTeam/t4.svg";
-import t5 from "../assets/ourTeam/t5.svg";
-import t6 from "../assets/ourTeam/t6.svg";
-import t7 from "../assets/ourTeam/t7.svg";
-import t8 from "../assets/ourTeam/t8.svg";
-import t9 from "../assets/ourTeam/t9.svg";
-import t10 from "../assets/ourTeam/t10.svg";
+import t1 from "../assets/ourTeam/t1.png";
+import t2 from "../assets/ourTeam/t2.png";
+import t3 from "../assets/ourTeam/t3.png";
+import t4 from "../assets/ourTeam/t4.png";
+import t5 from "../assets/ourTeam/t5.png";
+import t6 from "../assets/ourTeam/t6.png";
+import t7 from "../assets/ourTeam/t7.png";
+import t8 from "../assets/ourTeam/t8.png";
+import t9 from "../assets/ourTeam/t9.png";
+import t10 from "../assets/ourTeam/t10.png";
 
 const TeamBody = () => {
 	const data = [
