@@ -2,10 +2,10 @@ import React from "react";
 
 // IMPORTS
 import explore from "../assets/gifs/Spinning globe.gif";
-import i1 from "../assets/explorePaymob/i1.svg";
-import i2 from "../assets/explorePaymob/i2.svg";
-import i3 from "../assets/explorePaymob/i3.svg";
-import i4 from "../assets/explorePaymob/i4.svg";
+import i1 from "../assets/explorePaymob/i1.png";
+import i2 from "../assets/explorePaymob/i2.png";
+import i3 from "../assets/explorePaymob/i3.png";
+import i4 from "../assets/explorePaymob/i4.png";
 
 const ExploreAvail = () => {
 	const data = [

@@ -1,10 +1,10 @@
 import React from "react";
-import s1 from "../assets/systemComp/s1.svg";
-import s2 from "../assets/systemComp/s2.svg";
+import s1 from "../assets/systemComp/s1.png";
+import s2 from "../assets/systemComp/s2.png";
 // import s3 from "../assets/systemComp/s3.svg";
 import s3 from "../assets/systemComp/s3.png";
-import s4 from "../assets/systemComp/s4.svg";
-import s5 from "../assets/systemComp/s5.svg";
+import s4 from "../assets/systemComp/s4.png";
+import s5 from "../assets/systemComp/s5.png";
 import { IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
@@ -99,7 +99,16 @@ const SystemComponent = () => {
 									{data.map((prev, i) => {
 										return (
 											<div className="col-4 text-center mt-5 system_card">
-												<img src={prev.i} alt="" />
+												<img
+													style={{
+														width:
+															(prev.t === "Digital merchant onboarding" &&
+																"65%") ||
+															(prev.t === "Payment gateway" && "78%"),
+													}}
+													src={prev.i}
+													alt=""
+												/>
 												<h5 className="color1 f20 gotham fw600 mt-2">
 													{prev.t}
 												</h5>

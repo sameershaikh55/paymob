@@ -1,8 +1,8 @@
 import React from "react";
-import i2 from "../assets/callback/i2.svg";
-import i3 from "../assets/callback/i3.svg";
-import i5 from "../assets/callback/i5.svg";
-import i6 from "../assets/callback/i6.svg";
+import i2 from "../assets/callback/i2.png";
+import i3 from "../assets/callback/i3.png";
+import i5 from "../assets/callback/i5.png";
+import i6 from "../assets/callback/i6.png";
 
 const CallbackApp = () => {
 	return (

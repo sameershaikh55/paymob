@@ -9,8 +9,8 @@ const HeroIndustry = ({ ind }) => {
 						{(ind && (
 							<div className="col-11 col-lg-12 mx-auto">
 								<h1 className="color1 gotham fw-bold mb-0">Industry sectors</h1>
-								<div className="col-12 col-sm-10 col-md-8 col-lg-5 mx-auto mt-4">
-									<p className="Walsheim color2 lh27 fw-light">
+								<div className="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto mt-2">
+									<p className="crice color2 lh27 fw-bold">
 										Paymob provide powerful, easy-to-use, intuitive, Point of
 										Sale (POS) contactless payment systems, with multiple
 										payment options along with our contactless Tap-to-Phone

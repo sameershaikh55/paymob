@@ -1,9 +1,10 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import logoW from "../assets/logoW.svg";
-import b3 from "../assets/brands/b3.svg";
+import b3 from "../assets/brands/b3.png";
 import { Link as LinkS } from "react-scroll";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
 	const products = [
@@ -59,9 +60,11 @@ const Footer = () => {
 								<div className="col-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column justify-content-between">
 									<div className="w-100">
 										<h3 className="fw500">Ready to get started?</h3>
-										<button className="border-0 bg-transparent text-white">
-											Contact sales <IoIosArrowForward />
-										</button>
+										<NavLink to="/contact">
+											<button className="border-0 bg-transparent text-white">
+												Contact sales <IoIosArrowForward />
+											</button>
+										</NavLink>
 									</div>
 									<div className="w-100 mt-5 mt-sm-0">
 										<img src={logoW} alt="" />
@@ -83,13 +86,11 @@ const Footer = () => {
 										</p>
 									</div>
 								</div>
-								<div className="col-12 col-lg-9 mt-lg-0">
-									<div className="d-flex justify-content-between flex-wrap">
-										<div className="mt-5">
+								<div className="col-12 col-lg-9 mt-lg-0 mt-5 mt-lg-0">
+									<div className="footer_inner_container">
+										<div className="single_cont">
 											<div>
-												<h6 className="fw600">
-													<span className="borderTop pt-2">Produ</span>cts
-												</h6>
+												<h6 className="fw600 borderTop pt-2">Products</h6>
 												<ul className="list-unstyled mt-3">
 													{products.map((prev, i) => {
 														return (
@@ -143,10 +144,8 @@ const Footer = () => {
 												</ul>
 											</div>
 										</div>
-										<div className="mt-5">
-											<h6 className="fw600">
-												<span className="borderTop pt-2">Use cas</span>es
-											</h6>
+										<div className="single_cont">
+											<h6 className="fw600 borderTop pt-2">Use cases</h6>
 											<ul className="list-unstyled mt-3">
 												{cases.map((prev, i) => {
 													return (
@@ -199,10 +198,8 @@ const Footer = () => {
 												})}
 											</ul>
 										</div>
-										<div className="mt-5">
-											<h6 className="fw600">
-												<span className="borderTop pt-2">Develo</span>pers
-											</h6>
+										<div className="single_cont">
+											<h6 className="fw600 borderTop pt-2">Developers</h6>
 											<ul className="list-unstyled mt-3">
 												{dev.map((prev, i) => {
 													return (
@@ -255,10 +252,8 @@ const Footer = () => {
 												})}
 											</ul>
 										</div>
-										<div className="mt-5">
-											<h6 className="fw600">
-												<span className="borderTop pt-2">Pricing</span>
-											</h6>
+										<div className="single_cont">
+											<h6 className="fw600 borderTop pt-2">Pricing</h6>
 											<ul className="list-unstyled mt-3">
 												{price.map((prev, i) => {
 													return (
@@ -311,10 +306,8 @@ const Footer = () => {
 												})}
 											</ul>
 										</div>
-										<div className="mt-5">
-											<h6 className="fw600">
-												<span className="borderTop pt-2">About</span> us
-											</h6>
+										<div className="single_cont">
+											<h6 className="fw600 borderTop pt-2">About us</h6>
 											<ul className="list-unstyled mt-3">
 												{about.map((prev, i) => {
 													return (
@@ -365,6 +358,29 @@ const Footer = () => {
 														</>
 													);
 												})}
+												<li className="mt-3">
+													<a
+														className="text-white"
+														target="blank"
+														href="https://www.instagram.com/paymobtech/"
+													>
+														<FaInstagram className="h5" />
+													</a>
+													<a
+														className="text-white"
+														target="blank"
+														href="https://twitter.com/paymobtech"
+													>
+														<FaLinkedinIn className="ms-3 h5" />
+													</a>
+													<a
+														className="text-white"
+														target="blank"
+														href="https://www.linkedin.com/company/paymobtech"
+													>
+														<FaTwitter className="ms-3 h5" />
+													</a>
+												</li>
 											</ul>
 										</div>
 									</div>

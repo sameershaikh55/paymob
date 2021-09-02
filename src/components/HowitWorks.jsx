@@ -2,10 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 
 // IMPORTS
-import i1 from "../assets/hiworks/i1.svg";
-import i2 from "../assets/hiworks/i2.svg";
-import i3 from "../assets/hiworks/i3.svg";
-import i4 from "../assets/hiworks/i4.svg";
+import i1 from "../assets/hiworks/i1.png";
+import i2 from "../assets/hiworks/i2.png";
+import i3 from "../assets/hiworks/i3.png";
+import i4 from "../assets/hiworks/i4.png";
 
 const HowitWorks = ({ callback }) => {
 	var settings = {

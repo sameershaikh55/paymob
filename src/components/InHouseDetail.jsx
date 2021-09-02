@@ -1,5 +1,5 @@
 import React from "react";
-import i2 from "../assets/InHouse/i2.svg";
+import i2 from "../assets/InHouse/i2.png";
 
 const InHouseDetail = () => {
 	return (

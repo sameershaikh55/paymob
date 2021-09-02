@@ -1,11 +1,11 @@
 import React from "react";
 
 // IMPORTS
-import b1 from "../assets/businessLogos/b1.svg";
-import b2 from "../assets/businessLogos/b2.svg";
-import b3 from "../assets/businessLogos/b3.svg";
-import b4 from "../assets/businessLogos/b4.svg";
-import b5 from "../assets/businessLogos/b5.svg";
+import b1 from "../assets/businessLogos/b1.png";
+import b2 from "../assets/businessLogos/b2.png";
+import b3 from "../assets/businessLogos/b3.png";
+import b4 from "../assets/businessLogos/b4.png";
+import b5 from "../assets/businessLogos/b5.png";
 
 const BrandPartners = () => {
 	const data = [b1, b2, b3, b4, b5];

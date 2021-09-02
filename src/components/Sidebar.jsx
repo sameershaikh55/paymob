@@ -337,6 +337,37 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 							>
 								<Typography>
 									<h5 className="orangeC fw-bold gotham letterSpace">
+										Pricing{" "}
+									</h5>
+								</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+								<Typography>
+									<div className="row">
+										<div className="col-12">
+											<ul className="list-unstyled mb-0">
+												<li className="f14 mb-3">
+													<NavLink
+														to="/pricing"
+														className="color1 text-decoration-none gotham"
+													>
+														Basic fee setup <IoIosArrowForward />
+													</NavLink>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</Typography>
+							</AccordionDetails>
+						</Accordion>
+						<Accordion>
+							<AccordionSummary
+								expandIcon={<ExpandMoreIcon />}
+								aria-controls="panel2a-content"
+								id="panel2a-header"
+							>
+								<Typography>
+									<h5 className="orangeC fw-bold gotham letterSpace">
 										About us
 									</h5>
 								</Typography>
@@ -416,37 +447,6 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 														className="color1 text-decoration-none gotham"
 													>
 														Contact us <IoIosArrowForward />
-													</NavLink>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</Typography>
-							</AccordionDetails>
-						</Accordion>
-						<Accordion>
-							<AccordionSummary
-								expandIcon={<ExpandMoreIcon />}
-								aria-controls="panel2a-content"
-								id="panel2a-header"
-							>
-								<Typography>
-									<h5 className="orangeC fw-bold gotham letterSpace">
-										Pricing{" "}
-									</h5>
-								</Typography>
-							</AccordionSummary>
-							<AccordionDetails>
-								<Typography>
-									<div className="row">
-										<div className="col-12">
-											<ul className="list-unstyled mb-0">
-												<li className="f14 mb-3">
-													<NavLink
-														to="/"
-														className="color1 text-decoration-none gotham"
-													>
-														Basic fee setup <IoIosArrowForward />
 													</NavLink>
 												</li>
 											</ul>

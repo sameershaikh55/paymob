@@ -2,6 +2,7 @@ import React from "react";
 
 // IMPORTS
 import { IoIosArrowForward } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 import i1 from "../assets/partnerPaymob/i1.svg";
 import i2 from "../assets/partnerPaymob/i2.svg";
 import i3 from "../assets/partnerPaymob/i3.svg";
@@ -62,9 +63,11 @@ const PartnerPaymob = () => {
 												{prev.d}
 											</p>
 											{i === 2 && (
-												<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
-													Find out more <IoIosArrowForward />
-												</button>
+												<NavLink to="/contact">
+													<button className="themeBtn bg-white gotham orangeC py-2 px-3 border-0 f18">
+														Find out more <IoIosArrowForward />
+													</button>
+												</NavLink>
 											)}
 										</div>
 									);

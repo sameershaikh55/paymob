@@ -24,9 +24,27 @@ const PressHero = () => {
 									Follow Paymob
 								</p>
 								<div>
-									<AiOutlineInstagram fontSize="1.2rem" className="orangeC" />
-									<FaLinkedinIn className="ms-4 orangeC" fontSize="1.2rem" />
-									<FaTwitter className="ms-4 orangeC" fontSize="1.2rem" />
+									<a
+										className="text-white"
+										target="blank"
+										href="https://www.instagram.com/paymobtech/"
+									>
+										<AiOutlineInstagram fontSize="1.2rem" className="orangeC" />
+									</a>
+									<a
+										className="text-white"
+										target="blank"
+										href="https://twitter.com/paymobtech"
+									>
+										<FaLinkedinIn className="ms-4 orangeC" fontSize="1.2rem" />
+									</a>
+									<a
+										className="text-white"
+										target="blank"
+										href="https://www.linkedin.com/company/paymobtech"
+									>
+										<FaTwitter className="ms-4 orangeC" fontSize="1.2rem" />
+									</a>
 								</div>
 							</div>
 						</div>

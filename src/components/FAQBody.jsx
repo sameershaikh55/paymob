@@ -12,39 +12,51 @@ const FAQBody = () => {
 	const data = [
 		{
 			t: "Why TAP on Phone?",
-			d: "Tap on Phone is quick, simple and secure. It’s an ideal payment method for customers when they need to pay and go. As a merchant, you can transform any enabled mobile device into a payment terminal.",
+			d: "Tap to Phone is quick, simple and secure. It’s an ideal payment method for merchants looking to streamline their checkout process, and increase customer satisfaction.",
 		},
 		{
-			t: "How do I know if a customer can pay via Tap on Phone?",
-			d: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi rerum nulla ad temporibus asperiores ea culpa nihil aliquam provident quaerat!",
+			t: "Do I need to purchase SoftPOS hardware?",
+			d: "No, in fact SoftPOS lives inside your app, inside your business customers' Android smartphones, or your white label terminals. No additional hardware is needed.",
 		},
 		{
 			t: "Where does the customer tap?",
 			d: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi rerum nulla ad temporibus asperiores ea culpa nihil aliquam provident quaerat!",
 		},
 		{
-			t: "Are Tap on Phone payments secure?",
-			d: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi rerum nulla ad temporibus asperiores ea culpa nihil aliquam provident quaerat!",
+			t: "What devices is Tap to Phone Compatible on?",
+			d: "Our SDK can be easily integrated into your POS terminal, vending machine or any NFC enabled android device.",
 		},
 		{
-			t: "How do you know if a transaction is successful?",
-			d: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi rerum nulla ad temporibus asperiores ea culpa nihil aliquam provident quaerat!",
+			t: "Are tap to phone payments secure?",
+			d: "Yes. We adhere to the highest payment security standards, as a PCI-DSS Level 1 compliant company, along with being Visa, Mastercard and FCA approved. Find out more about our certifications and security here.",
 		},
 		{
-			t: "What if the transaction does not process?",
-			d: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi rerum nulla ad temporibus asperiores ea culpa nihil aliquam provident quaerat!",
+			t: "How will my business customer know if a payment was successful?",
+			d: "They will be immediately taken to the ‘Payment successful’ screen, with the option to send their customer an e-receipt post payment, or return to the main menu.",
 		},
 		{
-			t: "How much do contactless payments cost?",
-			d: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi rerum nulla ad temporibus asperiores ea culpa nihil aliquam provident quaerat!",
+			t: "Do you provide Acquiring and processing as part of your packages?",
+			d: "We do! But only within the UK, EU and US at the moment. We are working hard to expand our services globally.",
 		},
 		{
-			t: "Is there a charge for contactless payments?",
-			d: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi rerum nulla ad temporibus asperiores ea culpa nihil aliquam provident quaerat!",
+			t: "Are there any hidden fees I should be aware of?",
+			d: "No. At Paymob we believe in complete transparency, from our business values to our fees. Our clients will receive a clear breakdown of costs depending on their package.",
 		},
 		{
-			t: "Where around the world can I accept contactless payments?",
-			d: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi rerum nulla ad temporibus asperiores ea culpa nihil aliquam provident quaerat!",
+			t: "What cards can I accept with SoftPOS?",
+			d: "You can accept every major card – Visa, Mastercard and American Express.",
+		},
+		{
+			t: "What methods of payment can my customers use?",
+			d: "You can accept cards, mobile e-wallet and QR code payments.",
+		},
+		{
+			t: "What does Paymob do to help with fraud protection?",
+			d: "Our systems offer 24/7 monitoring of your SoftPOS technology to keep an eye on suspicious transactions.",
+		},
+		{
+			t: "Can my customers manage their inventory from my SoftPOS app?",
+			d: "End point customers can upload their product categories for a speedier checkout process, enabling a more streamlined experience and the added ability to track specific product sales.",
 		},
 	];
 

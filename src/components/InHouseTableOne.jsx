@@ -1,6 +1,6 @@
 import React from "react";
-import i3 from "../assets/InHouse/i3.svg";
-import i4 from "../assets/InHouse/i4.svg";
+import i3 from "../assets/InHouse/i3.png";
+import i4 from "../assets/InHouse/i4.png";
 
 const InHouseTableOne = () => {
 	const data = [

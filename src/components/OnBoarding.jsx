@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 import onboarding from "../assets/gifs/Merchant onboarding GIF.gif";
 
 const OnBoarding = () => {
@@ -29,11 +30,11 @@ const OnBoarding = () => {
 												merchant custmers from day one.
 											</p>
 										</div>
-										<a href="https://airtable.com/shrL21Fd1xLND39mK">
+										<NavLink to="/contact">
 											<button className="themeBtn bg-white gotham orangeC py-2 px-3 border-0 f18">
 												Find out more <IoIosArrowForward />
 											</button>
-										</a>
+										</NavLink>
 									</div>
 								</div>
 								<div className="col-md-6 mt-5 mt-md-0">

@@ -12,6 +12,7 @@ import t7 from "../assets/ourTeam/t7.png";
 import t8 from "../assets/ourTeam/t8.png";
 import t9 from "../assets/ourTeam/t9.png";
 import t10 from "../assets/ourTeam/t10.png";
+import { NavLink } from "react-router-dom";
 
 const TeamBody = () => {
 	const data = [
@@ -101,9 +102,11 @@ const TeamBody = () => {
 											)) || (
 												<div className="d-flex flex-column align-items-center align-items-md-start justify-content-end height_set mt-3 mt-sm-0">
 													<p className="color2 gotham">Want to work with us?</p>
-													<button className="themeBtn bg-white gotham fw-bold py-2 px-3 border-0 f16">
-														View our job openings <IoIosArrowForward />
-													</button>
+													<NavLink to="/contact">
+														<button className="themeBtn bg-white gotham fw-bold py-2 px-3 border-0 f16">
+															View our job openings <IoIosArrowForward />
+														</button>
+													</NavLink>
 												</div>
 											)}
 										</div>

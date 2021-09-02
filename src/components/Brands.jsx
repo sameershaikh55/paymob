@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import b1 from "../assets/brands/b1.svg";
-import b2 from "../assets/brands/b2.svg";
-import b3 from "../assets/brands/b3.svg";
-import b4 from "../assets/brands/b4.svg";
+import b1 from "../assets/brands/b1.png";
+import b2 from "../assets/brands/b2.png";
+import b3 from "../assets/brands/b3.png";
+import b4 from "../assets/brands/b4.png";
 
 const Brands = () => {
 	var settings = {

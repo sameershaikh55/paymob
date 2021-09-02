@@ -66,7 +66,7 @@ const DevelopersBody = () => {
 				},
 				{
 					t: "Request brochure",
-					el: "",
+					el: "/contact",
 				},
 			],
 		},

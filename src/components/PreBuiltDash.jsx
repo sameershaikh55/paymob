@@ -4,6 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 // IMPORTS FOR ADMIN PORTAL PAGE
 import preBuiltA from "../assets/adminPortal/prebuilt.png";
+import { NavLink } from "react-router-dom";
 
 const PreBuiltDash = ({ adminP }) => {
 	return (
@@ -42,9 +43,11 @@ const PreBuiltDash = ({ adminP }) => {
 													insights into each payment at your fingertips.
 												</p>
 											</div>
-											<button className="themeBtn bg-white orangeC py-2 px-3 border-0 f18 mt-3">
-												Find out more <IoIosArrowForward />
-											</button>
+											<NavLink to="/contact">
+												<button className="themeBtn bg-white gotham orangeC py-2 px-3 border-0 f18">
+													Find out more <IoIosArrowForward />
+												</button>
+											</NavLink>
 										</div>
 									)) || (
 										<div>
@@ -72,9 +75,11 @@ const PreBuiltDash = ({ adminP }) => {
 													and SDK app integration.
 												</p>
 											</div>
-											<button className="themeBtn bg-white orangeC py-2 px-3 border-0 f18">
-												Find out more <IoIosArrowForward />
-											</button>
+											<NavLink to="/contact">
+												<button className="themeBtn bg-white gotham orangeC py-2 px-3 border-0 f18">
+													Find out more <IoIosArrowForward />
+												</button>
+											</NavLink>
 										</div>
 									)}
 								</div>
