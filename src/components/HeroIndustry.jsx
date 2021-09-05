@@ -24,7 +24,7 @@ const HeroIndustry = ({ ind }) => {
 									Friends of Paymob
 								</h1>
 								<div className="col-12 col-sm-10 col-md-8 col-lg-5 mx-auto mt-4">
-									<p className="Walsheim color2 lh27 fw-light">
+									<p className="crice fw600 color2 lh27">
 										Enabling fintechs, commerce solution vendors and banking
 										institutions across three continents to provide their own
 										Tap to Phone solutions through our bespoke white label app,

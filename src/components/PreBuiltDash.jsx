@@ -68,12 +68,6 @@ const PreBuiltDash = ({ adminP }) => {
 													customers as part of our Tap to Phone while label app,
 													and SDK app integration.
 												</p>
-												<p className="lh27 color1 f18 crice fw600 mt-4">
-													Provide an overview of transaction history, product
-													sales, data reports and beyond to your merchant
-													customers as part of our Tap to Phone while label app,
-													and SDK app integration.
-												</p>
 											</div>
 											<NavLink to="/contact">
 												<button className="themeBtn bg-white gotham orangeC py-2 px-3 border-0 f18">

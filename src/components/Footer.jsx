@@ -14,17 +14,15 @@ const Footer = () => {
 		{ t: "mPOS card reader", l: "/mposCard" },
 		{ t: "Mini POS Terminal", l: "/miniPos" },
 		{ t: "Smart POS Terminal", l: "/smartPos" },
-		{ t: "Merchant onboarding", l: "/merchantOnboarding" },
-		{ t: "Dashboards", l: "/merchantDashboard" },
+		{ t: "Digital merchant onboarding", l: "/merchantOnboarding" },
+		{ t: "Merchant dashboard", l: "/merchantDashboard" },
 		{ t: "Admin portal", l: "/adminPortal" },
 		{ t: "Payment gateway", l: "/paymentGatway" },
 	];
 
 	const cases = [
 		{ t: "Industry sectors", l: "/industrySector" },
-		{ t: "Channel partners", l: "/partners" },
-		{ t: "Commerce vendors", l: "/partners" },
-		{ t: "Banking", l: "/partners" },
+		{ t: "Friends of paymob", l: "/partners" },
 		{ t: "Case studies", l: "/caseStudies" },
 	];
 
@@ -32,8 +30,6 @@ const Footer = () => {
 		{ t: "Developer tools", l: "/developers" },
 		{ t: "App to app API", l: "/callback" },
 		{ t: "In-house deployment", l: "/inHouseDeployement" },
-		{ t: "Banking", l: "/partners" },
-		{ t: "Case studies", l: "/caseStudies" },
 	];
 
 	const price = [

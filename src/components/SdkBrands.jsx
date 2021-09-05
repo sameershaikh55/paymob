@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import b1 from "../assets/sdkBrands/i1.svg";
-import b2 from "../assets/sdkBrands/i2.svg";
-import b3 from "../assets/sdkBrands/i3.svg";
-import b4 from "../assets/sdkBrands/i4.svg";
+import b1 from "../assets/sdkBrands/i1.png";
+import b2 from "../assets/sdkBrands/i2.png";
+import b3 from "../assets/sdkBrands/i3.png";
+import b4 from "../assets/sdkBrands/i4.png";
 
 const SdkBrands = () => {
 	var settings = {
@@ -108,7 +108,7 @@ const SdkBrands = () => {
 											{(p.l && <div className="line"></div>) || (
 												<>
 													<p className="color2 crice f16">{p.t}</p>
-													<img src={p.i} alt="" />
+													<img className="w-100" src={p.i} alt="" />
 												</>
 											)}
 										</div>

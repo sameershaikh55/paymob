@@ -14,7 +14,7 @@ const MdDetails = () => {
 		{
 			t: (
 				<h5 className="fw600 color1 mb-4 text-white">
-					<span className="bottomLineGrayLight pb-2">Business</span>
+					<span className="bottomLineGrayLight pb-2">Business</span>{" "}
 					intelligence tools
 				</h5>
 			),

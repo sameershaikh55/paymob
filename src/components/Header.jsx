@@ -90,7 +90,7 @@ const ProductList = () => {
 									to="/merchantOnboarding"
 									className="color1 text-decoration-none color1 fw600"
 								>
-									Merchent onboarding <IoIosArrowForward />
+									Digital merchant onboarding <IoIosArrowForward />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3 color1 fw600">
@@ -106,7 +106,7 @@ const ProductList = () => {
 									to="/merchantDashboard"
 									className="color1 text-decoration-none color1 fw600"
 								>
-									Merchant & client dashboard <IoIosArrowForward />
+									Merchant dashboard <IoIosArrowForward />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3 color1 fw600">
@@ -141,59 +141,21 @@ const ProductList = () => {
 
 const UseCases = () => {
 	return (
-		<div className="dropdownList cases pt-5">
+		<div className="dropdownList dev pt-5">
 			<div>
 				<h6 className="f18 mb-3 orangeC fw600 px-4">Use Cases</h6>
 			</div>
 
 			<div className="inner_dropdown container-fluid pt-5 pb-4">
 				<div className="row">
-					<div className="col-6">
-						<h6 className="bottomHead mb-3 f14">INDUSTRY SECTORS</h6>
+					<div className="col-12">
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
 									to="/industrySector"
 									className="color1 text-decoration-none color1 fw600"
 								>
-									Retailers & small business <IoIosArrowForward />
-								</NavLink>
-							</li>
-							<li className="f14 mb-3">
-								<NavLink
-									to="/industrySector"
-									className="color1 text-decoration-none color1 fw600"
-								>
-									Gig economy <IoIosArrowForward />
-								</NavLink>
-							</li>
-							<li className="f14 mb-3">
-								<NavLink
-									to="/industrySector"
-									className="color1 text-decoration-none color1 fw600"
-								>
-									Transportation <IoIosArrowForward />
-								</NavLink>
-							</li>
-							<li className="f14 mb-3">
-								<NavLink
-									to="/industrySector"
-									className="color1 text-decoration-none color1 fw600"
-								>
-									Hospitality <IoIosArrowForward />
-								</NavLink>
-							</li>
-						</ul>
-					</div>
-					<div className="col-6">
-						<h6 className="bottomHead mb-3 f14">FRIENDS OF PAYMOB</h6>
-						<ul className="list-unstyled mb-0">
-							<li className="f14 mb-3">
-								<NavLink
-									to="/partners"
-									className="color1 text-decoration-none color1 fw600"
-								>
-									Channel partners <IoIosArrowForward />
+									Industry Sectors <IoIosArrowForward />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
@@ -201,28 +163,7 @@ const UseCases = () => {
 									to="/partners"
 									className="color1 text-decoration-none color1 fw600"
 								>
-									Banking <IoIosArrowForward />
-								</NavLink>
-							</li>
-							<li className="f14 mb-3">
-								<NavLink
-									to="/partners"
-									className="color1 text-decoration-none color1 fw600"
-								>
-									Commerce vendors <IoIosArrowForward />
-								</NavLink>
-							</li>
-						</ul>
-					</div>
-					<div className="col-6 mt-2">
-						<h6 className="bottomHead mb-3 f14">CASE STUDIES</h6>
-						<ul className="list-unstyled mb-0">
-							<li className="f14 mb-3">
-								<NavLink
-									to="/caseStudies"
-									className="color1 text-decoration-none color1 fw600"
-								>
-									ZmBIZI <IoIosArrowForward />
+									Friends of Paymob <IoIosArrowForward />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
@@ -230,7 +171,7 @@ const UseCases = () => {
 									to="/caseStudies"
 									className="color1 text-decoration-none color1 fw600"
 								>
-									Aisino <IoIosArrowForward />
+									Case Studies <IoIosArrowForward />
 								</NavLink>
 							</li>
 						</ul>
