@@ -15,9 +15,6 @@ import { useParams } from "react-router";
 const BlogInside = ({ blogApi, blogs, blogApiPage }) => {
 	const { page, singleBlog } = useParams();
 
-	console.log(page, "loout");
-	console.log(singleBlog, "singleBlog");
-
 	useEffect(() => {
 		if (page !== undefined) {
 			console.log(page, "lo");
