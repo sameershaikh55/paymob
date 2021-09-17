@@ -1,28 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 import blog from "../assets/home/blog.svg";
 
-const RecomendedBlogs = () => {
-	const data = [
-		{
-			i: blog,
-			p: "Product",
-			t: (
-				<h2 className="color1 f20 fw700">
-					How an in-app payments SDK can <br /> transform your business
-				</h2>
-			),
-		},
-		{
-			i: blog,
-			p: "INsights",
-			t: (
-				<h2 className="color1 f20 fw700">
-					5 Benefits of Accepting Contactless <br /> Payments
-				</h2>
-			),
-		},
-	];
+const RecomendedBlogs = ({ blogs }) => {
+	useEffect(() => {
+		for (let i = blogs.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[blogs[i], blogs[j]] = [blogs[j], blogs[i]];
+		}
+	}, []);
 
 	return (
 		<div className="insights_container recomended">
@@ -30,20 +17,43 @@ const RecomendedBlogs = () => {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-lg-12 mx-auto">
-							<div className="row">
-								{data.map((prev, ind) => {
-									const { i, p, t } = prev;
+							<div className="desktop_insights row">
+								{blogs.map((prev, ind) => {
+									console.log(prev);
 									return (
-										<div className="col-11 col-md-6 mx-auto mt-5" key={ind}>
-											<img src={i} alt="" />
-											<div className="ps-3 mt-2">
-												<p className="f14 crice mb-0 mb-md-2">{p}</p>
-												{t}
-												<button className="f14 border-0 bg-transparent orangeC fw600">
-													Learn more <IoIosArrowForward />
-												</button>
-											</div>
-										</div>
+										<>
+											{ind <= 1 && (
+												<div className="col-11 col-md-6 mx-auto mt-5" key={ind}>
+													{(prev.featured_image_urls &&
+														prev.featured_image_urls.small !== "" && (
+															<img
+																className="thumbnail"
+																src={prev.featured_image_urls.medium_large[0]}
+																alt=""
+															/>
+														)) || <img src={blog} alt="" />}
+													<div className="ps-3 mt-3">
+														<div
+															dangerouslySetInnerHTML={{
+																__html: prev.category_list,
+															}}
+															className="category_link f14 crice mb-0 mb-md-2"
+														></div>
+														<h2
+															dangerouslySetInnerHTML={{
+																__html: prev.title.rendered,
+															}}
+															className="color1 f20 fw700"
+														></h2>
+														<Link to={`/blogInside/${prev.slug}`}>
+															<button className="f14 border-0 bg-transparent orangeC fw600">
+																Learn more <IoIosArrowForward />
+															</button>
+														</Link>
+													</div>
+												</div>
+											)}
+										</>
 									);
 								})}
 							</div>

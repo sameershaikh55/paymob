@@ -5,6 +5,12 @@ import logoW from "../assets/logoW.svg";
 import b3 from "../assets/brands/b3.png";
 import { Link as LinkS } from "react-scroll";
 import { Link, NavLink } from "react-router-dom";
+import Newsletter from "./Newsletter";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+
+// API URL TO POST
+const url =
+	"https://kostadu.us20.list-manage.com/subscribe/post?u=2cf9a83db0cea39edd3e3a07b&amp;id=45549b5fed";
 
 const Footer = () => {
 	const products = [
@@ -387,18 +393,21 @@ const Footer = () => {
 										<span className="orangeC fw-bolder">Subscribe</span> to
 										Paymob INsights, our weekly newsletter!
 									</h6>
-									<div className="newsletterInp d-flex justify-content-between px-4 py-2">
-										<input
-											type="text"
-											name=""
-											id=""
-											className="border-0 bg-transparent"
-											placeholder="joebloggs@address.com"
-										/>
-										<button className="ps-4 bg-transparent color1 f14 fw-bold">
-											SUBSCRIBE
-										</button>
-									</div>
+
+									{/* MAIL CHIMP START */}
+									<MailchimpSubscribe
+										url={url}
+										render={({ subscribe, status, message }) => (
+											<div>
+												<Newsletter
+													onSubmitted={(formData) => subscribe(formData)}
+													status={status}
+													message={message}
+												/>
+											</div>
+										)}
+									/>
+									{/* MAIL CHIMP END */}
 								</div>
 							</div>
 						</div>

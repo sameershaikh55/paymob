@@ -1,6 +1,8 @@
 import React from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FiMail, FiPhone } from "react-icons/fi";
+import logoW from "../assets/logo.svg";
+import HubspotForm from "react-hubspot-form";
 
 const ContactBody = () => {
 	return (
@@ -82,7 +84,19 @@ const ContactBody = () => {
 								</div>
 								<div className="col-12 col-md-6 mt-5 mt-md-0">
 									<div className="contact_form py-5 px-4">
-										<input
+										<HubspotForm
+											portalId="9315354"
+											formId="6f697898-d7d9-470f-a8f1-d90238845b54"
+											onSubmit={() => console.log("Submit!")}
+											onReady={(form) => console.log("Form ready!")}
+											loading={
+												<div className="d-flex justify-content-center">
+													<img src={logoW} alt="" />
+												</div>
+											}
+										/>
+
+										{/* <input
 											className="w-100 mb-4 gotham f18 color2 letterSpace"
 											type="text"
 											name=""
@@ -127,7 +141,7 @@ const ContactBody = () => {
 											<button className="themeBtn py-2 px-4 border-0 letterSpace bg-white fw-bold gilroy">
 												Submit
 											</button>
-										</div>
+										</div> */}
 									</div>
 
 									<p className="text-center color1 f10 walsheim letterSpace my-4">

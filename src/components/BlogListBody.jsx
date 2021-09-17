@@ -1,64 +1,11 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 import blog from "../assets/home/blog.svg";
+import { useParams } from "react-router";
 
-const BlogListBody = () => {
-	const data = [
-		{
-			i: blog,
-			p: "Product",
-			t: (
-				<h2 className="color1 f20 fw700">
-					How an in-app payments SDK can <br /> transform your business
-				</h2>
-			),
-		},
-		{
-			i: blog,
-			p: "INsights",
-			t: (
-				<h2 className="color1 f20 fw700">
-					5 Benefits of Accepting Contactless <br /> Payments
-				</h2>
-			),
-		},
-		{
-			i: blog,
-			p: "Product",
-			t: (
-				<h2 className="color1 f20 fw700">
-					How an in-app payments SDK can <br /> transform your business
-				</h2>
-			),
-		},
-		{
-			i: blog,
-			p: "INsights",
-			t: (
-				<h2 className="color1 f20 fw700">
-					5 Benefits of Accepting Contactless <br /> Payments
-				</h2>
-			),
-		},
-		{
-			i: blog,
-			p: "Product",
-			t: (
-				<h2 className="color1 f20 fw700">
-					How an in-app payments SDK can <br /> transform your business
-				</h2>
-			),
-		},
-		{
-			i: blog,
-			p: "INsights",
-			t: (
-				<h2 className="color1 f20 fw700">
-					5 Benefits of Accepting Contactless <br /> Payments
-				</h2>
-			),
-		},
-	];
+const BlogListBody = ({ blogsPag }) => {
+	const { page } = useParams();
 
 	return (
 		<div className="insights_container blogBody">
@@ -66,20 +13,48 @@ const BlogListBody = () => {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-lg-12 mx-auto">
-							<div className="row">
-								{data.map((prev, ind) => {
-									const { i, p, t } = prev;
+							<div className="row desktop_insights">
+								{blogsPag.map((prev, ind) => {
 									return (
-										<div className="col-11 col-md-6 mx-auto mt-5" key={ind}>
-											<img src={i} alt="" />
-											<div className="ps-3 mt-2">
-												<p className="f14 crice mb-0 mb-md-2">{p}</p>
-												{t}
-												<button className="f14 border-0 bg-transparent orangeC fw600">
-													Learn more <IoIosArrowForward />
-												</button>
-											</div>
-										</div>
+										<>
+											{prev.title.rendered !==
+												"Emerging fintech trends in MENA" && (
+												<div className="col-11 col-md-6 mt-5" key={ind}>
+													{(prev.featured_image_urls &&
+														prev.featured_image_urls.small !== "" && (
+															<img
+																className="thumbnail"
+																src={prev.featured_image_urls.medium_large[0]}
+																alt=""
+															/>
+														)) || <img src={blog} alt="" />}
+
+													<div className="ps-3 mt-3">
+														<div
+															dangerouslySetInnerHTML={{
+																__html: prev.category_list,
+															}}
+															className="category_link f14 crice mb-0 mb-md-2"
+														></div>
+														<h2
+															dangerouslySetInnerHTML={{
+																__html: prev.title.rendered,
+															}}
+															className="color1 f20 fw700"
+														></h2>
+														<Link
+															to={`/blogInside${
+																(page !== undefined && `/${page}`) || ""
+															}/${prev.slug}`}
+														>
+															<button className="f14 border-0 bg-transparent orangeC fw600">
+																Learn more <IoIosArrowForward />
+															</button>
+														</Link>
+													</div>
+												</div>
+											)}
+										</>
 									);
 								})}
 							</div>

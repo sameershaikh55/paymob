@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import blog from "../assets/home/blog.svg";
 
-const Insights = () => {
+// IMPORTING REDUX
+import { blogApi } from "../redux/actions";
+
+const Insights = ({ blogApi, blogs }) => {
+	useEffect(() => {
+		blogApi();
+	}, []);
+
+	if (blogs.length) {
+		var blogMobile = [blogs[0], blogs[1]];
+	}
+
 	var settings = {
 		centerMode: true,
 		dots: false,
@@ -15,96 +27,135 @@ const Insights = () => {
 		initialSlide: 0,
 	};
 
-	const data = [
-		{
-			i: blog,
-			p: "Product",
-			t: (
-				<h2 className="color1 f20 fw700">
-					How an in-app payments SDK can <br /> transform your business
-				</h2>
-			),
-			l: "/blogInside",
-		},
-		{
-			i: blog,
-			p: "INsights",
-			t: (
-				<h2 className="color1 f20 fw700">
-					5 Benefits of Accepting Contactless <br /> Payments
-				</h2>
-			),
-			l: "/blogInside",
-		},
-	];
-
 	return (
-		<div id="insight" className="insights_container">
-			<div className="page_container">
-				<div className="container-fluid">
-					<div className="row">
-						<div className="col-11 col-lg-12 mx-auto">
-							<div className="text-end">
-								<div className="row">
-									<div className="ms-auto col-12 col-md-8">
-										<p className="f18 orangeC mb-1 mb-md-0">Paymob INsights</p>
-										<h1 className="fw600">Updates from our blog</h1>
+		<>
+			{(blogs.length && (
+				<div id="insight" className="insights_container">
+					<div className="page_container">
+						<div className="container-fluid">
+							<div className="row">
+								<div className="col-11 col-lg-12 mx-auto">
+									<div className="text-end">
+										<div className="row">
+											<div className="ms-auto col-12 col-md-8">
+												<p className="f18 orangeC mb-1 mb-md-0">
+													Paymob INsights
+												</p>
+												<h1 className="fw600">Updates from our blog</h1>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
 
-							<div className="d-block d-md-none sliderContainer px-3">
-								<Slider {...settings}>
-									{data.map((prev, ind) => {
-										const { i, p, t, l } = prev;
-										return (
-											<div
-												className="col-11 col-md-6 mx-auto mt-5 px-2"
-												key={ind}
-											>
-												<img src={i} alt="" />
-												<div className="ps-3 mt-2">
-													<p className="f14 crice mb-0 mb-md-2">{p}</p>
-													{t}
-													<Link to={l}>
-														<button className="f14 border-0 bg-transparent orangeC fw600">
-															Keep reading <IoIosArrowForward />
-														</button>
-													</Link>
-												</div>
-											</div>
-										);
-									})}
-								</Slider>
-							</div>
+									<div className="mobile_insights d-block d-md-none sliderContainer px-3">
+										<Slider {...settings}>
+											{blogMobile.map((prev, ind) => {
+												return (
+													<div
+														className="col-11 col-md-6 mx-auto mt-5 px-3"
+														key={ind}
+													>
+														{(prev.featured_image_urls &&
+															prev.featured_image_urls.small !== "" && (
+																<img
+																	className="w-100"
+																	src={prev.featured_image_urls.medium_large[0]}
+																	alt=""
+																/>
+															)) || <img className="w-100" src={blog} alt="" />}
 
-							<div className="d-none d-md-block">
-								<div className="row">
-									{data.map((prev, ind) => {
-										const { i, p, t, l } = prev;
-										return (
-											<div className="col-11 col-md-6 mx-auto mt-5" key={ind}>
-												<img src={i} alt="" />
-												<div className="ps-3 mt-2">
-													<p className="f14 crice mb-0 mb-md-2">{p}</p>
-													{t}
-													<Link to={l}>
-														<button className="f14 border-0 bg-transparent orangeC fw600">
-															Keep reading <IoIosArrowForward />
-														</button>
-													</Link>
-												</div>
-											</div>
-										);
-									})}
+														<div className="ps-3 mt-3">
+															<div
+																dangerouslySetInnerHTML={{
+																	__html: prev.category_list,
+																}}
+																className="category_link f14 crice mb-0 mb-md-2"
+															></div>
+															<h2
+																dangerouslySetInnerHTML={{
+																	__html: prev.title.rendered,
+																}}
+																className="color1 f20 fw700"
+															></h2>
+															<Link to={`/blogInside/${prev.slug}`}>
+																<button className="f14 border-0 bg-transparent orangeC fw600">
+																	Keep reading <IoIosArrowForward />
+																</button>
+															</Link>
+														</div>
+													</div>
+												);
+											})}
+										</Slider>
+									</div>
+
+									<div className="desktop_insights d-none d-md-block">
+										<div className="row">
+											{blogs.map((prev, ind) => {
+												return (
+													<>
+														{ind <= 1 && (
+															<div
+																className="col-11 col-md-6 mx-auto mt-5"
+																key={ind}
+															>
+																{(prev.featured_image_urls &&
+																	prev.featured_image_urls.small !== "" && (
+																		<img
+																			className="thumbnail"
+																			src={
+																				prev.featured_image_urls.medium_large[0]
+																			}
+																			alt=""
+																		/>
+																	)) || <img src={blog} alt="" />}
+																<div className="ps-3 mt-3">
+																	<div
+																		dangerouslySetInnerHTML={{
+																			__html: prev.category_list,
+																		}}
+																		className="category_link f14 crice mb-0 mb-md-2"
+																	></div>
+																	<h2
+																		dangerouslySetInnerHTML={{
+																			__html: prev.title.rendered,
+																		}}
+																		className="color1 f20 fw700"
+																	></h2>
+																	<Link to={`/blogInside/${prev.slug}`}>
+																		<button className="f14 border-0 bg-transparent orangeC fw600">
+																			Keep reading <IoIosArrowForward />
+																		</button>
+																	</Link>
+																</div>
+															</div>
+														)}
+													</>
+												);
+											})}
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+			)) ||
+				""}
+		</>
 	);
 };
 
-export default Insights;
+const mapStatetoProps = (state) => {
+	return {
+		blogs: state.reducer.blogs,
+	};
+};
+const mapDispatchtoProps = (dispatch) => {
+	return {
+		blogApi: function () {
+			dispatch(blogApi());
+		},
+	};
+};
+
+export default connect(mapStatetoProps, mapDispatchtoProps)(Insights);

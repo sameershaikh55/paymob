@@ -4,6 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Route, Switch } from "react-router-dom";
 
+// IMPORTING REDUX PROVIDER AND STORE
+import { Provider } from "react-redux";
+import store from "./redux/store";
+
 // IMPORTING PAGES
 import Home from "./pages/Home.jsx";
 import ProductOverview from "./pages/ProductOverview";
@@ -39,6 +43,7 @@ import logoW from "./assets/logoW.svg";
 
 function App() {
 	useEffect(() => {
+		localStorage.setItem("cookies", true);
 		document.body.style.overflow = "hidden";
 
 		window.addEventListener("load", (event) => {
@@ -53,50 +58,63 @@ function App() {
 		<>
 			<div className="loading_page">
 				<div className="inner_loading d-flex flex-column align-items-center">
-					<img src={logoW} alt="" />
-					{/* <HashLoader className="load mt-3" size={40} color="#fff" /> */}
-				</div>
+					<img src={logoW} alt="" />{" "}
+					{/* <HashLoader className="load mt-3" size={40} color="#fff" /> */}{" "}
+				</div>{" "}
 			</div>
-
 			<ScrollToTop />
-			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route exact path="/productOverview" component={ProductOverview} />
-				<Route exact path="/androidSdk" component={AndroidSdk} />
-				<Route exact path="/softPos" component={SoftPos} />
-				<Route exact path="/mposCard" component={MposCard} />
-				<Route exact path="/miniPos" component={MiniPos} />
-				<Route exact path="/smartPos" component={SmartPos} />
-				<Route
-					exact
-					path="/merchantOnboarding"
-					component={MerchantOnboarding}
-				/>
-				<Route exact path="/merchantDashboard" component={MerchantDashboard} />
-				<Route exact path="/adminPortal" component={AdminPortal} />
-				<Route exact path="/paymentGatway" component={PaymentGatway} />
-				<Route exact path="/certifications" component={Certifications} />
-				<Route exact path="/pricing" component={Pricing} />
-				<Route exact path="/team" component={Team} />
-				<Route exact path="/careers" component={Careers} />
-				<Route exact path="/careers/job_openings" component={JobOpenings} />
-				<Route exact path="/about" component={About} />
-				<Route exact path="/industrySector" component={IndustrySector} />
-				<Route exact path="/partners" component={Partners} />
-				<Route exact path="/caseStudies" component={CaseStudies} />
-				<Route exact path="/developers" component={Developers} />
-				<Route exact path="/blogList" component={BlogList} />
-				<Route exact path="/blogInside" component={BlogInside} />
-				<Route exact path="/press" component={Press} />
-				<Route exact path="/contact" component={Contact} />
-				<Route exact path="/faq" component={Faq} />
-				<Route exact path="/callback" component={Callback} />
-				<Route
-					exact
-					path="/inHouseDeployement"
-					component={InHouseDeployement}
-				/>
-			</Switch>
+			<Provider store={store}>
+				<Switch>
+					<Route exact path="/" component={Home} />{" "}
+					<Route exact path="/productOverview" component={ProductOverview} />{" "}
+					<Route exact path="/androidSdk" component={AndroidSdk} />{" "}
+					<Route exact path="/softPos" component={SoftPos} />{" "}
+					<Route exact path="/mposCard" component={MposCard} />{" "}
+					<Route exact path="/miniPos" component={MiniPos} />{" "}
+					<Route exact path="/smartPos" component={SmartPos} />{" "}
+					<Route
+						exact
+						path="/merchantOnboarding"
+						component={MerchantOnboarding}
+					/>{" "}
+					<Route
+						exact
+						path="/merchantDashboard"
+						component={MerchantDashboard}
+					/>{" "}
+					<Route exact path="/adminPortal" component={AdminPortal} />{" "}
+					<Route exact path="/paymentGatway" component={PaymentGatway} />{" "}
+					<Route exact path="/certifications" component={Certifications} />{" "}
+					<Route exact path="/pricing" component={Pricing} />{" "}
+					<Route exact path="/team" component={Team} />{" "}
+					<Route exact path="/careers" component={Careers} />{" "}
+					<Route exact path="/careers/job_openings" component={JobOpenings} />{" "}
+					<Route exact path="/about" component={About} />{" "}
+					<Route exact path="/industrySector" component={IndustrySector} />{" "}
+					<Route exact path="/partners" component={Partners} />{" "}
+					<Route exact path="/caseStudies" component={CaseStudies} />{" "}
+					<Route exact path="/developers" component={Developers} />{" "}
+					<Route
+						exact
+						path={["/blogList", "/blogList/:page"]}
+						component={BlogList}
+					/>{" "}
+					<Route
+						exact
+						path={["/blogInside/:singleBlog", "/blogInside/:page/:singleBlog"]}
+						component={BlogInside}
+					/>{" "}
+					<Route exact path="/press" component={Press} />{" "}
+					<Route exact path="/contact" component={Contact} />{" "}
+					<Route exact path="/faq" component={Faq} />{" "}
+					<Route exact path="/callback" component={Callback} />{" "}
+					<Route
+						exact
+						path="/inHouseDeployement"
+						component={InHouseDeployement}
+					/>{" "}
+				</Switch>{" "}
+			</Provider>{" "}
 		</>
 	);
 }
