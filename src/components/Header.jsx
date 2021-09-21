@@ -266,8 +266,8 @@ const About = () => {
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
-								<LinkS
-									to="insight"
+								<NavLink
+									to="/blogList"
 									offset={-120}
 									smooth={true}
 									duration={600}
@@ -275,7 +275,7 @@ const About = () => {
 									className="color1 text-decoration-none color1 fw600 pointer"
 								>
 									Paymob INsights <IoIosArrowForward />
-								</LinkS>
+								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink

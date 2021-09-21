@@ -44,7 +44,7 @@ const Footer = () => {
 
 	const about = [
 		{ t: "About us", l: "/about" },
-		{ t: "Paymob INsights", l: "insight" },
+		{ t: "Paymob INsights", l: "/blogList" },
 		{ t: "FAQs", l: "/faq" },
 		{ t: "Press", l: "/press" },
 		{ t: "Certifications & security", l: "/certifications" },
@@ -97,13 +97,10 @@ const Footer = () => {
 													{products.map((prev, i) => {
 														return (
 															<>
-																{(prev.l === "insight" && (
-																	<LinkS
-																		to={prev.l}
-																		offset={-120}
-																		smooth={true}
-																		duration={600}
-																		spy={true}
+																{(prev.el && (
+																	<a
+																		target="blank"
+																		href={prev.el}
 																		className="text-decoration-none"
 																	>
 																		<li
@@ -112,34 +109,20 @@ const Footer = () => {
 																		>
 																			{prev.t}
 																		</li>
-																	</LinkS>
-																)) ||
-																	(prev.el && (
-																		<a
-																			target="blank"
-																			href={prev.el}
-																			className="text-decoration-none"
+																	</a>
+																)) || (
+																	<Link
+																		to={prev.l}
+																		className="text-decoration-none"
+																	>
+																		<li
+																			className="text-white mb-2 mb-md-3 f14"
+																			key={i}
 																		>
-																			<li
-																				className="text-white mb-2 mb-md-3 f14"
-																				key={i}
-																			>
-																				{prev.t}
-																			</li>
-																		</a>
-																	)) || (
-																		<Link
-																			to={prev.l}
-																			className="text-decoration-none"
-																		>
-																			<li
-																				className="text-white mb-2 mb-md-3 f14"
-																				key={i}
-																			>
-																				{prev.t}
-																			</li>
-																		</Link>
-																	)}
+																			{prev.t}
+																		</li>
+																	</Link>
+																)}
 															</>
 														);
 													})}
