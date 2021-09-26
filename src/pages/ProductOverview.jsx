@@ -16,9 +16,18 @@ import { IoIosArrowForward } from "react-icons/io";
 import ExploreAvail from "../components/ExploreAvail";
 import { Link } from "react-router-dom";
 
+// IMPORT SEO
+import Seo from "../components/Seo";
+
 const ProductOverview = () => {
 	return (
 		<Layout>
+			<Seo
+				title="Paymob Products exist to help other businesses offer their own financial services"
+				description="Paymob exist to help other businesses offer their own financial services. We have built several packages to suit the individual needs of our Paymob partners from ready-to-go solutions to a bespoke white labeled application."
+				canonical="https://paymobtech.com/productOverview"
+			/>
+
 			<ProductHero />
 			<BrandPartners />
 			<PaymentInterface />

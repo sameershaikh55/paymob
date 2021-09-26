@@ -7,6 +7,9 @@ import PgHero from "../components/PgHero";
 import GatewayDetails from "../components/GatewayDetails";
 import OurPaymentInfra from "../components/OurPaymentInfra";
 
+// IMPORT SEO
+import Seo from "../components/Seo";
+
 const PaymentGatway = () => {
 	const data1 = [
 		"Full list of transactions including cash payment withdrawl per terminal",
@@ -22,6 +25,12 @@ const PaymentGatway = () => {
 
 	return (
 		<Layout>
+			<Seo
+				title="Payment gateway - Securely accept card present payments with Paymob"
+				description="How to use the Payment gateway - Securely accept card present payments with Paymob"
+				canonical="https://paymobtech.com/paymentGatway"
+			/>
+
 			<PgHero />
 			<GatewayDetails />
 

@@ -6,6 +6,7 @@ import logoW from "../assets/logoW.svg";
 import Layout from "../layout";
 import BlogInsideBody from "../components/BlogInsideBody";
 import RecomendedBlogs from "../components/RecomendedBlogs";
+import BlogSeo from "../components/BlogSeo";
 
 // IMPORTING REDUX
 import { connect } from "react-redux";
@@ -17,7 +18,6 @@ const BlogInside = ({ blogApi, blogs, blogApiPage }) => {
 
 	useEffect(() => {
 		if (page !== undefined) {
-			console.log(page, "lo");
 			blogApiPage(page);
 		} else {
 			blogApi();
@@ -38,6 +38,7 @@ const BlogInside = ({ blogApi, blogs, blogApiPage }) => {
 				</div>
 			)) || (
 				<Layout>
+					<BlogSeo page={page} data={singleBlog} />
 					<BlogInsideBody filteredData={filteredData} />
 					<RecomendedBlogs blogs={blogs} />
 				</Layout>

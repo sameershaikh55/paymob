@@ -10,9 +10,17 @@ import FinancialService from "../components/FinancialService";
 import SystemComponent from "../components/SystemComponent";
 import Insights from "../components/Insights";
 
+// IMPORT SEO
+import Seo from "../components/Seo";
+
 const Home = () => {
 	return (
 		<Layout>
+			<Seo
+				title="A payment engine for business apps. - Paymob"
+				description="A payment engine for business apps. - Paymob"
+				canonical="https://paymobtech.com/"
+			/>
 			<Hero />
 			<FinancialService />
 			<WhyMob />

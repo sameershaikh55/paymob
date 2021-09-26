@@ -10,6 +10,9 @@ import { connect } from "react-redux";
 import { blogApiPage } from "../redux/actions";
 import { useParams } from "react-router";
 
+// IMPORT SEO
+import Seo from "../components/Seo";
+
 const BlogList = ({ blogApiPage, blogs }) => {
 	const { page } = useParams();
 
@@ -20,6 +23,8 @@ const BlogList = ({ blogApiPage, blogs }) => {
 	return (
 		<>
 			<Layout>
+				<Seo canonical="https://paymobtech.com/blogList" />
+
 				{(!blogs.length && (
 					<div className="loading_page">
 						<div className="inner_loading d-flex flex-column align-items-center">

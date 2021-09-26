@@ -11,9 +11,17 @@ import SystemComponent from "../components/SystemComponent";
 import CaseStudies from "../components/CaseStudies";
 import Benefits from "../components/Benefits";
 
+// IMPORT SEO
+import Seo from "../components/Seo";
+
 const SoftPos = () => {
 	return (
 		<Layout>
+			<Seo
+				title="SoftPOS white label app with Tap To Phone technology | Paymob"
+				description="Try our SoftPOS white label app with Tap To Phone technology from Paymob"
+				canonical="https://paymobtech.com/softPos"
+			/>
 			<HeroSoft />
 			<SdkBrands />
 			<SoftDetails />
