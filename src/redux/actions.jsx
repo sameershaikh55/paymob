@@ -11,6 +11,7 @@ const blogFunc = (data) => {
 export const blogApi = () => {
 	return (dispatch) => {
 		axios.get("https://paymobtech.com/wp-json/wp/v2/posts").then((res) => {
+			console.log(res, "LOL");
 			dispatch(blogFunc(res.data));
 		});
 	};

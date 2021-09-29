@@ -3,8 +3,10 @@ import { Helmet } from "react-helmet";
 
 const Seo = ({ description, title, canonical }) => {
 	const noFound = {
-		title: "A payment engine for business apps. - Paymob",
-		description: "A payment engine for business apps. - Paymob",
+		title:
+			"SoftPOS payment engine for business apps financial services | Paymob",
+		description:
+			"Paymob provide a SoftPOS payment engine enabling any company to provide innovative financial services solutions to merchant customers. Turn any NFC enabled device into a contactless card reading terminal with our revolutionary SoftPOS payment SDK and white label app",
 	};
 
 	const metaDescription = description || noFound.description;
