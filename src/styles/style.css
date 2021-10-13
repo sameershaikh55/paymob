@@ -729,12 +729,14 @@ input:focus {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  max-width: 480px;
 }
 
 .insights_container .desktop_insights img.thumbnail {
   max-width: 480px;
   border-radius: 18px;
   min-height: 327px;
+  max-height: 330px;
   -webkit-box-shadow: 1px 1px 10px #ccc;
           box-shadow: 1px 1px 10px #ccc;
   -o-object-fit: cover;

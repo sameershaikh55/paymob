@@ -1,6 +1,8 @@
 import { BLOGS } from "./type";
 import axios from "axios";
 
+const url = "https://v1.nocodeapi.com/paymob1234/ghost/PgUAPCdEXBfABFYr";
+
 const blogFunc = (data) => {
 	return {
 		type: BLOGS,
@@ -10,20 +12,8 @@ const blogFunc = (data) => {
 
 export const blogApi = () => {
 	return (dispatch) => {
-		axios.get("https://paymobtech.com/wp-json/wp/v2/posts").then((res) => {
-			console.log(res, "LOL");
+		axios.get(url + "?limit=100000").then((res) => {
 			dispatch(blogFunc(res.data));
 		});
-	};
-};
-
-export const blogApiPage = (page) => {
-	return (dispatch) => {
-		dispatch(blogFunc(""));
-		axios
-			.get(`https://paymobtech.com/wp-json/wp/v2/posts?page=${page || 1}`)
-			.then((res) => {
-				dispatch(blogFunc(res.data), console.log(res));
-			});
 	};
 };

@@ -1,12 +1,9 @@
 import React from "react";
 import blog from "../assets/home/blog.svg";
 import { IoIosArrowForward } from "react-icons/io";
-import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
 const BlogListHero = ({ blogs }) => {
-	const { page } = useParams();
-
 	return (
 		<div className="blog_list_container">
 			<div className="page_container">
@@ -27,16 +24,12 @@ const BlogListHero = ({ blogs }) => {
 										<div className="col-12 col-lg-9 ms-auto h-100 d-flex flex-column justify-content-between">
 											<h2
 												dangerouslySetInnerHTML={{
-													__html: blogs[0].title.rendered,
+													__html: blogs[0].title,
 												}}
 												className="f35 gotham fw600 color1"
 											></h2>
 											<div className="mt-2 mt-md-5">
-												<Link
-													to={`/blogInside${
-														(page !== undefined && `/${page}`) || ""
-													}/${blogs[0].slug}`}
-												>
+												<Link to={`/blogInside/${blogs[0].slug}`}>
 													<button className="f14 border-0 bg-transparent orangeC fw600 gotham">
 														Learn more <IoIosArrowForward />
 													</button>
@@ -46,11 +39,13 @@ const BlogListHero = ({ blogs }) => {
 									</div>
 								</div>
 								<div className="col-12 col-md-6 mt-5 mt-md-0">
-									<img
-										className="thumbnail"
-										src={blogs[0].featured_image_urls.medium_large[0]}
-										alt=""
-									/>
+									{(blogs[0].feature_image && (
+										<img
+											className="thumbnail"
+											src={blogs[0].feature_image}
+											alt=""
+										/>
+									)) || <img className="thumbnail" src={blog} alt="" />}
 								</div>
 							</div>
 						</div>

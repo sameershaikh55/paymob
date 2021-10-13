@@ -736,12 +736,14 @@ input:focus {
 			-webkit-line-clamp: 1;
 			-webkit-box-orient: vertical;
 			overflow: hidden;
+			max-width: 480px;
 		}
 
 		img.thumbnail {
 			max-width: 480px;
 			border-radius: 18px;
 			min-height: 327px;
+			max-height: 330px;
 			box-shadow: 1px 1px 10px #ccc;
 			object-fit: cover;
 			width: 100%;

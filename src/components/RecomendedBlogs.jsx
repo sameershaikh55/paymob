@@ -9,7 +9,7 @@ const RecomendedBlogs = ({ blogs }) => {
 			const j = Math.floor(Math.random() * (i + 1));
 			[blogs[i], blogs[j]] = [blogs[j], blogs[i]];
 		}
-	}, []);
+	});
 
 	return (
 		<div className="insights_container recomended">
@@ -19,29 +19,27 @@ const RecomendedBlogs = ({ blogs }) => {
 						<div className="col-11 col-lg-12 mx-auto">
 							<div className="desktop_insights row">
 								{blogs.map((prev, ind) => {
-									console.log(prev);
 									return (
 										<>
 											{ind <= 1 && (
 												<div className="col-11 col-md-6 mx-auto mt-5" key={ind}>
-													{(prev.featured_image_urls &&
-														prev.featured_image_urls.small !== "" && (
-															<img
-																className="thumbnail"
-																src={prev.featured_image_urls.medium_large[0]}
-																alt=""
-															/>
-														)) || <img src={blog} alt="" />}
+													{(prev.feature_image && (
+														<img
+															className="thumbnail"
+															src={prev.feature_image}
+															alt=""
+														/>
+													)) || <img src={blog} alt="" />}
 													<div className="ps-3 mt-3">
-														<div
+														{/* <div
 															dangerouslySetInnerHTML={{
 																__html: prev.category_list,
 															}}
 															className="category_link f14 crice mb-0 mb-md-2"
-														></div>
+														></div> */}
 														<h2
 															dangerouslySetInnerHTML={{
-																__html: prev.title.rendered,
+																__html: prev.title,
 															}}
 															className="color1 f20 fw700"
 														></h2>

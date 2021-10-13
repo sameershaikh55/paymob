@@ -2,11 +2,8 @@ import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import blog from "../assets/home/blog.svg";
-import { useParams } from "react-router";
 
 const BlogListBody = ({ blogsPag }) => {
-	const { page } = useParams();
-
 	return (
 		<div className="insights_container blogBody">
 			<div className="page_container">
@@ -17,36 +14,30 @@ const BlogListBody = ({ blogsPag }) => {
 								{blogsPag.map((prev, ind) => {
 									return (
 										<>
-											{prev.title.rendered !==
-												"Emerging fintech trends in MENA" && (
+											{ind >= 1 && (
 												<div className="col-11 col-md-6 mt-5" key={ind}>
-													{(prev.featured_image_urls &&
-														prev.featured_image_urls.small !== "" && (
-															<img
-																className="thumbnail"
-																src={prev.featured_image_urls.medium_large[0]}
-																alt=""
-															/>
-														)) || <img src={blog} alt="" />}
+													{(prev.feature_image && (
+														<img
+															className="thumbnail"
+															src={prev.feature_image}
+															alt=""
+														/>
+													)) || <img src={blog} alt="" />}
 
 													<div className="ps-3 mt-3">
-														<div
+														{/* <div
 															dangerouslySetInnerHTML={{
 																__html: prev.category_list,
 															}}
 															className="category_link f14 crice mb-0 mb-md-2"
-														></div>
+														></div> */}
 														<h2
 															dangerouslySetInnerHTML={{
-																__html: prev.title.rendered,
+																__html: prev.title,
 															}}
 															className="color1 f20 fw700"
 														></h2>
-														<Link
-															to={`/blogInside${
-																(page !== undefined && `/${page}`) || ""
-															}/${prev.slug}`}
-														>
+														<Link to={`/blogInside/${prev.slug}`}>
 															<button className="f14 border-0 bg-transparent orangeC fw600">
 																Learn more <IoIosArrowForward />
 															</button>

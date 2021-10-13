@@ -10,19 +10,17 @@ import BlogSeo from "../components/BlogSeo";
 
 // IMPORTING REDUX
 import { connect } from "react-redux";
-import { blogApi, blogApiPage } from "../redux/actions";
+import { blogApi } from "../redux/actions";
 import { useParams } from "react-router";
 
-const BlogInside = ({ blogApi, blogs, blogApiPage }) => {
-	const { page, singleBlog } = useParams();
-	console.log(singleBlog);
+const BlogInside = ({ blogApi, blogs }) => {
+	const { singleBlog } = useParams();
+
 	useEffect(() => {
-		if (page !== undefined) {
-			blogApiPage(page);
-		} else {
-			blogApi();
-		}
+		blogApi();
 	}, []);
+
+	console.log(singleBlog);
 
 	if (blogs.length) {
 		var filteredData = blogs.filter((prev) => singleBlog === prev.slug);
@@ -38,7 +36,7 @@ const BlogInside = ({ blogApi, blogs, blogApiPage }) => {
 				</div>
 			)) || (
 				<Layout>
-					<BlogSeo page={page} data={singleBlog} />
+					<BlogSeo data={singleBlog} />
 					<BlogInsideBody filteredData={filteredData} />
 					<RecomendedBlogs blogs={blogs} />
 				</Layout>
@@ -56,9 +54,6 @@ const mapDispatchtoProps = (dispatch) => {
 	return {
 		blogApi: function () {
 			dispatch(blogApi());
-		},
-		blogApiPage: function (page) {
-			dispatch(blogApiPage(page));
 		},
 	};
 };

@@ -38,6 +38,7 @@ const SystemComponent = () => {
 		{ i: s4, t: "Admin Portal", l: "/adminPortal" },
 		{ i: s5, t: "Payment gateway", l: "/paymentGatway" },
 	];
+
 	return (
 		<div className="System_component_container">
 			<div className="page_container">

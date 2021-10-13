@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 // IMPORTING COMPONENTS
 import Layout from "../layout";
@@ -7,18 +7,26 @@ import BlogListBody from "../components/BlogListBody";
 import BlogPagination from "../components/BlogPagination";
 import logoW from "../assets/logoW.svg";
 import { connect } from "react-redux";
-import { blogApiPage } from "../redux/actions";
-import { useParams } from "react-router";
+import { blogApi } from "../redux/actions";
 
 // IMPORT SEO
 import Seo from "../components/Seo";
 
-const BlogList = ({ blogApiPage, blogs }) => {
-	const { page } = useParams();
+const BlogList = ({ blogApi, blogs }) => {
+	const [currentPage, setCurrentPage] = useState(1);
+	const [postsPerPage] = useState(10);
 
 	useEffect(() => {
-		blogApiPage(page);
-	}, [page]);
+		blogApi();
+	}, []);
+
+	// Get current posts
+	const indexOfLastPost = currentPage * postsPerPage;
+	const indexOfFirstPost = indexOfLastPost - postsPerPage;
+	const currentPosts = blogs.slice(indexOfFirstPost, indexOfLastPost);
+
+	// Change page
+	const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
 	return (
 		<>
@@ -33,11 +41,17 @@ const BlogList = ({ blogApiPage, blogs }) => {
 					</div>
 				)) || (
 					<>
-						{!page && <BlogListHero blogs={blogs} />}
-						<BlogListBody blogsPag={blogs} />
+						{currentPage === 1 && <BlogListHero blogs={blogs} />}
+						<BlogListBody blogsPag={currentPosts} />
 					</>
 				)}
-				<BlogPagination />
+				<BlogPagination
+					currentPage={currentPage}
+					postsPerPage={postsPerPage}
+					totalPosts={blogs.length}
+					paginate={paginate}
+					setCurrentPage={setCurrentPage}
+				/>
 			</Layout>
 		</>
 	);
@@ -50,8 +64,8 @@ const mapStatetoProps = (state) => {
 };
 const mapDispatchtoProps = (dispatch) => {
 	return {
-		blogApiPage: function (page) {
-			dispatch(blogApiPage(page));
+		blogApi: function () {
+			dispatch(blogApi());
 		},
 	};
 };
